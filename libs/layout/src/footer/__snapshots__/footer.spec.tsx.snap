@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer should render successfully 1`] = `
+<div>
+  <footer
+    class="MuiContainer-root MuiContainer-maxWidthMd css-dedtb0-MuiContainer-root"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-d9vyhc-MuiGrid-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-3 css-1blu1sr-MuiGrid-root"
+      >
+        <h6
+          class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1dxy5kq-MuiTypography-root"
+        >
+          Company
+        </h6>
+        <ul>
+          <li>
+            <a
+              class="MuiTypography-root MuiTypography-subtitle1 MuiLink-root MuiLink-underlineAlways css-1nlicrk-MuiTypography-root-MuiLink-root"
+              href="#"
+            >
+              Team
+            </a>
+          </li>
+          <li>
+            <a
+              class="MuiTypography-root MuiTypography-subtitle1 MuiLink-root MuiLink-underlineAlways css-1nlicrk-MuiTypography-root-MuiLink-root"
+              href="#"
+            >
+              History
+            </a>
+          </li>
+          <li>
+            <a
+              class="MuiTypography-root MuiTypography-subtitle1 MuiLink-root MuiLink-underlineAlways css-1nlicrk-MuiTypography-root-MuiLink-root"
+              href="#"
+            >
+              Contact us
+            </a>
+          </li>
+          <li>
+            <a
+              class="MuiTypography-root MuiTypography-subtitle1 MuiLink-root MuiLink-underlineAlways css-1nlicrk-MuiTypography-root-MuiLink-root"
+              href="#"
+            >
+              Locations
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-3 css-1blu1sr-MuiGrid-root"
+      >
+        <h6
+          class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1dxy5kq-MuiTypography-root"
+        >
+          Features
+        </h6>
+        <ul>
+          <li>
+            <a
+              class="MuiTypography-root MuiTypography-subtitle1 MuiLink-root MuiLink-underlineAlways css-1nlicrk-MuiTypography-root-MuiLink-root"
+              href="#"
+            >
+              Cool stuff
+            </a>
+          </li>
+          <li>
+            <a
+              class="MuiTypography-root MuiTypography-subtitle1 MuiLink-root MuiLink-underlineAlways css-1nlicrk-MuiTypography-root-MuiLink-root"
+              href="#"
+            >
+              Random feature
+            </a>
+          </li>
+          <li>
+            <a
+              class="MuiTypography-root MuiTypography-subtitle1 MuiLink-root MuiLink-underlineAlways css-1nlicrk-MuiTypography-root-MuiLink-root"
+              href="#"
+            >
+              Team feature
+            </a>
+          </li>
+          <li>
+            <a
+              class="MuiTypography-root MuiTypography-subtitle1 MuiLink-root MuiLink-underlineAlways css-1nlicrk-MuiTypography-root-MuiLink-root"
+              href="#"
+            >
+              Developer stuff
+            </a>
+          </li>
+          <li>
+            <a
+              class="MuiTypography-root MuiTypography-subtitle1 MuiLink-root MuiLink-underlineAlways css-1nlicrk-MuiTypography-root-MuiLink-root"
+              href="#"
+            >
+              Another one
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-3 css-1blu1sr-MuiGrid-root"
+      >
+        <h6
+          class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1dxy5kq-MuiTypography-root"
+        >
+          Resources
+        </h6>
+        <ul>
+          <li>
+            <a
+              class="MuiTypography-root MuiTypography-subtitle1 MuiLink-root MuiLink-underlineAlways css-1nlicrk-MuiTypography-root-MuiLink-root"
+              href="#"
+            >
+              Resource
+            </a>
+          </li>
+          <li>
+            <a
+              class="MuiTypography-root MuiTypography-subtitle1 MuiLink-root MuiLink-underlineAlways css-1nlicrk-MuiTypography-root-MuiLink-root"
+              href="#"
+            >
+              Resource name
+            </a>
+          </li>
+          <li>
+            <a
+              class="MuiTypography-root MuiTypography-subtitle1 MuiLink-root MuiLink-underlineAlways css-1nlicrk-MuiTypography-root-MuiLink-root"
+              href="#"
+            >
+              Another resource
+            </a>
+          </li>
+          <li>
+            <a
+              class="MuiTypography-root MuiTypography-subtitle1 MuiLink-root MuiLink-underlineAlways css-1nlicrk-MuiTypography-root-MuiLink-root"
+              href="#"
+            >
+              Final resource
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-3 css-1blu1sr-MuiGrid-root"
+      >
+        <h6
+          class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1dxy5kq-MuiTypography-root"
+        >
+          Legal
+        </h6>
+        <ul>
+          <li>
+            <a
+              class="MuiTypography-root MuiTypography-subtitle1 MuiLink-root MuiLink-underlineAlways css-1nlicrk-MuiTypography-root-MuiLink-root"
+              href="#"
+            >
+              Privacy policy
+            </a>
+          </li>
+          <li>
+            <a
+              class="MuiTypography-root MuiTypography-subtitle1 MuiLink-root MuiLink-underlineAlways css-1nlicrk-MuiTypography-root-MuiLink-root"
+              href="#"
+            >
+              Terms of use
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p
+      class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-5k114j-MuiTypography-root"
+      data-testid="waweb.molecules/copyright"
+    >
+      Copyright © 
+      <a
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1kgfegd-MuiTypography-root-MuiLink-root"
+        href="https://www.watheia.io/"
+      >
+        Watheia Labs, LLC
+      </a>
+       
+      2021
+      .
+    </p>
+  </footer>
+</div>
+`;

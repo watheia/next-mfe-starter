@@ -1,0 +1,647 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index should render successfully 1`] = `
+<div>
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+  >
+    <nav
+      class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-14105se-MuiToolbar-root"
+    >
+      <a
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
+        href="http://dev.local:4200/blog/technology"
+      >
+        Technology
+      </a>
+      <a
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
+        href="http://dev.local:4200/blog/design"
+      >
+        Design
+      </a>
+      <a
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
+        href="http://dev.local:4200/blog/culture"
+      >
+        Culture
+      </a>
+      <a
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
+        href="http://dev.local:4200/blog/business"
+      >
+        Business
+      </a>
+      <a
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
+        href="http://dev.local:4200/blog/politics"
+      >
+        Politics
+      </a>
+      <a
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
+        href="http://dev.local:4200/blog/opinion"
+      >
+        Opinion
+      </a>
+      <a
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
+        href="http://dev.local:4200/blog/science"
+      >
+        Science
+      </a>
+      <a
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
+        href="http://dev.local:4200/blog/health"
+      >
+        Health
+      </a>
+      <a
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
+        href="http://dev.local:4200/blog/style"
+      >
+        Style
+      </a>
+      <a
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
+        href="http://dev.local:4200/blog/travel"
+      >
+        Travel
+      </a>
+    </nav>
+    <main>
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-rl1oml-MuiPaper-root"
+      >
+        <img
+          alt="main image description"
+          src="https://source.unsplash.com/random"
+          style="display: none;"
+        />
+        <div
+          class="MuiBox-root css-1plq5y9"
+        />
+        <div
+          class="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-1k7sk4d-MuiGrid-root"
+          >
+            <div
+              class="MuiBox-root css-30n99s"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-h3 MuiTypography-gutterBottom css-1007tex-MuiTypography-root"
+              >
+                Title of a longer featured blog post
+              </h1>
+              <p
+                class="MuiTypography-root MuiTypography-h5 MuiTypography-paragraph css-187jqjf-MuiTypography-root"
+              >
+                Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.
+              </p>
+              <a
+                class="MuiTypography-root MuiTypography-subtitle1 MuiLink-root MuiLink-underlineAlways css-1qktr10-MuiTypography-root-MuiLink-root"
+                href="#"
+              >
+                Read more...
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-480o17-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root"
+        >
+          <a
+            class="MuiButtonBase-root MuiCardActionArea-root css-b6lsxj-MuiButtonBase-root-MuiCardActionArea-root"
+            href="#"
+            tabindex="0"
+          >
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1oqv2c0-MuiPaper-root-MuiCard-root"
+            >
+              <div
+                class="MuiCardContent-root css-97bign-MuiCardContent-root"
+              >
+                <h2
+                  class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+                >
+                  Featured post
+                </h2>
+                <h6
+                  class="MuiTypography-root MuiTypography-subtitle1 css-ecpxie-MuiTypography-root"
+                >
+                  Nov 12
+                </h6>
+                <p
+                  class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-paragraph css-11j0rze-MuiTypography-root"
+                >
+                  This is a wider card with supporting text below as a natural lead-in to additional content.
+                </p>
+                <h6
+                  class="MuiTypography-root MuiTypography-subtitle1 css-x4wfr5-MuiTypography-root"
+                >
+                  Continue reading...
+                </h6>
+              </div>
+              <img
+                alt="Image Text"
+                class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-fnq5ct-MuiCardMedia-root"
+                src="https://source.unsplash.com/random"
+              />
+            </div>
+            <span
+              class="MuiCardActionArea-focusHighlight css-1v2exvi-MuiCardActionArea-focusHighlight"
+            />
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </a>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root"
+        >
+          <a
+            class="MuiButtonBase-root MuiCardActionArea-root css-b6lsxj-MuiButtonBase-root-MuiCardActionArea-root"
+            href="#"
+            tabindex="0"
+          >
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1oqv2c0-MuiPaper-root-MuiCard-root"
+            >
+              <div
+                class="MuiCardContent-root css-97bign-MuiCardContent-root"
+              >
+                <h2
+                  class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+                >
+                  Post title
+                </h2>
+                <h6
+                  class="MuiTypography-root MuiTypography-subtitle1 css-ecpxie-MuiTypography-root"
+                >
+                  Nov 11
+                </h6>
+                <p
+                  class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-paragraph css-11j0rze-MuiTypography-root"
+                >
+                  This is a wider card with supporting text below as a natural lead-in to additional content.
+                </p>
+                <h6
+                  class="MuiTypography-root MuiTypography-subtitle1 css-x4wfr5-MuiTypography-root"
+                >
+                  Continue reading...
+                </h6>
+              </div>
+              <img
+                alt="Image Text"
+                class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-fnq5ct-MuiCardMedia-root"
+                src="https://source.unsplash.com/random"
+              />
+            </div>
+            <span
+              class="MuiCardActionArea-focusHighlight css-1v2exvi-MuiCardActionArea-focusHighlight"
+            />
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </a>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-1n8pt8h-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-8 css-1455oqv-MuiGrid-root"
+        >
+          <h6
+            class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-18k87ye-MuiTypography-root"
+          >
+            From the firehose
+          </h6>
+          <hr
+            class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+          />
+          <div
+            class="markdown"
+          >
+            <h1
+              class="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom css-1vw6mcs-MuiTypography-root"
+              id="sample-blog-post"
+            >
+              Sample blog post
+            </h1>
+            <p
+              class="MuiTypography-root MuiTypography-caption MuiTypography-gutterBottom MuiTypography-paragraph css-5y8tz6-MuiTypography-root"
+              id="april-1-2020-by-olivier"
+            >
+              April 1, 2020 by 
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1iwtne7-MuiTypography-root-MuiLink-root"
+                href="/"
+              >
+                Olivier
+              </a>
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-z2eky3-MuiTypography-root"
+            >
+              This blog post shows a few different types of content that are supported and styled with
+Material styles. Basic typography, images, and code are all supported.
+You can extend these by modifying 
+              <code>
+                Markdown.js
+              </code>
+              .
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-z2eky3-MuiTypography-root"
+            >
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-z2eky3-MuiTypography-root"
+            >
+              Curabitur blandit tempus porttitor. 
+              <strong>
+                Nullam quis risus eget urna mollis
+              </strong>
+               ornare vel eu leo.
+Nullam id dolor id nibh ultricies vehicula ut id elit.
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-z2eky3-MuiTypography-root"
+            >
+              Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum.
+Aenean lacinia bibendum nulla sed consectetur.
+            </p>
+            <h2
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-18k87ye-MuiTypography-root"
+              id="heading"
+            >
+              Heading
+            </h2>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-z2eky3-MuiTypography-root"
+            >
+              Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+            </p>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-gutterBottom css-1wniyei-MuiTypography-root"
+              id="sub-heading"
+            >
+              Sub-heading
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-z2eky3-MuiTypography-root"
+            >
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-gutterBottom css-1wniyei-MuiTypography-root"
+              id="sub-heading"
+            >
+              Sub-heading
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-z2eky3-MuiTypography-root"
+            >
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.
+Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+sit amet risus.
+            </p>
+            <ul>
+              <li
+                class="MuiBox-root css-1rfldfl"
+              >
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+              </li>
+              <li
+                class="MuiBox-root css-1rfldfl"
+              >
+                Donec id elit non mi porta gravida at eget metus.
+              </li>
+              <li
+                class="MuiBox-root css-1rfldfl"
+              >
+                Nulla vitae elit libero, a pharetra augue.
+              </li>
+            </ul>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-z2eky3-MuiTypography-root"
+            >
+              Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
+            </p>
+            <ol
+              start="1"
+            >
+              <li
+                class="MuiBox-root css-1rfldfl"
+              >
+                Vestibulum id ligula porta felis euismod semper.
+              </li>
+              <li
+                class="MuiBox-root css-1rfldfl"
+              >
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              </li>
+              <li
+                class="MuiBox-root css-1rfldfl"
+              >
+                Maecenas sed diam eget risus varius blandit sit amet non magna.
+              </li>
+            </ol>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-z2eky3-MuiTypography-root"
+            >
+              Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
+            </p>
+          </div>
+          <div
+            class="markdown"
+          >
+            <h1
+              class="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom css-1vw6mcs-MuiTypography-root"
+              id="another-blog-post"
+            >
+              Another blog post
+            </h1>
+            <p
+              class="MuiTypography-root MuiTypography-caption MuiTypography-gutterBottom MuiTypography-paragraph css-5y8tz6-MuiTypography-root"
+              id="march-23-2020-by-matt"
+            >
+              March 23, 2020 by 
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1iwtne7-MuiTypography-root-MuiLink-root"
+                href="/"
+              >
+                Matt
+              </a>
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-z2eky3-MuiTypography-root"
+            >
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-z2eky3-MuiTypography-root"
+            >
+              Curabitur blandit tempus porttitor. 
+              <strong>
+                Nullam quis risus eget urna mollis
+              </strong>
+               ornare vel eu leo.
+Nullam id dolor id nibh ultricies vehicula ut id elit.
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-z2eky3-MuiTypography-root"
+            >
+              Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum.
+Aenean lacinia bibendum nulla sed consectetur.
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-z2eky3-MuiTypography-root"
+            >
+              Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+            </p>
+          </div>
+          <div
+            class="markdown"
+          >
+            <h1
+              class="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom css-1vw6mcs-MuiTypography-root"
+              id="new-feature"
+            >
+              New feature
+            </h1>
+            <p
+              class="MuiTypography-root MuiTypography-caption MuiTypography-gutterBottom MuiTypography-paragraph css-5y8tz6-MuiTypography-root"
+              id="march-14-2020-by-tom"
+            >
+              March 14, 2020 by 
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1iwtne7-MuiTypography-root-MuiLink-root"
+                href="/"
+              >
+                Tom
+              </a>
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-z2eky3-MuiTypography-root"
+            >
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.
+Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+ut fermentum massa justo sit amet risus.
+            </p>
+            <ul>
+              <li
+                class="MuiBox-root css-1rfldfl"
+              >
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+              </li>
+              <li
+                class="MuiBox-root css-1rfldfl"
+              >
+                Donec id elit non mi porta gravida at eget metus.
+              </li>
+              <li
+                class="MuiBox-root css-1rfldfl"
+              >
+                Nulla vitae elit libero, a pharetra augue.
+              </li>
+            </ul>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-z2eky3-MuiTypography-root"
+            >
+              Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum.
+Aenean lacinia bibendum nulla sed consectetur.
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-z2eky3-MuiTypography-root"
+            >
+              Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
+            </p>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1wq21mn-MuiPaper-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-18k87ye-MuiTypography-root"
+            >
+              About
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+            >
+              Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+            </p>
+          </div>
+          <h6
+            class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1ncy60i-MuiTypography-root"
+          >
+            Archives
+          </h6>
+          <a
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
+            href="http://dev.local:4200/#"
+          >
+            March 2020
+          </a>
+          <a
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
+            href="http://dev.local:4200/#"
+          >
+            February 2020
+          </a>
+          <a
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
+            href="http://dev.local:4200/#"
+          >
+            January 2020
+          </a>
+          <a
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
+            href="http://dev.local:4200/#"
+          >
+            November 1999
+          </a>
+          <a
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
+            href="http://dev.local:4200/#"
+          >
+            October 1999
+          </a>
+          <a
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
+            href="http://dev.local:4200/#"
+          >
+            September 1999
+          </a>
+          <a
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
+            href="http://dev.local:4200/#"
+          >
+            August 1999
+          </a>
+          <a
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
+            href="http://dev.local:4200/#"
+          >
+            July 1999
+          </a>
+          <a
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
+            href="http://dev.local:4200/#"
+          >
+            June 1999
+          </a>
+          <a
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
+            href="http://dev.local:4200/#"
+          >
+            May 1999
+          </a>
+          <a
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
+            href="http://dev.local:4200/#"
+          >
+            April 1999
+          </a>
+          <h6
+            class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1ncy60i-MuiTypography-root"
+          >
+            Social
+          </h6>
+          <a
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-dc7lsi-MuiTypography-root-MuiLink-root"
+            href="/#"
+          >
+            <div
+              class="css-1q36rmd-MuiStack-root"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="GitHubIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+                />
+              </svg>
+              <span>
+                GitHub
+              </span>
+            </div>
+          </a>
+          <a
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-dc7lsi-MuiTypography-root-MuiLink-root"
+            href="/#"
+          >
+            <div
+              class="css-1q36rmd-MuiStack-root"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="TwitterIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"
+                />
+              </svg>
+              <span>
+                Twitter
+              </span>
+            </div>
+          </a>
+          <a
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-dc7lsi-MuiTypography-root-MuiLink-root"
+            href="/#"
+          >
+            <div
+              class="css-1q36rmd-MuiStack-root"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="FacebookIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z"
+                />
+              </svg>
+              <span>
+                Facebook
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+`;

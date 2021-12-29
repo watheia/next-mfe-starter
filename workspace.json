@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "projects": {
+    "app": "libs/app",
+    "atoms": "libs/atoms",
+    "auth": "libs/auth",
+    "blog": "apps/blog",
+    "catalog": "apps/catalog",
+    "cypress": "apps/cypress",
+    "emotion": "libs/emotion",
+    "gatekeeper": "apps/gatekeeper",
+    "home": "apps/home",
+    "layout": "libs/layout",
+    "model": "libs/model",
+    "molecules": "libs/molecules",
+    "organisms": "libs/organisms",
+    "theme": "libs/theme",
+    "utils": "libs/utils",
+    "views": "libs/views"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "root": "libs/emotion",
+  "sourceRoot": "libs/emotion/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/emotion",
+        "tsConfig": "libs/emotion/tsconfig.lib.json",
+        "project": "libs/emotion/package.json",
+        "entryFile": "libs/emotion/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "swc",
+        "assets": [
+          {
+            "glob": "libs/emotion/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/emotion/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/emotion"],
+      "options": {
+        "jestConfig": "libs/emotion/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

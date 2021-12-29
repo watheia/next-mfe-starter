@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Copyright should render successfully 1`] = `
+<div>
+  <p
+    class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-5k114j-MuiTypography-root"
+    data-testid="waweb.molecules/copyright"
+  >
+    Copyright © 
+    <a
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1kgfegd-MuiTypography-root-MuiLink-root"
+      href="https://www.watheia.io/"
+    >
+      Watheia Labs, LLC
+    </a>
+     
+    2021
+    .
+  </p>
+</div>
+`;

@@ -1,0 +1,91 @@
+{
+  "root": "apps/blog",
+  "sourceRoot": "apps/blog",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/next:build",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "defaultConfiguration": "production",
+      "options": {
+        "root": "apps/blog",
+        "outputPath": "dist/apps/blog"
+      },
+      "configurations": {
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/next:server",
+      "options": {
+        "buildTarget": "blog:build",
+        "dev": true,
+        "port": 4220,
+        "hostname": "dev.local"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "blog:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nrwl/next:export",
+      "options": {
+        "buildTarget": "blog:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/apps/blog"
+      ],
+      "options": {
+        "jestConfig": "apps/blog/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "apps/blog/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "docker": {
+      "executor": "@nx-tools/nx-docker:build",
+      "options": {
+        "push": false,
+        "tags": [
+          "dev.local/blog"
+        ]
+      },
+      "configurations": {
+        "production": {
+          "push": true,
+          "tags": [
+            "watheialabs/blog:v0alpha1"
+          ]
+        }
+      }
+    },
+    "assemble": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": [
+          "nx run blog:export",
+          "nx run blog:docker"
+        ],
+        "parallel": false
+      }
+    }
+  },
+  "tags": []
+}
