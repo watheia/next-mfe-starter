@@ -1,8 +1,10 @@
-import React, { ReactNode } from 'react';
+import { AuthProvider } from '@waweb/auth';
 import Layout from '@waweb/layout';
 import { ThemeProvider } from '@waweb/theme';
+import { fetcher } from '@waweb/utils';
 import NextApp from 'next/app';
-import { AuthProvider } from '@waweb/auth';
+import React, { ReactNode } from 'react';
+import { SWRConfig } from 'swr';
 
 /* eslint-disable-next-line */
 export interface WaAppProps {}
@@ -15,11 +17,20 @@ export class WaApp extends NextApp<WaAppProps> {
 
   compose(children: ReactNode | ReactNode[]): JSX.Element {
     return (
-      <AuthProvider>
-        <ThemeProvider>
-          <Layout>{children}</Layout>
-        </ThemeProvider>
-      </AuthProvider>
+      <SWRConfig
+        value={{
+          fetcher: fetcher,
+          onError: (err) => {
+            console.error(err);
+          },
+        }}
+      >
+        <AuthProvider>
+          <ThemeProvider>
+            <Layout>{children}</Layout>
+          </ThemeProvider>
+        </AuthProvider>
+      </SWRConfig>
     );
   }
 }

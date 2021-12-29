@@ -1893,6 +1893,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hapi/b64@npm:5.x.x":
+  version: 5.0.0
+  resolution: "@hapi/b64@npm:5.0.0"
+  dependencies:
+    "@hapi/hoek": 9.x.x
+  checksum: 1e166bc9a6ca2952190ede40089d552efa21554c3325d5174e5616b940f79cd8327520b239ef6725f823f95b9e4684579bc8e99a222b28639b793ae0ef788409
+  languageName: node
+  linkType: hard
+
 "@hapi/boom@npm:9.x.x":
   version: 9.1.4
   resolution: "@hapi/boom@npm:9.1.4::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40hapi%2Fboom%2F-%2Fboom-9.1.4.tgz"
@@ -1902,10 +1911,39 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hapi/bourne@npm:2.x.x":
+  version: 2.0.0
+  resolution: "@hapi/bourne@npm:2.0.0"
+  checksum: 2ea0922101d3fecec43428194c72c5dbe0be908dd7ad07347879dc720820ac410ead79a4c349a2e1726e8af062464160c6d32b6566bbc4c60865923f9d7dd006
+  languageName: node
+  linkType: hard
+
+"@hapi/cryptiles@npm:5.x.x":
+  version: 5.1.0
+  resolution: "@hapi/cryptiles@npm:5.1.0"
+  dependencies:
+    "@hapi/boom": 9.x.x
+  checksum: 3109ad8435d6333b22092e8264e0cc32baafaa10c8c813685ca379c033b5d4123cd503aecdb535fb0c2d39d8e26c494f4c4998d5d040865907b64bf4cb72c705
+  languageName: node
+  linkType: hard
+
 "@hapi/hoek@npm:9.x.x":
   version: 9.2.1
   resolution: "@hapi/hoek@npm:9.2.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40hapi%2Fhoek%2F-%2Fhoek-9.2.1.tgz"
   checksum: 6a439f672df5f12f1d08d56967b4cb364ce05d81e95e3c3c1b88c5a98b917ca91c70e78cc0b2b4219a760cceec1f22d6658bfc93a83670cecc1ce9ca2247ebd8
+  languageName: node
+  linkType: hard
+
+"@hapi/iron@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@hapi/iron@npm:6.0.0"
+  dependencies:
+    "@hapi/b64": 5.x.x
+    "@hapi/boom": 9.x.x
+    "@hapi/bourne": 2.x.x
+    "@hapi/cryptiles": 5.x.x
+    "@hapi/hoek": 9.x.x
+  checksum: ef07abc8a55eb8b60ab0c09d797bb13b39d283260ecdabedc1568c64c47d8c15fe517beed4f76a2b69dac57e6c26cd30ac7612169c41adb8f4c77ea3f58d973d
   languageName: node
   linkType: hard
 
@@ -3721,6 +3759,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@supabase/ui@npm:^0.36.2":
+  version: 0.36.2
+  resolution: "@supabase/ui@npm:0.36.2"
+  dependencies:
+    fsevents: ^2.3.2
+    lodash: ^4.17.20
+    prop-types: ^15.7.2
+  peerDependencies:
+    react: ^16.13.1 || ^17.0.1
+    react-dom: ^16.13.1 || ^17.0.1
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  checksum: 9a727f70a2d693835070d3b693807999452c37acbeec02c70b29e6527eed523af6f2e76cfb65cd6ebfd5a2a43166940ebc5ac002c39584152e6f76cbdd74b9d6
+  languageName: node
+  linkType: hard
+
 "@svgr/babel-plugin-add-jsx-attribute@npm:^5.4.0":
   version: 5.4.0
   resolution: "@svgr/babel-plugin-add-jsx-attribute@npm:5.4.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40svgr%2Fbabel-plugin-add-jsx-attribute%2F-%2Fbabel-plugin-add-jsx-attribute-5.4.0.tgz"
@@ -4195,6 +4250,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/cookie@npm:^0.4.0":
+  version: 0.4.1
+  resolution: "@types/cookie@npm:0.4.1"
+  checksum: 3275534ed69a76c68eb1a77d547d75f99fedc80befb75a3d1d03662fb08d697e6f8b1274e12af1a74c6896071b11510631ba891f64d30c78528d0ec45a9c1a18
+  languageName: node
+  linkType: hard
+
 "@types/eslint-scope@npm:^3.7.0":
   version: 3.7.2
   resolution: "@types/eslint-scope@npm:3.7.2::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40types%2Feslint-scope%2F-%2Feslint-scope-3.7.2.tgz"
@@ -4243,6 +4305,18 @@ __metadata:
 "@types/express@npm:*":
   version: 4.17.13
   resolution: "@types/express@npm:4.17.13::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40types%2Fexpress%2F-%2Fexpress-4.17.13.tgz"
+  dependencies:
+    "@types/body-parser": "*"
+    "@types/express-serve-static-core": ^4.17.18
+    "@types/qs": "*"
+    "@types/serve-static": "*"
+  checksum: 12a2a0e6c4b993fc0854bec665906788aea0d8ee4392389d7a98a5de1eefdd33c9e1e40a91f3afd274011119c506f7b4126acb97fae62ae20b654974d44cba12
+  languageName: node
+  linkType: hard
+
+"@types/express@npm:^4.17.13":
+  version: 4.17.13
+  resolution: "@types/express@npm:4.17.13"
   dependencies:
     "@types/body-parser": "*"
     "@types/express-serve-static-core": ^4.17.18
@@ -4370,6 +4444,13 @@ __metadata:
   version: 14.18.3
   resolution: "@types/node@npm:14.18.3::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40types%2Fnode%2F-%2Fnode-14.18.3.tgz"
   checksum: 72275674a25b0e9d4fe213449d874fd3e8280a84d911a359d298d68b84550b6a3210d484dc2662b8eb6e0b1829f4dac5e60cb7c01ce78878b316305c798d1cbb
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^16.11.7":
+  version: 16.11.17
+  resolution: "@types/node@npm:16.11.17"
+  checksum: 86ed84f79450f6aba1a6ef09f8407c10076966c3cc7cc4eb3d35b8ae4f47817e525641396ef0a667fa0a88fcdf484f6182812c074601403083bdf3b5e1ac0313
   languageName: node
   linkType: hard
 
@@ -6855,9 +6936,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cookie@npm:0.4.1":
+"cookie@npm:0.4.1, cookie@npm:^0.4.1":
   version: 0.4.1
-  resolution: "cookie@npm:0.4.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fcookie%2F-%2Fcookie-0.4.1.tgz"
+  resolution: "cookie@npm:0.4.1"
   checksum: bd7c47f5d94ab70ccdfe8210cde7d725880d2fcda06d8e375afbdd82de0c8d3b73541996e9ce57d35f67f672c4ee6d60208adec06b3c5fc94cebb85196084cf8
   languageName: node
   linkType: hard
@@ -9205,7 +9286,9 @@ __metadata:
     "@react-aria/tabs": ^3.1.0
     "@react-stately/collections": ^3.3.4
     "@react-stately/tabs": ^3.0.1
+    "@supabase/gotrue-js": ^1.21.7
     "@supabase/supabase-js": ^1.29.1
+    "@supabase/ui": ^0.36.2
     "@swc/cli": ~0.1.55
     "@swc/core": 1.2.124
     "@swc/helpers": ~0.3.2
@@ -9233,6 +9316,7 @@ __metadata:
     eslint-plugin-jsx-a11y: 6.5.1
     eslint-plugin-react: 7.28.0
     eslint-plugin-react-hooks: 4.3.0
+    iron-session: ^6.0.4
     jest: 27.4.5
     lodash: ^4.17.21
     markdown-to-jsx: ^7.1.5
@@ -9249,6 +9333,7 @@ __metadata:
     stylelint: ^14.2.0
     stylelint-config-prettier: ^9.0.3
     stylelint-config-standard: ^24.0.0
+    swr: ^1.1.2
     ts-jest: 27.1.2
     tslib: ^2.3.1
     typescript: ~4.5.4
@@ -10323,6 +10408,27 @@ __metadata:
   version: 2.0.1
   resolution: "ipaddr.js@npm:2.0.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fipaddr.js%2F-%2Fipaddr.js-2.0.1.tgz"
   checksum: dd194a394a843d470f88d17191b0948f383ed1c8e320813f850c336a0fcb5e9215d97ec26ca35ab4fbbd31392c8b3467f3e8344628029ed3710b2ff6b5d1034e
+  languageName: node
+  linkType: hard
+
+"iron-session@npm:^6.0.4":
+  version: 6.0.4
+  resolution: "iron-session@npm:6.0.4"
+  dependencies:
+    "@hapi/iron": ^6.0.0
+    "@types/cookie": ^0.4.0
+    "@types/express": ^4.17.13
+    "@types/node": ^16.11.7
+    cookie: ^0.4.1
+  peerDependencies:
+    express: ">=4"
+    next: ">=10"
+  peerDependenciesMeta:
+    express:
+      optional: true
+    next:
+      optional: true
+  checksum: db8363be330e1b5118614f29dff4c42a5bebc2b1d349c21bbcf99337b9baf5fb508ebab8105ce3ce0004d8d96e860f0aa0307809b2a7c194c43d00f0df80c42c
   languageName: node
   linkType: hard
 
@@ -16251,6 +16357,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"swr@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "swr@npm:1.1.2"
+  peerDependencies:
+    react: ^16.11.0 || ^17.0.0 || ^18.0.0
+  checksum: 84bf222c667bf4f94bf9bcaf51f11443d69eb6feb82649c06ef8e576c51f52269872dbda4b926f267fd79cfeaf7bd84c6a62d519db25fe2af1fb811e75163e94
+  languageName: node
+  linkType: hard
+
 "symbol-tree@npm:^3.2.4":
   version: 3.2.4
   resolution: "symbol-tree@npm:3.2.4::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fsymbol-tree%2F-%2Fsymbol-tree-3.2.4.tgz"
@@ -16850,11 +16965,11 @@ __metadata:
 
 "typescript@patch:typescript@~4.5.4#~builtin<compat/typescript>":
   version: 4.5.4
-  resolution: "typescript@patch:typescript@npm%3A4.5.4%3A%3A__archiveUrl=https%253A%252F%252Fregistry.npmjs.org%252Ftypescript%252F-%252Ftypescript-4.5.4.tgz#~builtin<compat/typescript>::version=4.5.4&hash=de8f8a"
+  resolution: "typescript@patch:typescript@npm%3A4.5.4%3A%3A__archiveUrl=https%253A%252F%252Fregistry.npmjs.org%252Ftypescript%252F-%252Ftypescript-4.5.4.tgz#~builtin<compat/typescript>::version=4.5.4&hash=493e53"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: eda87927f9cfb94aca9b5e47842daf37347ad3073133e17f556fbb6c18f3493c5b551eedab0f4b26774235ddb7acbe0087250d5285f72ce6819a0891dd5a74ed
+  checksum: 2e488dde7d2c4a2fa2e79cf2470600f8ce81bc0563c276b72df8ff412d74456ae532ba824650ae936ce207440c79720ddcfaa25e3cb4477572b8534fa4e34d49
   languageName: node
   linkType: hard
 

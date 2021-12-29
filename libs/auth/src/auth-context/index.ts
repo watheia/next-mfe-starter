@@ -1,8 +1,3 @@
-export type {
-  ISignInRequest,
-  ISignInResponse,
-  ISignUpRequest,
-  ISignUpResponse,
-  IAuthContext,
-} from './auth-context';
+export { useAuth } from './auth-context';
 export { AuthProvider } from './auth-context.provider';
+export type { AuthProviderProps } from './auth-context.provider';

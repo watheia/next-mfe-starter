@@ -24,9 +24,12 @@
     "@react-aria/tabs": "^3.1.0",
     "@react-stately/collections": "^3.3.4",
     "@react-stately/tabs": "^3.0.1",
+    "@supabase/gotrue-js": "^1.21.7",
     "@supabase/supabase-js": "^1.29.1",
+    "@supabase/ui": "^0.36.2",
     "core-js": "^3.20.1",
     "critters": "^0.0.15",
+    "iron-session": "^6.0.4",
     "lodash": "^4.17.21",
     "markdown-to-jsx": "^7.1.5",
     "next": "12.0.7",
@@ -34,6 +37,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "regenerator-runtime": "0.13.9",
+    "swr": "^1.1.2",
     "tslib": "^2.3.1"
   },
   "devDependencies": {
