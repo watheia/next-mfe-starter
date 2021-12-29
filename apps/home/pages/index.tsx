@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import Layout from '@waweb/layout';
-import { Welcome } from '@waweb/views';
+import { Welcome } from '@watheia/ui-views';
 
 const StyledPage = styled.div`
   .page {

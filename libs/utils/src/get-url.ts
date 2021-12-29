@@ -5,7 +5,7 @@ const getURL = (...parts: string[]) => {
       ? process.env['URL']
       : process.env['VERCEL_URL'] && process.env['VERCEL_URL'] !== ''
       ? process.env['VERCEL_URL']
-      : 'http://dev.local:4200';
+      : 'http://localhost:4200';
 
   return new URL(posix.join(...parts) ?? '/', basePath).href;
 };

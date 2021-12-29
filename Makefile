@@ -8,14 +8,9 @@ clean:
 
 # TODO: detect and replace in bashrc to prevent dupes
 setup:
-	npm i -g yarn @teambit/bvm
-	bvm install
+	bvm install latest
 	bit config set analytics_reporting false
 	bit init --harmony
-	bit import
-	bit install
-	bit compile
-	bit status
 
 	echo 'export PATH=${HOME}/bin:${PATH}' >> ~/.bashrc
 
@@ -40,5 +35,6 @@ start-bit:
 
 docs:
 	yarn depcruise --output-type dot --output-to docs/depgraph.dot --prefix "https://github.com/watheia/next-mfe-starter/blob/main"
-	cat docs/depgraph.dot | dot -T svg > docs/depgraph.svg
+	cat docs/depgraph.dot | dot -T svg > docs/depgraph.svg.tmp
+	mv docs/depgraph.svg.tmp docs/depgraph.svg
 

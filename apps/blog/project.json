@@ -22,8 +22,7 @@
       "options": {
         "buildTarget": "blog:build",
         "dev": true,
-        "port": 4220,
-        "hostname": "dev.local"
+        "port": 4220
       },
       "configurations": {
         "production": {

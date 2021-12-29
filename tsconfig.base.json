@@ -15,17 +15,17 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@watheia/ui-atoms": ["libs/ui/atoms/src/index.ts"],
+      "@watheia/ui-molecules": ["libs/ui/molecules/src/index.ts"],
+      "@watheia/ui-organisms": ["libs/ui/organisms/src/index.ts"],
+      "@watheia/ui-views": ["libs/ui/views/src/index.ts"],
       "@waweb/app": ["libs/app/src/index.ts"],
-      "@waweb/atoms": ["libs/atoms/src/index.ts"],
       "@waweb/auth": ["libs/auth/src/index.ts"],
       "@waweb/emotion": ["libs/emotion/src/index.ts"],
       "@waweb/layout": ["libs/layout/src/index.ts"],
       "@waweb/model": ["libs/model/src/index.ts"],
-      "@waweb/molecules": ["libs/molecules/src/index.ts"],
-      "@waweb/organisms": ["libs/organisms/src/index.ts"],
       "@waweb/theme": ["libs/theme/src/index.ts"],
-      "@waweb/utils": ["libs/utils/src/index.ts"],
-      "@waweb/views": ["libs/views/src/index.ts"]
+      "@waweb/utils": ["libs/utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

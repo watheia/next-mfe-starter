@@ -3,7 +3,7 @@ import Container, { ContainerProps } from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
-import { Copyright } from '@waweb/molecules';
+import { Copyright } from '@watheia/ui-molecules';
 
 /* eslint-disable-next-line */
 export interface FooterProps extends ContainerProps {}

@@ -1,6 +1,12 @@
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/watheia/next-mfe-starter)
+
 # Nextjs Microfrontend (MFE) Starter Kit
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/watheia/next-mfe-starter)
+> A proof of concept microfrontend implementation for the modern web
+
+## Project Layout
+
+_click an item to navigate to source_
 
 ![depgraph](./docs/depgraph.svg)
 

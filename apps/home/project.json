@@ -5,9 +5,7 @@
   "targets": {
     "build": {
       "executor": "@nrwl/next:build",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
         "root": "apps/home",
@@ -23,7 +21,7 @@
         "buildTarget": "home:build",
         "dev": true,
         "port": 4210,
-        "hostname": "dev.local"
+        "hostname": "localhost"
       },
       "configurations": {
         "production": {
@@ -40,9 +38,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/apps/home"
-      ],
+      "outputs": ["coverage/apps/home"],
       "options": {
         "jestConfig": "apps/home/jest.config.js",
         "passWithNoTests": true
@@ -50,39 +46,28 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "apps/home/**/*.{ts,tsx,js,jsx}"
-        ]
+        "lintFilePatterns": ["apps/home/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "docker": {
       "executor": "@nx-tools/nx-docker:build",
       "options": {
         "push": false,
-        "tags": [
-          "dev.local/home"
-        ]
+        "tags": ["dev.local/home"]
       },
       "configurations": {
         "production": {
           "push": true,
-          "tags": [
-            "watheialabs/home:v0alpha1"
-          ]
+          "tags": ["watheialabs/home:v0alpha1"]
         }
       }
     },
     "assemble": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
-        "commands": [
-          "nx run home:export",
-          "nx run home:docker"
-        ],
+        "commands": ["nx run home:export", "nx run home:docker"],
         "parallel": false
       }
     }

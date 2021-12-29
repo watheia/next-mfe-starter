@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Copyright } from '@waweb/molecules';
+import { Copyright } from '@watheia/ui-molecules';
 
 const StyledPage = styled.div`
   .page {

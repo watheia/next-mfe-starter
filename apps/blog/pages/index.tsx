@@ -1,5 +1,5 @@
 import { fixtures as data } from '@waweb/model';
-import { Blog } from '@waweb/views';
+import { Blog } from '@watheia/ui-views';
 
 export function BlogPage(props: any) {
   return (
