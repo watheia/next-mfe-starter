@@ -10,7 +10,6 @@ import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
-import { Copyright } from '@watheia/ui-molecules';
 import React from 'react';
 
 export type AuthViewProps = GridProps;
@@ -98,7 +97,6 @@ export default function AuthView({ ...props }: AuthViewProps) {
                 </Link>
               </Grid>
             </Grid>
-            <Copyright sx={{ mt: 5 }} />
           </Box>
         </Box>
       </Grid>

@@ -1,7 +1,7 @@
-import { blueGrey, red, teal } from '@mui/material/colors';
+import { blue, red, teal } from '@mui/material/colors';
 export default {
-  primary: blueGrey,
-  secondary: teal,
+  secondary: blue,
+  primary: teal,
   error: {
     main: red.A400,
   },

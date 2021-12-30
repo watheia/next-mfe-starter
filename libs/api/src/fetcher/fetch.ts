@@ -1,15 +1,15 @@
-import { FetchError } from "./FetchError";
+import { FetchError } from './FetchError';
 
 /**
  * Wrap the standard fetch with auth tokensand error handlers
- * 
- * @param input 
- * @param init 
- * @returns 
+ *
+ * @param input
+ * @param init
+ * @returns
  */
 export default async function _fetch<JSON = unknown>(
   input: RequestInfo,
-  init?: RequestInit 
+  init?: RequestInit
 ): Promise<JSON> {
   const response = await fetch(input, init);
 

@@ -22,7 +22,7 @@ export class WaApp extends NextApp<WaAppProps> {
         <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
         <SWRConfig
           value={{
-            fetcher: fetcher,
+            fetcher,
             onError: (err) => {
               console.error(err);
             },

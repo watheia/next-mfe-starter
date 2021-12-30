@@ -1,10 +1,11 @@
 // this file is a wrapper with defaults to be used in both API routes and `getServerSideProps` functions
 import type { IronSessionOptions } from 'iron-session';
+import env from './env';
 import { WaUser } from './types/WaUser';
 
 export const sessionOptions: IronSessionOptions = {
-  password: process.env['JWT_SECRET'] as string,
-  cookieName: 'watheia.mfe.api.iron-session',
+  password: env.jwt_secret,
+  cookieName: env.cookie_name,
   // secure: true should be used in production (HTTPS) but can't be used in development (HTTP)
   cookieOptions: {
     secure: process.env['NODE_ENV'] === 'production',

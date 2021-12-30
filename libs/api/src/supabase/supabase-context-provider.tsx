@@ -20,7 +20,6 @@ export type SupabaseProviderProps = {
 };
 
 export function SupabaseProvider({ publicUrl, anonKey, children }: SupabaseProviderProps) {
-  console.info('USE SUPABASE', publicUrl);
   const supabase = useMemo(() => createClient(publicUrl, anonKey), [publicUrl, anonKey]);
   return (
     <SupabaseContext.Provider value={{ supabase }}>{children}</SupabaseContext.Provider>

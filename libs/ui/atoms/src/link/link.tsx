@@ -1,9 +1,10 @@
-import * as React from 'react';
-import clsx from 'clsx';
-import { useRouter } from 'next/router';
-import NextLink, { LinkProps as NextLinkProps } from 'next/link';
 import MuiLink, { LinkProps as MuiLinkProps } from '@mui/material/Link';
 import { styled } from '@mui/material/styles';
+import { isExternal } from '@watheia/mfe.util';
+import clsx from 'clsx';
+import NextLink, { LinkProps as NextLinkProps } from 'next/link';
+import { useRouter } from 'next/router';
+import * as React from 'react';
 
 // Add support for the sx prop for consistency with the other branches.
 const Anchor = styled('a')({});
@@ -66,21 +67,19 @@ const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(function Link(props,
     [activeClassName]: router && router.pathname === pathname && activeClassName,
   });
 
-  const isExternal =
-    typeof href === 'string' &&
-    (href.indexOf('http') === 0 || href.indexOf('mailto:') === 0);
+  console.log(`isExternal(${href})?`, isExternal(href));
 
-  if (isExternal) {
-    if (noLinkStyle) {
-      return <Anchor className={className} href={href} ref={ref} {...other} />;
-    }
+  if (isExternal(href)) {
+    // if (noLinkStyle) {
+    //   return <Anchor className={className} href={href.toString()} ref={ref} {...other} />;
+    // }
 
-    return <MuiLink className={className} href={href} ref={ref} {...other} />;
+    return <MuiLink className={className} href={href.toString()} ref={ref} {...other} />;
   }
 
-  if (noLinkStyle) {
-    return <NextLinkComposed className={className} ref={ref} to={href} {...other} />;
-  }
+  // if (noLinkStyle) {
+  //   return <NextLinkComposed className={className} ref={ref} to={href} {...other} />;
+  // }
 
   return (
     <MuiLink
