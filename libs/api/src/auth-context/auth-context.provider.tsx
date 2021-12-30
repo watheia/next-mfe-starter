@@ -1,6 +1,6 @@
 import { Session } from '@supabase/supabase-js';
-import { useSupabase } from '@watheia/mfe.api';
 import React, { ReactNode, useEffect, useState } from 'react';
+import { useSupabase } from '../supabase';
 import { WaAuthContext } from '../types/WaAuthContext';
 import { WaSignInRequest } from '../types/WaSignInRequest';
 import { WaSignUpRequest } from '../types/WaSignUpRequest';

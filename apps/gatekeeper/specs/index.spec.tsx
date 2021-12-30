@@ -1,14 +1,16 @@
 import { render } from '@testing-library/react';
-import { AuthProvider } from '@watheia/mfe.api';
+import { AuthProvider, env, SupabaseProvider } from '@watheia/mfe.api';
 import React from 'react';
 import Index from '../pages/index';
 
 describe('Index', () => {
   it('should render successfully', () => {
     const { container } = render(
-      <AuthProvider>
-        <Index />
-      </AuthProvider>
+      <SupabaseProvider publicUrl={env.supabase_url} anonKey={env.public_key}>
+        <AuthProvider>
+          <Index />
+        </AuthProvider>
+      </SupabaseProvider>
     );
     expect(container).toBeInstanceOf(HTMLElement);
     expect(container).toMatchSnapshot();

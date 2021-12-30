@@ -3,7 +3,7 @@
 exports[`AppBar should render successfully 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-yd56u6-MuiPaper-root-MuiAppBar-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-jyud63-MuiPaper-root-MuiAppBar-root"
   >
     <div
       class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1t018ql-MuiToolbar-root"
@@ -12,7 +12,7 @@ exports[`AppBar should render successfully 1`] = `
         class="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap css-uh02xs-MuiTypography-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1a3i5r6-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-8p8juu-MuiTypography-root-MuiLink-root"
           href="http://localhost:4200/"
         >
           waweb
@@ -33,16 +33,16 @@ exports[`AppBar should render successfully 1`] = `
             style="margin-bottom: 0px;"
           >
             <div
-              aria-label="scrollable auto tabs example"
+              aria-label="primary navigation"
               class="MuiTabs-flexContainer css-heg063-MuiTabs-flexContainer"
               role="tablist"
             >
               <a
-                aria-selected="true"
-                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                aria-selected="false"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
                 href="http://localhost:4200/home"
                 role="tab"
-                tabindex="0"
+                tabindex="-1"
               >
                 Home
                 <span
