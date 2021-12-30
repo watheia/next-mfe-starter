@@ -24,7 +24,7 @@ const nextConfig = {
   optimizeFonts: true,
   outputFileTracing: true,
   experimental: {
-    reactMode: 'concurrent',
+    // reactMode: 'concurrent',
     optimizeImages: true,
     optimizeCss: true,
   },
