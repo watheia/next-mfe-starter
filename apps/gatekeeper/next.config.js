@@ -5,9 +5,10 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 });
 
-const HOME_URL = new URL(process.env['HOME_URL'] ?? 'http://localhost:4210/home').href
-const BLOG_URL = new URL(process.env['BLOG_URL'] ?? 'http://localhost:4220/blog').href
-const CATALOG_URL = new URL(process.env['CATALOG_URL'] ?? 'http://localhost:4230/catalog').href
+const HOME_URL = new URL(process.env['HOME_URL'] || 'http://localhost:4210/home').href;
+const BLOG_URL = new URL(process.env['BLOG_URL'] || 'http://localhost:4220/blog').href;
+const CATALOG_URL = new URL(process.env['CATALOG_URL'] || 'http://localhost:4230/catalog')
+  .href;
 
 const nx = {
   // Set this to true if you would like to to use SVGR
