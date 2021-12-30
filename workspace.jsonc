@@ -105,10 +105,12 @@
       "defaultScope": "watheia.base-ui"
     },
     "libs/components/src/demo": {
-      "defaultScope": "watheia.demo"
+      "defaultScope": "watheia.demo",
+      "watheia.envs/material": {}
     },
     "libs/components/src/mfe": {
-      "defaultScope": "watheia.mfe"
+      "defaultScope": "watheia.mfe",
+      "watheia.envs/material": {}
     },
     "libs/components/src/envs": {
       "defaultScope": "watheia.envs"

@@ -13,55 +13,97 @@
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/gatsby/gatsby-env"
+        "rootDir": "libs/components/src/envs/gatsby/gatsby-env",
+        "nextVersion": {
+            "version": "patch",
+            "message": "",
+            "username": "Aaron Miller",
+            "email": "amiller@watheia.org"
+        }
     },
     "gatsby/globals": {
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/gatsby/globals"
+        "rootDir": "libs/components/src/envs/gatsby/globals",
+        "nextVersion": {
+            "version": "patch",
+            "message": "",
+            "username": "Aaron Miller",
+            "email": "amiller@watheia.org"
+        }
     },
     "gatsby/webpack-transformer": {
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/gatsby/webpack-transformer"
+        "rootDir": "libs/components/src/envs/gatsby/webpack-transformer",
+        "nextVersion": {
+            "version": "patch",
+            "message": "",
+            "username": "Aaron Miller",
+            "email": "amiller@watheia.org"
+        }
     },
     "material/react-with-mui": {
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/material/react-with-mui"
+        "rootDir": "libs/components/src/envs/material/react-with-mui",
+        "nextVersion": {
+            "version": "patch",
+            "message": "",
+            "username": "Aaron Miller",
+            "email": "amiller@watheia.org"
+        }
     },
     "material/theme-provider": {
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/material/theme-provider"
-    },
-    "modules/packages-excluder": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/dependencies/modules/packages-excluder"
-    },
-    "tailwind/tailwind-config": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/tailwind/tailwind-config"
+        "rootDir": "libs/components/src/envs/material/theme-provider",
+        "nextVersion": {
+            "version": "patch",
+            "message": "",
+            "username": "Aaron Miller",
+            "email": "amiller@watheia.org"
+        }
     },
     "tailwind/env-with-tailwind": {
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/tailwind/env-with-tailwind"
+        "rootDir": "libs/components/src/envs/tailwind/env-with-tailwind",
+        "nextVersion": {
+            "version": "patch",
+            "message": "",
+            "username": "Aaron Miller",
+            "email": "amiller@watheia.org"
+        }
+    },
+    "tailwind/tailwind-config": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/envs/tailwind/tailwind-config",
+        "nextVersion": {
+            "version": "patch",
+            "message": "",
+            "username": "Aaron Miller",
+            "email": "amiller@watheia.org"
+        }
     },
     "tailwind/webpack-transformer": {
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/tailwind/webpack-transformer"
+        "rootDir": "libs/components/src/envs/tailwind/webpack-transformer",
+        "nextVersion": {
+            "version": "patch",
+            "message": "",
+            "username": "Aaron Miller",
+            "email": "amiller@watheia.org"
+        }
     },
     "$schema-version": "14.9.0"
 }
