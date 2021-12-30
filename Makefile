@@ -8,6 +8,7 @@ clean:
 
 # TODO: detect and replace in bashrc to prevent dupes
 setup:
+	npm install --global @teambit/bvm
 	bvm install latest
 	bit config set analytics_reporting false
 	bit init --harmony
