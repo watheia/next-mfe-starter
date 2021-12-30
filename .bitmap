@@ -9,5 +9,59 @@
  */
 
 {
+    "gatsby/gatsby-env": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/envs/gatsby/gatsby-env"
+    },
+    "gatsby/globals": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/envs/gatsby/globals"
+    },
+    "gatsby/webpack-transformer": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/envs/gatsby/webpack-transformer"
+    },
+    "material/react-with-mui": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/envs/material/react-with-mui"
+    },
+    "material/theme-provider": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/envs/material/theme-provider"
+    },
+    "modules/packages-excluder": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/dependencies/modules/packages-excluder"
+    },
+    "tailwind/tailwind-config": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/envs/tailwind/tailwind-config"
+    },
+    "tailwind/env-with-tailwind": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/envs/tailwind/env-with-tailwind"
+    },
+    "tailwind/webpack-transformer": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/envs/tailwind/webpack-transformer"
+    },
     "$schema-version": "14.9.0"
 }

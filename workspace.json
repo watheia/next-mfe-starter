@@ -5,6 +5,7 @@
     "app": "libs/app",
     "blog": "apps/blog",
     "catalog": "apps/catalog",
+    "components": "libs/components",
     "cypress": "apps/cypress",
     "gatekeeper": "apps/gatekeeper",
     "home": "apps/home",

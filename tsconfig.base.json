@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@frontend/components": ["libs/components/src/index.ts"],
       "@watheia/mfe.api": ["libs/api/src/index.ts"],
       "@watheia/mfe.app": ["libs/app/src/index.ts"],
       "@watheia/mfe.model": ["libs/model/src/index.ts"],
