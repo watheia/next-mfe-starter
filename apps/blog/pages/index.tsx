@@ -1,4 +1,4 @@
-import { fixtures as data } from '@waweb/model';
+import { fixtures as data } from '@watheia/mfe.model';
 import { Blog } from '@watheia/ui-views';
 
 export function BlogPage(props: any) {

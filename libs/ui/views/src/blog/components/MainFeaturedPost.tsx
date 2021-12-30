@@ -1,10 +1,10 @@
-import * as React from 'react';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
-import Box from '@mui/material/Box';
-import { Post } from '@waweb/model';
+import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography';
+import { Post } from '@watheia/mfe.model';
+import * as React from 'react';
 
 interface MainFeaturedPostProps {
   post: Post;

@@ -3,11 +3,9 @@
   "projects": {
     "api": "libs/api",
     "app": "libs/app",
-    "auth": "libs/auth",
     "blog": "apps/blog",
     "catalog": "apps/catalog",
     "cypress": "apps/cypress",
-    "emotion": "libs/emotion",
     "gatekeeper": "apps/gatekeeper",
     "home": "apps/home",
     "model": "libs/model",
@@ -16,6 +14,6 @@
     "ui-molecules": "libs/ui/molecules",
     "ui-organisms": "libs/ui/organisms",
     "ui-views": "libs/ui/views",
-    "utils": "libs/utils"
+    "util": "libs/util"
   }
 }

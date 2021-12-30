@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { AuthProvider, useAuth } from '@waweb/auth';
+import { AuthProvider, useAuth } from '@watheia/mfe.api';
 import Auth from './auth';
 
 describe('Auth', () => {

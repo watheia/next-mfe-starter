@@ -1,7 +1,5 @@
-import React from 'react';
-import { WaApp } from '@waweb/app';
-
-import './styles.css';
+import { WaApp } from '@watheia/mfe.app';
+import '@watheia/mfe.theme.styles/global.css';
 
 export default class CatalogApp extends WaApp {
   override componentDidMount(): void {

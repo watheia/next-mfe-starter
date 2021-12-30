@@ -1,5 +1,5 @@
 import { Session } from '@supabase/supabase-js';
-import { useSupabase } from 'libs/api/src';
+import { useSupabase } from '@watheia/mfe.api';
 import React, { ReactNode, useEffect, useState } from 'react';
 import { WaAuthContext } from '../types/WaAuthContext';
 import { WaSignInRequest } from '../types/WaSignInRequest';
@@ -11,7 +11,6 @@ export type AuthProviderProps = Partial<WaAuthContext> & {
 };
 
 export const AuthProvider = ({ children, ...props }: AuthProviderProps) => {
-  console.log('AuthProvider');
   const [userLoaded, setUserLoaded] = useState(false);
   const [session, setSession] = useState<Session | null>(null);
   const supabase = useSupabase();

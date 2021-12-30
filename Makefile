@@ -12,8 +12,6 @@ setup:
 	bit config set analytics_reporting false
 	bit init --harmony
 
-	echo 'export PATH=${HOME}/bin:${PATH}' >> ~/.bashrc
-
 assemble:
 	nx affected --target assemble
 

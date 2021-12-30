@@ -2,7 +2,7 @@ import { CacheProvider, EmotionCache } from '@emotion/react';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider as MuiThemeProvider } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { createEmotionCache } from '@waweb/emotion';
+import { createEmotionCache } from '@watheia/mfe.util';
 import Head from 'next/head';
 import React, { ReactNode } from 'react';
 import { createTheme } from './theme';

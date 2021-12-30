@@ -1,8 +1,6 @@
 import { GlobalStyles } from '@mui/material';
-import { SupabaseProvider } from '@waweb/api';
-import { AuthProvider } from '@waweb/auth';
-import { ThemeProvider } from '@waweb/theme';
-import { fetcher } from '@waweb/utils';
+import { AuthProvider, env, fetcher, SupabaseProvider } from '@watheia/mfe.api';
+import { ThemeProvider } from '@watheia/mfe.theme';
 import NextApp from 'next/app';
 import React, { ReactNode } from 'react';
 import { SWRConfig } from 'swr';
@@ -30,10 +28,7 @@ export class WaApp extends NextApp<WaAppProps> {
             },
           }}
         >
-          <SupabaseProvider
-            publicUrl={process.env['NEXT_PUBLIC_SUPABASE_URL'] ?? ''}
-            anonKey={process.env['NEXT_PUBLIC_SUPABASE_ANON_KEY'] ?? ''}
-          >
+          <SupabaseProvider publicUrl={env.supabase_url} anonKey={env.public_key}>
             <AuthProvider>
               <ThemeProvider>
                 <AppBar />

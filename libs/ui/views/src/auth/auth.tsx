@@ -10,11 +10,11 @@ import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
+import { WaAuthContext } from '@watheia/mfe.api';
 import { Copyright } from '@watheia/ui-molecules';
-import { WaAuthContext } from '@waweb/auth';
 import React from 'react';
 
-export type AuthViewProps = GridProps & { ctx: WaAuthContext };
+export type AuthViewProps = GridProps & { ctx?: WaAuthContext };
 
 export default function AuthView({ ctx, ...props }: AuthViewProps) {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {

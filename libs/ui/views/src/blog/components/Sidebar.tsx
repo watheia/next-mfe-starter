@@ -1,11 +1,11 @@
-import * as React from 'react';
 import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
 import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
+import { Resource } from '@watheia/mfe.model';
+import { getUrl } from '@watheia/mfe.util';
 import { Link } from '@watheia/ui-atoms';
-import { Resource } from '@waweb/model';
-import { getUrl } from '@waweb/utils';
+import * as React from 'react';
 
 interface SidebarProps {
   archives: ReadonlyArray<Resource>;

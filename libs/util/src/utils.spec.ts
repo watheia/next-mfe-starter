@@ -1,6 +1,6 @@
 import getUrl from './get-url';
 
-describe('@waweb/utils', () => {
+describe('@watheia/mfe.util', () => {
   describe('getUrl', () => {
     it('MUST always return an absolute URL', () => {
       expect(getUrl()).toEqual('http://localhost:4200/');

@@ -1,6 +1,6 @@
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
-import { Post, Resource } from '@waweb/model';
+import { Post, Resource } from '@watheia/mfe.model';
 import * as React from 'react';
 import FeaturedPost from './components/FeaturedPost';
 import Header from './components/Header';

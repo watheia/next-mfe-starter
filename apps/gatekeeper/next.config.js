@@ -1,9 +1,13 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
+
 const withNx = require('@nrwl/next/plugins/with-nx');
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 });
-const { BLOG_URL, HOME_URL, CATALOG_URL } = process.env;
+
+const HOME_URL = new URL(process.env['HOME_URL'] ?? 'http://localhost:4210/home').href
+const BLOG_URL = new URL(process.env['BLOG_URL'] ?? 'http://localhost:4220/blog').href
+const CATALOG_URL = new URL(process.env['CATALOG_URL'] ?? 'http://localhost:4230/catalog').href
 
 const nx = {
   // Set this to true if you would like to to use SVGR
@@ -22,16 +26,6 @@ const rewrite = (url, zone) => [
   },
 ];
 
-// async function redirects() {
-//   return [
-//     {
-//       source: '/',
-//       destination: '/home',
-//       permanent: false,
-//     },
-//   ];
-// }
-
 async function rewrites() {
   return [
     {
@@ -49,7 +43,6 @@ async function rewrites() {
  **/
 module.exports = withBundleAnalyzer(
   withNx({
-    // redirects,
     rewrites,
     nx,
     images: {

@@ -20,6 +20,11 @@
             "glob": "libs/theme/README.md",
             "input": ".",
             "output": "."
+          },
+          {
+            "glob": "libs/theme/src/styles",
+            "input": ".",
+            "output": "."
           }
         ]
       }

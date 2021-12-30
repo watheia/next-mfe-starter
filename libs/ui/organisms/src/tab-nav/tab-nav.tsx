@@ -1,10 +1,10 @@
-import React from 'react';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
 import Box, { BoxProps } from '@mui/material/Box';
-import { Resource } from '@waweb/model';
-import { getUrl } from '@waweb/utils';
+import Tab from '@mui/material/Tab';
+import Tabs from '@mui/material/Tabs';
+import { Resource } from '@watheia/mfe.model';
+import { getUrl } from '@watheia/mfe.util';
 import { useRouter } from 'next/router';
+import React from 'react';
 
 interface LinkTabProps {
   label?: string;

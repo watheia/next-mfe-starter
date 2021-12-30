@@ -1,5 +1,4 @@
-import { SupabaseProvider } from '@waweb/api';
-import { AuthProvider } from '@waweb/auth';
+import { AuthProvider, SupabaseProvider } from '@watheia/mfe.api';
 import React from 'react';
 import AppBar from './app-bar';
 

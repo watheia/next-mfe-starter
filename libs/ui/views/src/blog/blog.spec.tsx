@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
-import { fixtures } from '@waweb/model';
-
+import { fixtures } from '@watheia/mfe.model';
 import Blog from './blog';
+
 const { categories, mainFeaturedPost, featuredPosts, posts, sidebar } = fixtures;
 
 describe('Blog', () => {

@@ -1,9 +1,5 @@
-import React, { ReactNode } from 'react';
-import { ThemeProvider } from '@waweb/theme';
-import { WaApp } from '@waweb/app';
-import { AuthProvider } from '@waweb/auth';
-
-import './styles.css';
+import { WaApp } from '@watheia/mfe.app';
+import '@watheia/mfe.theme.styles/global.css';
 
 export default class GatekeeperApp extends WaApp {
   override componentDidMount(): void {

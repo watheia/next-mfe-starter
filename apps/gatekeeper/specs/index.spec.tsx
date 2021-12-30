@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { AuthProvider } from '@waweb/auth';
+import { AuthProvider } from '@watheia/mfe.api';
 import React from 'react';
 import Index from '../pages/index';
 

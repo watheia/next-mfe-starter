@@ -1,12 +1,8 @@
-import * as React from 'react';
 import Toolbar from '@mui/material/Toolbar';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import SearchIcon from '@mui/icons-material/Search';
-import Typography from '@mui/material/Typography';
+import { Resource } from '@watheia/mfe.model';
+import { getUrl } from '@watheia/mfe.util';
 import { Link } from '@watheia/ui-atoms';
-import { Resource } from '@waweb/model';
-import { getUrl } from '@waweb/utils';
+import * as React from 'react';
 
 interface HeaderProps {
   categories: ReadonlyArray<Resource>;

@@ -2,11 +2,11 @@ import MuiAppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import { useAuth } from '@watheia/mfe.api';
+import { fixtures } from '@watheia/mfe.model';
+import { getUrl } from '@watheia/mfe.util';
 import { Link } from '@watheia/ui-atoms';
 import { TabNav } from '@watheia/ui-organisms';
-import { useAuth } from '@waweb/auth';
-import { fixtures } from '@waweb/model';
-import { getUrl } from '@waweb/utils';
 import React from 'react';
 
 /* eslint-disable-next-line */
