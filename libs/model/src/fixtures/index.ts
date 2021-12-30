@@ -1,7 +1,8 @@
 import FacebookIcon from '@mui/icons-material/Facebook';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import { Post, Resource } from '@waweb/model';
+import { Post } from '../types/Post';
+import { Resource } from '../types/Resource';
 import post1 from './blog-post.1.md';
 import post2 from './blog-post.2.md';
 import post3 from './blog-post.3.md';

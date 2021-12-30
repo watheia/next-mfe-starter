@@ -1,11 +1,5 @@
-import styled from '@emotion/styled';
-import Layout from '@waweb/layout';
 import { Welcome } from '@watheia/ui-views';
-
-const StyledPage = styled.div`
-  .page {
-  }
-`;
+import React from 'react';
 
 export function Index() {
   return <Welcome title="Welcome Home" subTitle="Please enjoy your stay." />;

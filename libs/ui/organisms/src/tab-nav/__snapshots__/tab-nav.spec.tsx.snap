@@ -17,16 +17,16 @@ exports[`TabNav should render successfully 1`] = `
         style="margin-bottom: 0px;"
       >
         <div
-          aria-label="scrollable auto tabs example"
+          aria-label="primary navigation"
           class="MuiTabs-flexContainer css-heg063-MuiTabs-flexContainer"
           role="tablist"
         >
           <a
-            aria-selected="true"
-            class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+            aria-selected="false"
+            class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
             href="http://localhost:4200/#a"
             role="tab"
-            tabindex="0"
+            tabindex="-1"
           >
             A
             <span

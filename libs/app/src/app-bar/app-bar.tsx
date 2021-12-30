@@ -25,6 +25,7 @@ const LogoutButton = ({ onClick }: { onClick: () => any }) => (
 );
 
 export function AppBar(props: AppBarProps) {
+  console.log('AppBar');
   const auth = useAuth();
   return (
     <MuiAppBar

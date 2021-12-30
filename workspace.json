@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "api": "libs/api",
     "app": "libs/app",
     "auth": "libs/auth",
     "blog": "apps/blog",
@@ -9,7 +10,6 @@
     "emotion": "libs/emotion",
     "gatekeeper": "apps/gatekeeper",
     "home": "apps/home",
-    "layout": "libs/layout",
     "model": "libs/model",
     "theme": "libs/theme",
     "ui-atoms": "libs/ui/atoms",

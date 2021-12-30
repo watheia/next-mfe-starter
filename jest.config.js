@@ -11,4 +11,5 @@ module.exports = {
       statements: -10,
     },
   },
+  setupFiles: ['dotenv/config'],
 };

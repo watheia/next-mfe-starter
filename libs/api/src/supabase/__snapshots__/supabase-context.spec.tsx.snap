@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render successfully 1`] = `
+<div>
+  <div>
+    rpc(fn, params, { head = false, count = null, } = {}) {
+        const rest = this._initPostgRESTClient();
+        return rest.rpc(fn, params, { head, count });
+    }
+  </div>
+</div>
+`;

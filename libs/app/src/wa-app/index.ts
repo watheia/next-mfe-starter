@@ -1,2 +1,2 @@
-export type { WaAppProps } from './WaApp';
-export { default } from './WaApp';
+export type { WaAppProps } from './wa-app';
+export { default } from './wa-app';

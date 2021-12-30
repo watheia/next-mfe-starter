@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'layout',
+  displayName: 'api',
   preset: '../../jest.preset.js',
   globals: {
     'ts-jest': {
@@ -10,5 +10,6 @@ module.exports = {
     '^.+\\.[tj]sx?$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/libs/layout',
+  coverageDirectory: '../../coverage/libs/api',
+  setupFiles: ['../../jest.setup.js'],
 };

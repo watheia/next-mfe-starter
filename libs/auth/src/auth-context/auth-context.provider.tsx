@@ -1,6 +1,6 @@
-import { Session, User } from '@supabase/supabase-js';
+import { Session } from '@supabase/supabase-js';
+import { useSupabase } from 'libs/api/src';
 import React, { ReactNode, useEffect, useState } from 'react';
-import { supabase } from '../supabase';
 import { WaAuthContext } from '../types/WaAuthContext';
 import { WaSignInRequest } from '../types/WaSignInRequest';
 import { WaSignUpRequest } from '../types/WaSignUpRequest';
@@ -11,8 +11,10 @@ export type AuthProviderProps = Partial<WaAuthContext> & {
 };
 
 export const AuthProvider = ({ children, ...props }: AuthProviderProps) => {
+  console.log('AuthProvider');
   const [userLoaded, setUserLoaded] = useState(false);
   const [session, setSession] = useState<Session | null>(null);
+  const supabase = useSupabase();
 
   useEffect(() => {
     const session = supabase.auth.session();
@@ -29,7 +31,6 @@ export const AuthProvider = ({ children, ...props }: AuthProviderProps) => {
       authListener?.unsubscribe();
     };
   }, []);
-
 
   const value = {
     session,
