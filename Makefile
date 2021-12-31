@@ -33,8 +33,14 @@ start-bit:
 	bit ui-build
 	bit start --dev --log info
 
+
 docs:
-	yarn depcruise --output-type dot --output-to docs/depgraph.dot --prefix "https://github.com/watheia/next-mfe-starter/blob/main"
-	cat docs/depgraph.dot | dot -T svg > docs/depgraph.svg.tmp
-	mv docs/depgraph.svg.tmp docs/depgraph.svg
+# Generate dependency reports
+	yarn depcruise apps libs tools -T json -c > docs/depgraph.json
+	yarn depcruise-fmt -T dot docs/depgraph.json | dot -T svg > docs/depgraph.dot.svg
+	yarn depcruise-fmt -T archi docs/depgraph.json | dot -T svg > docs/depgraph.archi.svg
+# docs:
+# 	yarn depcruise --output-type dot --output-to docs/depgraph.dot --prefix "https://github.com/watheia/next-mfe-starter/blob/main"
+# 	cat docs/depgraph.dot | dot -T svg > docs/depgraph.svg.tmp
+# 	mv docs/depgraph.svg.tmp docs/depgraph.svg
 

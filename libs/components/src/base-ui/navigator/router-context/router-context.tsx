@@ -1,8 +1,10 @@
 import React from 'react';
 import { LinkType } from './link.type';
 
+type Res = Record<string, any>;
+
 // export function useLocation<S = H.LocationState>(): H.Location<S>;
-export type Location<StateType = {}> = {
+export type Location<StateType = Res> = {
   /** Returns the Location object's URL's fragment (includes leading "#" if non-empty). */
   hash: string;
   /* Returns the Location object's URL's path. */
@@ -16,8 +18,8 @@ export type Location<StateType = {}> = {
   key?: string;
 };
 
-export type UseLocation<StateType extends {} = {}> = () => Location<StateType>;
-export type UseHistory = () => {};
+export type UseLocation<StateType extends Res = Res> = () => Location<StateType>;
+export type UseHistory = () => Res;
 
 export type RouterContextType = {
   /**

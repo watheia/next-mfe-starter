@@ -102,7 +102,8 @@
       }
     },
     "libs/components/src/base-ui": {
-      "defaultScope": "watheia.base-ui"
+      "defaultScope": "watheia.base-ui",
+      "teambit.react/react": {}
     },
     "libs/components/src/model": {
       "defaultScope": "watheia.model"
@@ -119,7 +120,8 @@
       "defaultScope": "watheia.envs"
     },
     "libs/components/src/theme": {
-      "defaultScope": "watheia.theme"
+      "defaultScope": "watheia.theme",
+      "teambit.react/react": {}
     },
     "{gatsby/gatsby-env}": {
       "teambit.harmony/aspect": {}

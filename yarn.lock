@@ -1601,6 +1601,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.7.6":
+  version: 7.16.7
+  resolution: "@babel/runtime@npm:7.16.7"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: 47912f0aaacd1cab2e2552aaf3e6eaffbcaf2d5ac9b07a89a12ac0d42029cb92c070b0d16f825e4277c4a34677c54d8ffe85e1f7c6feb57de58f700eec67ce2f
+  languageName: node
+  linkType: hard
+
 "@babel/standalone@npm:^7.15.5":
   version: 7.16.7
   resolution: "@babel/standalone@npm:7.16.7::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40babel%2Fstandalone%2F-%2Fstandalone-7.16.7.tgz"
@@ -5339,6 +5348,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/history@npm:*":
+  version: 4.7.9
+  resolution: "@types/history@npm:4.7.9"
+  checksum: 556b062adb92795839301965776b0418e9ca32798bd8a6031345a6a84d7512771107143a497b7e3ff826d0b0d4456e962c6450485dda6f55c7dd33371e840529
+  languageName: node
+  linkType: hard
+
 "@types/http-cache-semantics@npm:*":
   version: 4.0.1
   resolution: "@types/http-cache-semantics@npm:4.0.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40types%2Fhttp-cache-semantics%2F-%2Fhttp-cache-semantics-4.0.1.tgz"
@@ -5621,6 +5637,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-router-dom@npm:^5.3.2":
+  version: 5.3.2
+  resolution: "@types/react-router-dom@npm:5.3.2"
+  dependencies:
+    "@types/history": "*"
+    "@types/react": "*"
+    "@types/react-router": "*"
+  checksum: 90f052dc5a43a77edaf41d2afa781c8ed2164cd7922b3cdf5daae446b02a2f279382425e6efc338260782c0a24d25a6101e3658acb41c8a053695968a351ea96
+  languageName: node
+  linkType: hard
+
+"@types/react-router@npm:*":
+  version: 5.1.17
+  resolution: "@types/react-router@npm:5.1.17"
+  dependencies:
+    "@types/history": "*"
+    "@types/react": "*"
+  checksum: b9d1c7b6ce073652c39712d2b02aeec7640036e369c04be2e57e4b0eb049b64ec9f34fb91cad680ab3f794e89576f77aacadb015b61eb21500a1779e5c955b86
+  languageName: node
+  linkType: hard
+
 "@types/react-test-renderer@npm:>=16.9.0":
   version: 17.0.1
   resolution: "@types/react-test-renderer@npm:17.0.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40types%2Freact-test-renderer%2F-%2Freact-test-renderer-17.0.1.tgz"
@@ -5639,7 +5676,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:>=16.9.0, @types/react@npm:^17.0.8":
+"@types/react@npm:*, @types/react@npm:17.0.38, @types/react@npm:>=16.9.0":
   version: 17.0.38
   resolution: "@types/react@npm:17.0.38::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40types%2Freact%2F-%2Freact-17.0.38.tgz"
   dependencies:
@@ -7647,6 +7684,8 @@ __metadata:
 "book-df4496@workspace:libs/components/src/theme/fonts/book":
   version: 0.0.0-use.local
   resolution: "book-df4496@workspace:libs/components/src/theme/fonts/book"
+  peerDependencies:
+    react: ^17.0.2
   languageName: unknown
   linkType: soft
 
@@ -8696,6 +8735,8 @@ __metadata:
 "color-definition-5b38a8@workspace:libs/components/src/theme/styles/color-definition":
   version: 0.0.0-use.local
   resolution: "color-definition-5b38a8@workspace:libs/components/src/theme/styles/color-definition"
+  peerDependencies:
+    react: ^17.0.2
   languageName: unknown
   linkType: soft
 
@@ -8766,6 +8807,8 @@ __metadata:
 "colors-92439b@workspace:libs/components/src/theme/styles/colors":
   version: 0.0.0-use.local
   resolution: "colors-92439b@workspace:libs/components/src/theme/styles/colors"
+  peerDependencies:
+    react: ^17.0.2
   languageName: unknown
   linkType: soft
 
@@ -9934,6 +9977,8 @@ __metadata:
 "default-theme-e7abec@workspace:libs/components/src/theme/default-theme":
   version: 0.0.0-use.local
   resolution: "default-theme-e7abec@workspace:libs/components/src/theme/default-theme"
+  peerDependencies:
+    react: ^17.0.2
   languageName: unknown
   linkType: soft
 
@@ -11905,6 +11950,8 @@ __metadata:
 "figma-embed-28842b@workspace:libs/components/src/base-ui/figma/figma-embed":
   version: 0.0.0-use.local
   resolution: "figma-embed-28842b@workspace:libs/components/src/base-ui/figma/figma-embed"
+  peerDependencies:
+    react: ^17.0.2
   languageName: unknown
   linkType: soft
 
@@ -12333,8 +12380,9 @@ __metadata:
     "@types/chai": ^4.3.0
     "@types/jest": 26.0.20
     "@types/node": 12.20.4
-    "@types/react": ^17.0.8
+    "@types/react": 17.0.38
     "@types/react-dom": ^17.0.5
+    "@types/react-router-dom": ^5.3.2
     "@types/testing-library__jest-dom": 5.9.5
     "@typescript-eslint/eslint-plugin": ~5.8.1
     "@typescript-eslint/parser": ~5.8.1
@@ -12384,6 +12432,7 @@ __metadata:
     react: ^17.0.2
     react-dom: ^17.0.2
     react-helmet: 6.1.0
+    react-router-dom: ^6.2.1
     react-test-renderer: 17.0.2
     regenerator-runtime: 0.13.9
     stylelint: ^14.2.0
@@ -12396,6 +12445,7 @@ __metadata:
     typescript: ~4.5.4
     url-parse: ^1.5.4
   peerDependencies:
+    "@mui/material": ^5.2.6
     "@supabase/gotrue-js": ^1.21.7
   languageName: unknown
   linkType: soft
@@ -13956,6 +14006,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"history@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "history@npm:5.2.0"
+  dependencies:
+    "@babel/runtime": ^7.7.6
+  checksum: 2c6a05aa86793e0a0857013457f34474c17f81a012c6bdb00bf30862389ac6a8c2df113d82176f67af2fd534ea9dc4e1218470c5526355b6fc1aefcc971f2eb2
+  languageName: node
+  linkType: hard
+
 "hmac-drbg@npm:^1.0.1":
   version: 1.0.1
   resolution: "hmac-drbg@npm:1.0.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fhmac-drbg%2F-%2Fhmac-drbg-1.0.1.tgz"
@@ -14269,6 +14328,8 @@ __metadata:
 "icons-font-1b1369@workspace:libs/components/src/theme/fonts/icons-font":
   version: 0.0.0-use.local
   resolution: "icons-font-1b1369@workspace:libs/components/src/theme/fonts/icons-font"
+  peerDependencies:
+    react: ^17.0.2
   languageName: unknown
   linkType: soft
 
@@ -16674,6 +16735,8 @@ __metadata:
 "link-33e9c3@workspace:libs/components/src/base-ui/navigator/link":
   version: 0.0.0-use.local
   resolution: "link-33e9c3@workspace:libs/components/src/base-ui/navigator/link"
+  peerDependencies:
+    react: ^17.0.2
   languageName: unknown
   linkType: soft
 
@@ -20680,6 +20743,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-router-dom@npm:^6.2.1":
+  version: 6.2.1
+  resolution: "react-router-dom@npm:6.2.1"
+  dependencies:
+    history: ^5.2.0
+    react-router: 6.2.1
+  peerDependencies:
+    react: ">=16.8"
+    react-dom: ">=16.8"
+  checksum: fa0edc69fddf0cb1313bcb3dbd5eb2b2ff24a75ee03ba928995e16a6a251585750f91d966612e868eb68a5aebc4a5240be40fd96c4acf1d8d48d33f54ad3f4e2
+  languageName: node
+  linkType: hard
+
+"react-router@npm:6.2.1":
+  version: 6.2.1
+  resolution: "react-router@npm:6.2.1"
+  dependencies:
+    history: ^5.2.0
+  peerDependencies:
+    react: ">=16.8"
+  checksum: 081a89237ab4f32195d1f2173bc4b3d95637cd6942a4d1a9e90d4ac8c80faa95528255ca2ec44c1e88c1b369e712c4ca74cba5ae3acef6fc30a51a62805b95a4
+  languageName: node
+  linkType: hard
+
 "react-shallow-renderer@npm:^16.13.1":
   version: 16.14.1
   resolution: "react-shallow-renderer@npm:16.14.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Freact-shallow-renderer%2F-%2Freact-shallow-renderer-16.14.1.tgz"
@@ -21415,6 +21502,8 @@ __metadata:
 "roboto-1065c5@workspace:libs/components/src/theme/fonts/roboto":
   version: 0.0.0-use.local
   resolution: "roboto-1065c5@workspace:libs/components/src/theme/fonts/roboto"
+  peerDependencies:
+    react: ^17.0.2
   languageName: unknown
   linkType: soft
 
@@ -21505,6 +21594,8 @@ __metadata:
 "router-context-a89535@workspace:libs/components/src/base-ui/navigator/router-context":
   version: 0.0.0-use.local
   resolution: "router-context-a89535@workspace:libs/components/src/base-ui/navigator/router-context"
+  peerDependencies:
+    react: ^17.0.2
   languageName: unknown
   linkType: soft
 
@@ -23335,6 +23426,8 @@ __metadata:
 "tangerine-font-f5e3d2@workspace:libs/components/src/theme/fonts/tangerine-font":
   version: 0.0.0-use.local
   resolution: "tangerine-font-f5e3d2@workspace:libs/components/src/theme/fonts/tangerine-font"
+  peerDependencies:
+    react: ^17.0.2
   languageName: unknown
   linkType: soft
 
@@ -23504,18 +23597,24 @@ __metadata:
 "theme-compositions-2472ec@workspace:libs/components/src/theme/theme-compositions":
   version: 0.0.0-use.local
   resolution: "theme-compositions-2472ec@workspace:libs/components/src/theme/theme-compositions"
+  peerDependencies:
+    react: ^17.0.2
   languageName: unknown
   linkType: soft
 
 "theme-context-762d61@workspace:libs/components/src/theme/theme-context":
   version: 0.0.0-use.local
   resolution: "theme-context-762d61@workspace:libs/components/src/theme/theme-context"
+  peerDependencies:
+    react: ^17.0.2
   languageName: unknown
   linkType: soft
 
 "theme-provider-7d491e@workspace:libs/components/src/theme/theme-provider":
   version: 0.0.0-use.local
   resolution: "theme-provider-7d491e@workspace:libs/components/src/theme/theme-provider"
+  peerDependencies:
+    react: ^17.0.2
   languageName: unknown
   linkType: soft
 
@@ -24523,6 +24622,8 @@ __metadata:
 "use-location-a0ed8a@workspace:libs/components/src/base-ui/navigator/use-location":
   version: 0.0.0-use.local
   resolution: "use-location-a0ed8a@workspace:libs/components/src/base-ui/navigator/use-location"
+  peerDependencies:
+    react: ^17.0.2
   languageName: unknown
   linkType: soft
 
