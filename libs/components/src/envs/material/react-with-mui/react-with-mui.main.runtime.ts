@@ -23,8 +23,7 @@ export class ReactWithMuiMain {
           'react-dom': '-',
           '@testing-library/jest-dom': '-',
           '@testing-library/react': '-',
-          '@testing-library/react-hooks': '-',
-          '@watheia/envs.material.theme.theme-provider': '-',
+          '@testing-library/react-hooks': '-'
         },
         devDependencies: {
           '@mui/material': '-',
@@ -33,8 +32,7 @@ export class ReactWithMuiMain {
           'react-dom': '-',
           '@testing-library/jest-dom': '-',
           '@testing-library/react': '-',
-          '@testing-library/react-hooks': '-',
-          '@watheia/envs.material.theme.theme-provider': '-',
+          '@testing-library/react-hooks': '-'
         },
         peerDependencies: {
           '@mui/material': {
@@ -64,11 +62,7 @@ export class ReactWithMuiMain {
           'react-dom': {
             version: '^17.0.2',
             resolveFromEnv: true,
-          },
-          '@watheia/envs.material.theme.theme-provider': {
-            version: 'latest',
-            resolveFromEnv: true,
-          },
+          }
         },
       }),
       /**

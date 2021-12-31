@@ -84,8 +84,7 @@ export class GatsbyEnvMain {
           'react-dom': '-',
           '@testing-library/jest-dom': '-',
           '@testing-library/react': '-',
-          '@testing-library/react-hooks': '-',
-          '@watheia/envs.material.theme.theme-provider': '-',
+          '@testing-library/react-hooks': '-'
         },
         devDependencies: {
           '@emotion/cache': '-',
@@ -104,8 +103,7 @@ export class GatsbyEnvMain {
           'react-dom': '-',
           '@testing-library/jest-dom': '-',
           '@testing-library/react': '-',
-          '@testing-library/react-hooks': '-',
-          '@watheia/envs.material.theme.theme-provider': '-',
+          '@testing-library/react-hooks': '-'
         },
         peerDependencies: {
           '@emotion/cache': {
@@ -175,11 +173,7 @@ export class GatsbyEnvMain {
           'react-dom': {
             version: '^17.0.2',
             resolveFromEnv: true,
-          },
-          '@watheia/envs.material.theme.theme-provider': {
-            version: 'latest',
-            resolveFromEnv: true,
-          },
+          }
         },
       }),
     ]);

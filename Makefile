@@ -1,10 +1,11 @@
 .PHONY: setup clean test lint build assemble docs
 
-SHELL := /bin/bash
+SHELL := /usr/bin/bash
 PATH := ./node_modules/.bin:$(HOME)/bin:$(PATH)
 
-clean:
-	rm -rf yarn.lock dist public node_modules apps/web/public apps/web/.cache
+# recursivly remove node_modules
+nuke-it-from-orbit:
+	bash -c scripts/clean.sh
 
 # TODO: detect and replace in bashrc to prevent dupes
 setup:

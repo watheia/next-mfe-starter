@@ -12,7 +12,7 @@ exports[`AppBar should render successfully 1`] = `
         class="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap css-uh02xs-MuiTypography-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-8p8juu-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1a3i5r6-MuiTypography-root-MuiLink-root"
           href="http://localhost:4200/"
         >
           waweb

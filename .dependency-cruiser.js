@@ -168,7 +168,7 @@ module.exports = {
        for a complete list
     */
     doNotFollow: {
-      path: 'node_modules',
+      path: '(node_modules)|(\\.yarn)|(dist)|(coverage)',
       dependencyTypes: [
         'npm',
         'npm-dev',
@@ -186,7 +186,7 @@ module.exports = {
     */
     exclude: {
       path: '^((\\.yarn)|(.*\\.(spec|test)\\.[jt]sx?)|(.*/next\\.config\\.js)|(jest\\.\\w+\\.js))$',
-      dynamic: true,
+      // dynamic: true,
     },
 
     /* pattern specifying which files to include (regular expression)

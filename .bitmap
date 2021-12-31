@@ -9,101 +9,275 @@
  */
 
 {
+    "default-theme": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/theme/default-theme"
+    },
+    "entity/product": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/model/entity/product"
+    },
+    "figma/figma-embed": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/base-ui/figma/figma-embed"
+    },
+    "fonts/book": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/theme/fonts/book"
+    },
+    "fonts/icons-font": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/theme/fonts/icons-font"
+    },
+    "fonts/roboto": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/theme/fonts/roboto"
+    },
+    "fonts/tangerine-font": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/theme/fonts/tangerine-font"
+    },
     "gatsby/gatsby-env": {
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/gatsby/gatsby-env",
-        "nextVersion": {
-            "version": "patch",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
+        "rootDir": "libs/components/src/envs/gatsby/gatsby-env"
     },
     "gatsby/globals": {
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/gatsby/globals",
-        "nextVersion": {
-            "version": "patch",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
+        "rootDir": "libs/components/src/envs/gatsby/globals"
     },
     "gatsby/webpack-transformer": {
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/gatsby/webpack-transformer",
-        "nextVersion": {
-            "version": "patch",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
+        "rootDir": "libs/components/src/envs/gatsby/webpack-transformer"
     },
     "material/react-with-mui": {
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/material/react-with-mui",
-        "nextVersion": {
-            "version": "patch",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
+        "rootDir": "libs/components/src/envs/material/react-with-mui"
     },
     "material/theme-provider": {
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/material/theme-provider",
-        "nextVersion": {
-            "version": "patch",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
+        "rootDir": "libs/components/src/envs/material/theme-provider"
+    },
+    "navigator/compare-url": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/base-ui/navigator/compare-url"
+    },
+    "navigator/link": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/base-ui/navigator/link"
+    },
+    "navigator/router-context": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/base-ui/navigator/router-context"
+    },
+    "navigator/use-location": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/base-ui/navigator/use-location"
+    },
+    "styles/brand-definition": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/theme/styles/brand-definition"
+    },
+    "styles/color-definition": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/theme/styles/color-definition"
+    },
+    "styles/colors": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/theme/styles/colors"
+    },
+    "styles/heading-margin-definition": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/theme/styles/heading-margin-definition"
+    },
+    "styles/shadow-definition": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/theme/styles/shadow-definition"
+    },
+    "styles/size-definition": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/theme/styles/size-definition"
+    },
+    "styles/sizes": {
+        "scope": "",
+        "version": "",
+        "mainFile": "sizes.ts",
+        "rootDir": "libs/components/src/theme/styles/sizes"
+    },
+    "styles/text-sizes": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/theme/styles/text-sizes"
     },
     "tailwind/env-with-tailwind": {
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/tailwind/env-with-tailwind",
-        "nextVersion": {
-            "version": "patch",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
+        "rootDir": "libs/components/src/envs/tailwind/env-with-tailwind"
     },
     "tailwind/tailwind-config": {
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/tailwind/tailwind-config",
-        "nextVersion": {
-            "version": "patch",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
+        "rootDir": "libs/components/src/envs/tailwind/tailwind-config"
     },
     "tailwind/webpack-transformer": {
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/tailwind/webpack-transformer",
-        "nextVersion": {
-            "version": "patch",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
+        "rootDir": "libs/components/src/envs/tailwind/webpack-transformer"
+    },
+    "theme-compositions": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/theme/theme-compositions"
+    },
+    "theme-context": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/theme/theme-context"
+    },
+    "theme-provider": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.tsx",
+        "rootDir": "libs/components/src/theme/theme-provider"
+    },
+    "ui/button": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/mfe/ui/button"
+    },
+    "ui/card": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/mfe/ui/card"
+    },
+    "ui/forms/input": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/mfe/ui/forms/input"
+    },
+    "ui/forms/select": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/mfe/ui/forms/select"
+    },
+    "ui/heading": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/mfe/ui/heading"
+    },
+    "ui/hero": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/mfe/ui/hero"
+    },
+    "ui/img": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/mfe/ui/img"
+    },
+    "ui/img-grid": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/mfe/ui/img-grid"
+    },
+    "ui/label": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/mfe/ui/label"
+    },
+    "ui/layout": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/mfe/ui/layout"
+    },
+    "ui/link": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/mfe/ui/link"
+    },
+    "ui/nav": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/mfe/ui/nav"
+    },
+    "ui/paragraph": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/mfe/ui/paragraph"
+    },
+    "ui/theme-toggler": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/mfe/ui/theme-toggler"
+    },
+    "ui/title": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/mfe/ui/title"
     },
     "$schema-version": "14.9.0"
 }

@@ -104,13 +104,16 @@
     "libs/components/src/base-ui": {
       "defaultScope": "watheia.base-ui"
     },
+    "libs/components/src/model": {
+      "defaultScope": "watheia.model"
+    },
     "libs/components/src/demo": {
       "defaultScope": "watheia.demo",
-      "watheia.envs/material": {}
+      "watheia.envs/material/react-with-mui": {}
     },
     "libs/components/src/mfe": {
       "defaultScope": "watheia.mfe",
-      "watheia.envs/material": {}
+      "watheia.envs/material/react-with-mui": {}
     },
     "libs/components/src/envs": {
       "defaultScope": "watheia.envs"
