@@ -25,7 +25,7 @@ export function compareUrl(
   return subUrl && exactMatch && strictMatch;
 }
 
-function isSubUrl(base: urlParse, match: urlParse) {
+function isSubUrl(base: urlParse<any>, match: urlParse<any>) {
   return (
     (!match.protocol || match.protocol === base.protocol) &&
     (!match.hostname || match.hostname === base.hostname) &&
@@ -38,14 +38,14 @@ function isSubUrl(base: urlParse, match: urlParse) {
   );
 }
 
-function isExactMatch(base: urlParse, match: urlParse) {
+function isExactMatch(base: urlParse<any>, match: urlParse<any>) {
   return (
     (!match.pathname || base.pathname === match.pathname) &&
     (!match.query || isSubObject(base.query, match.query))
   );
 }
 
-function isStrictMatch(base: urlParse, match: urlParse) {
+function isStrictMatch(base: urlParse<any>, match: urlParse<any>) {
   return (
     !match.pathname ||
     base.pathname.endsWith('/') === match.pathname.endsWith('/')

@@ -16,11 +16,11 @@
     "baseUrl": ".",
     "paths": {
       "@frontend/components": ["libs/components/src/index.ts"],
+      "@frontend/temp": ["libs/temp/src/index.ts"],
       "@watheia/mfe.api": ["libs/api/src/index.ts"],
       "@watheia/mfe.app": ["libs/app/src/index.ts"],
       "@watheia/mfe.model": ["libs/model/src/index.ts"],
       "@watheia/mfe.theme": ["libs/theme/src/index.ts"],
-      "@watheia/mfe.theme.styles/*": ["libs/theme/src/styles/*"],
       "@watheia/mfe.util": ["libs/util/src/index.ts"],
       "@watheia/ui-atoms": ["libs/ui/atoms/src/index.ts"],
       "@watheia/ui-molecules": ["libs/ui/molecules/src/index.ts"],

@@ -1,7 +1,7 @@
 import { MainRuntime } from '@teambit/cli';
 import { EnvsAspect, EnvsMain } from '@teambit/envs';
 import { ReactAspect, ReactMain } from '@teambit/react';
-import { tailwindConfigPath } from '@watheia/envs.tailwind.tailwind-config';
+import { tailwindConfig } from '@watheia/envs.tailwind.tailwind-config';
 import { UseTailwindTransformer } from '@watheia/envs.tailwind.webpack-transformer';
 import { EnvWithTailwindAspect } from './env-with-tailwind.aspect';
 
@@ -16,7 +16,7 @@ export class EnvWithTailwindMain {
     const {
       previewConfigTransformer: twPreviewTransformer,
       devServerConfigTransformer: twDevServerTransformer,
-    } = UseTailwindTransformer(tailwindConfigPath); // <-- this is for shareable tailwind config
+    } = UseTailwindTransformer(tailwindConfig); // <-- this is for shareable tailwind config
     // } = UseTailwindTransformer(require.resolve('./tailwind/tailwind.config.js')); // <-- this is for locally-defined tw config
 
     const templatesReactEnv = envs.compose(react.reactEnv, [

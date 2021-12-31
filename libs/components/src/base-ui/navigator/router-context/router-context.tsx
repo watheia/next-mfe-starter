@@ -35,7 +35,7 @@ export type RouterContextType = {
   /**
    * useLocation implementation.
    */
-  useLocation?: UseLocation;
+  useLocation?: () => Location;
 };
 
 export const RouterContext = React.createContext<RouterContextType>({});

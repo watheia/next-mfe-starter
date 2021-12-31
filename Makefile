@@ -21,7 +21,7 @@ build:
 	nx run-many --all --target build --prod --verbose
 
 test:
-	nx run-many --all --target test
+	nx run-many --all --target test --verbose --coverage 
 
 lint:
 	nx run-many --all --target lint --fix

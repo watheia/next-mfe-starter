@@ -1,6 +1,6 @@
 import { Location, useRouter } from '@watheia/base-ui.navigator.router-context';
 
-export function useLocation(): Location | undefined {
+export function useLocation(): Location<Record<string, any> | undefined> | undefined {
   const router = useRouter();
   const actualUseLocation = router.useLocation;
 

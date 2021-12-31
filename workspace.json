@@ -10,6 +10,7 @@
     "gatekeeper": "apps/gatekeeper",
     "home": "apps/home",
     "model": "libs/model",
+    "temp": "libs/temp",
     "theme": "libs/theme",
     "ui-atoms": "libs/ui/atoms",
     "ui-molecules": "libs/ui/molecules",

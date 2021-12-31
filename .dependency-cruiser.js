@@ -28,8 +28,11 @@ module.exports = {
           '(^|/)\\.[^/]+\\.(js|cjs|mjs|ts|json)$', // dot files
           '\\.d\\.ts$', // TypeScript declaration files
           '\\.json$', // json files
-          '(^|/)app.po.ts$', // cypress
-          '(^|/)(babel|webpack|jest)\\.config\\.(js|cjs|mjs|ts|json)$', // other configs
+          '(^|/)app.po.ts$', // cypress tailwind.config.js
+          '(^|/)next\\.config\\.js$', //next config
+          '(spec|test)\\.[jt]sx?$', // unit tests
+          '(^|/)jest\\.(config|setup|preset)\\.[jt]sx?$', //jest
+          '(^|/)(babel|webpack|tailwind)\\.config\\.(js|cjs|mjs|ts|json)$', // other configs
           '^docs/.*',
         ],
       },
@@ -278,11 +281,7 @@ module.exports = {
       fileName: 'babel.config.json',
     },
 
-    metrics: {
-      orderBy: 'name',
-      hideModules: true,
-      hideFolders: false,
-    },
+    metrics: true,
 
     /* List of strings you have in use in addition to cjs/ es6 requires
        & imports to declare module dependencies. Use this e.g. if you've
@@ -297,7 +296,7 @@ module.exports = {
 
        Note: settings in webpack.conf.js override the ones specified here.
      */
-    parser: 'swc', // acorn, swc, tsc
+    parser: 'tsc', // acorn, swc, tsc
     enhancedResolveOptions: {
       exportsFields: ['exports'],
       conditionNames: ['require'],

@@ -10,61 +10,61 @@ exports[`Index should render successfully 1`] = `
     >
       <a
         class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
-        href="http://localhost:4200/blog/technology"
+        href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/blog/technology"
       >
         Technology
       </a>
       <a
         class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
-        href="http://localhost:4200/blog/design"
+        href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/blog/design"
       >
         Design
       </a>
       <a
         class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
-        href="http://localhost:4200/blog/culture"
+        href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/blog/culture"
       >
         Culture
       </a>
       <a
         class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
-        href="http://localhost:4200/blog/business"
+        href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/blog/business"
       >
         Business
       </a>
       <a
         class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
-        href="http://localhost:4200/blog/politics"
+        href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/blog/politics"
       >
         Politics
       </a>
       <a
         class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
-        href="http://localhost:4200/blog/opinion"
+        href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/blog/opinion"
       >
         Opinion
       </a>
       <a
         class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
-        href="http://localhost:4200/blog/science"
+        href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/blog/science"
       >
         Science
       </a>
       <a
         class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
-        href="http://localhost:4200/blog/health"
+        href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/blog/health"
       >
         Health
       </a>
       <a
         class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
-        href="http://localhost:4200/blog/style"
+        href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/blog/style"
       >
         Style
       </a>
       <a
         class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
-        href="http://localhost:4200/blog/travel"
+        href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/blog/travel"
       >
         Travel
       </a>
@@ -501,67 +501,67 @@ Aenean lacinia bibendum nulla sed consectetur.
           </h6>
           <a
             class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
-            href="http://localhost:4200/#"
+            href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/#"
           >
             March 2020
           </a>
           <a
             class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
-            href="http://localhost:4200/#"
+            href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/#"
           >
             February 2020
           </a>
           <a
             class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
-            href="http://localhost:4200/#"
+            href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/#"
           >
             January 2020
           </a>
           <a
             class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
-            href="http://localhost:4200/#"
+            href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/#"
           >
             November 1999
           </a>
           <a
             class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
-            href="http://localhost:4200/#"
+            href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/#"
           >
             October 1999
           </a>
           <a
             class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
-            href="http://localhost:4200/#"
+            href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/#"
           >
             September 1999
           </a>
           <a
             class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
-            href="http://localhost:4200/#"
+            href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/#"
           >
             August 1999
           </a>
           <a
             class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
-            href="http://localhost:4200/#"
+            href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/#"
           >
             July 1999
           </a>
           <a
             class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
-            href="http://localhost:4200/#"
+            href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/#"
           >
             June 1999
           </a>
           <a
             class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
-            href="http://localhost:4200/#"
+            href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/#"
           >
             May 1999
           </a>
           <a
             class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
-            href="http://localhost:4200/#"
+            href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/#"
           >
             April 1999
           </a>

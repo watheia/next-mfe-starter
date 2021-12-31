@@ -27,5 +27,6 @@ export function RouterNavLink({ children, ...props }: NavLinkProps) {
 export const reactRouterAdapter: RouterContextType = {
   Link: RouterLink,
   NavLink: RouterNavLink,
+  // @ts-ignore
   useLocation,
 };

@@ -31,7 +31,7 @@ export function Theme(props: React.HTMLAttributes<HTMLDivElement>) {
         primaryPalette,
         brands,
         headingMargins,
-        texts.defaults,
+        texts['defaults'],
         props.className
       )}
     ></div>

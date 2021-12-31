@@ -109,12 +109,10 @@
       "defaultScope": "watheia.model"
     },
     "libs/components/src/demo": {
-      "defaultScope": "watheia.demo",
-      "watheia.envs/material/react-with-mui": {}
+      "defaultScope": "watheia.demo"
     },
     "libs/components/src/mfe": {
-      "defaultScope": "watheia.mfe",
-      "watheia.envs/material/react-with-mui": {}
+      "defaultScope": "watheia.mfe"
     },
     "libs/components/src/envs": {
       "defaultScope": "watheia.envs"
@@ -134,6 +132,9 @@
     },
     "{material/theme-provider}": {
       "teambit.react/react": {}
+    },
+    "{ui/**},": {
+      // "watheia.envs/material/react-with-mui": {}
     }
   }
 }

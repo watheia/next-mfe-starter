@@ -15,7 +15,7 @@ const env = {
   },
 
   get cookie_name(): string {
-    return process.env['COOKIE_NAME'] ?? 'watheia.mfe.api.session';
+    return process.env['COOKIE_NAME'] ?? 'watheia.mfe/api/session';
   },
 
   get url(): string {
