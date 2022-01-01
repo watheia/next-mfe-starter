@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSupabase } from './supabase-context';
 import { SupabaseProvider } from './supabase-context-provider';
+import env from '../env'
 
 export function MockComponent() {
   const supabase = useSupabase();
@@ -8,11 +9,9 @@ export function MockComponent() {
 }
 
 export const SupaAuthExample = () => {
+  console.log('SupaAuthExample', env.home_url, env.supabase_url);
   return (
-    <SupabaseProvider
-      publicUrl={process.env['NEXT_PUBLIC_SUPABASE_URL'] ?? ''}
-      anonKey={process.env['NEXT_PUBLIC_SUPABASE_ANON_KEY'] ?? ''}
-    >
+    <SupabaseProvider publicUrl={env.supabase_url} anonKey={env.public_key}>
       <MockComponent />
     </SupabaseProvider>
   );

@@ -12,8 +12,8 @@ exports[`AppBar should render successfully 1`] = `
         class="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap css-uh02xs-MuiTypography-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-8p8juu-MuiTypography-root-MuiLink-root"
-          href="http://localhost:4200/"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1a3i5r6-MuiTypography-root-MuiLink-root"
+          href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/"
         >
           waweb
         </a>
@@ -40,7 +40,7 @@ exports[`AppBar should render successfully 1`] = `
               <a
                 aria-selected="false"
                 class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
-                href="http://localhost:4200/home"
+                href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/home"
                 role="tab"
                 tabindex="-1"
               >
@@ -52,7 +52,7 @@ exports[`AppBar should render successfully 1`] = `
               <a
                 aria-selected="false"
                 class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
-                href="http://localhost:4200/blog"
+                href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/blog"
                 role="tab"
                 tabindex="-1"
               >
@@ -64,7 +64,7 @@ exports[`AppBar should render successfully 1`] = `
               <a
                 aria-selected="false"
                 class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
-                href="http://localhost:4200/catalog"
+                href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/catalog"
                 role="tab"
                 tabindex="-1"
               >
@@ -83,7 +83,7 @@ exports[`AppBar should render successfully 1`] = `
       </div>
       <a
         class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1hg9nn6-MuiButtonBase-root-MuiButton-root"
-        href="http://localhost:4200/auth"
+        href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/auth"
         tabindex="0"
       >
         Login

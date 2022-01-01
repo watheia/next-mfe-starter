@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://harmony-docs.bit.dev/workspace/configurations
- **/{
+ **/ {
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -10,7 +10,7 @@
     /**
      * the name of the component workspace. used for development purposes.
      **/
-    "name": "next-mfe-starter",
+    "name": "components",
     /**
      * set the icon to be shown on the Bit server.
      **/
@@ -23,7 +23,7 @@
      * scope - scope name only, e.g. 'compilation'.
      * owner - owner name in bit.dev, e.g. 'teambit'.
      **/
-    "defaultDirectory": "libs/{name}/src",
+    "defaultDirectory": "libs/components/src/{scope}/{name}",
     /**
      * default scope for all components in workspace.
      **/
@@ -38,7 +38,12 @@
      */
     "packageManager": "teambit.dependencies/yarn",
     "policy": {
-      "dependencies": {},
+      "dependencies": {
+        "lodash": "^4.17.21",
+        "markdown-to-jsx": "^7.1.5",
+        "regenerator-runtime": "0.13.9",
+        "tslib": "^2.3.1"
+      },
       "peerDependencies": {
         "@emotion/cache": "^11.7.1",
         "@emotion/react": "^11.7.1",
@@ -47,14 +52,16 @@
         "@mui/icons-material": "^5.2.5",
         "@mui/material": "^5.2.6",
         "@nrwl/next": "^13.4.1",
-        "@prisma/client": "^3.7.0",
+        "@supabase/gotrue-js": "^1.21.7",
         "@supabase/supabase-js": "^1.29.1",
-        "lodash": "^4.17.21",
-        "markdown-to-jsx": "^7.1.5",
+        "core-js": "^3.20.1",
+        "iron-session": "^6.0.4",
         "next": "^12.0.7",
         "next-seo": "^4.28.1",
+        "octokit": "^1.7.1",
         "react": "^17.0.2",
-        "react-dom": "^17.0.2"
+        "react-dom": "^17.0.2",
+        "swr": "^1.1.2"
       }
     }
   },
@@ -70,10 +77,74 @@
      * "*" is a special rule which applied on all components in the workspace.
      **/
     "*": {
-      /**
-       * uncomment to apply the chosen environment on all components.
-       **/
-      // "teambit.react/react": { }
+      "teambit.dependencies/dependency-resolver": {},
+      "teambit.pkg/pkg": {
+        "packageManagerPublishArgs": ["--access public"],
+        "packageJson": {
+          "name": "@watheia/{scope}.{name}",
+          "private": false,
+          "license": "EPL-2.0",
+          "author": "Aaron R Miller<amiller@watheia.org>",
+          "homepage": "https://www.watheia.io/home",
+          "repository": {
+            "url": "https://bit.dev/watheia/mfe"
+          },
+          "keywords": [
+            "microcomponent",
+            "microfrontend",
+            "watheia",
+            "mfe",
+            "bit",
+            "atomic-design",
+            "material-ui"
+          ]
+        }
+      }
+    },
+    "libs/base-ui": {
+      "defaultScope": "watheia.base-ui",
+      "teambit.react/react": {}
+    },
+    "libs/model": {
+      "defaultScope": "watheia.model"
+    },
+    "libs/demo": {
+      "defaultScope": "watheia.demo"
+    },
+    "libs/mfe": {
+      "defaultScope": "watheia.mfe"
+    },
+    "libs/envs": {
+      "defaultScope": "watheia.envs"
+    },
+    "libs/theme": {
+      "defaultScope": "watheia.theme",
+      "teambit.react/react": {}
+    },
+    "{gatsby/gatsby-env}": {
+      "teambit.harmony/aspect": {}
+    },
+    "{material/mui-env}": {
+      "teambit.harmony/aspect": {}
+    },
+    "{tailwind/tailwind-env}": {
+      "teambit.harmony/aspect": {}
+    },
+    "{material/theme}": {
+      "teambit.react/react": {}
+    },
+    "{material/theme-provider}": {
+      "teambit.react/react": {}
+    },
+    "{material/use-dark-mode}": {
+      "teambit.react/react": {}
+    },
+    "libs/base-ui/navigator": {
+      "teambit.react/react": {}
+    },
+
+    "{ui/**},": {
+      "watheia.envs/material/react-mui-env": {}
     }
   }
 }

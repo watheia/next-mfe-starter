@@ -1,0 +1,43 @@
+{
+  "root": "libs/base-ui/navigator/routing-adapter",
+  "sourceRoot": "libs/base-ui/navigator/routing-adapter/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/base-ui/navigator/routing-adapter",
+        "tsConfig": "libs/base-ui/navigator/routing-adapter/tsconfig.lib.json",
+        "project": "libs/base-ui/navigator/routing-adapter/package.json",
+        "entryFile": "libs/base-ui/navigator/routing-adapter/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "swc",
+        "assets": [
+          {
+            "glob": "libs/base-ui/navigator/routing-adapter/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/base-ui/navigator/routing-adapter/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/base-ui/navigator/routing-adapter"],
+      "options": {
+        "jestConfig": "libs/base-ui/navigator/routing-adapter/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

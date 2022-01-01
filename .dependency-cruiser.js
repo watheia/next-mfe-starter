@@ -28,8 +28,11 @@ module.exports = {
           '(^|/)\\.[^/]+\\.(js|cjs|mjs|ts|json)$', // dot files
           '\\.d\\.ts$', // TypeScript declaration files
           '\\.json$', // json files
-          '(^|/)app.po.ts$', // cypress
-          '(^|/)(babel|webpack|jest)\\.config\\.(js|cjs|mjs|ts|json)$', // other configs
+          '(^|/)app.po.ts$', // cypress tailwind.config.js
+          '(^|/)next\\.config\\.js$', //next config
+          '(spec|test)\\.[jt]sx?$', // unit tests
+          '(^|/)jest\\.(config|setup|preset)\\.[jt]sx?$', //jest
+          '(^|/)(babel|webpack|tailwind)\\.config\\.(js|cjs|mjs|ts|json)$', // other configs
           '^docs/.*',
         ],
       },
@@ -162,13 +165,15 @@ module.exports = {
     },
   ],
   options: {
+    parser: 'swc',
+
     /* conditions specifying which files not to follow further when encountered:
        - path: a regular expression to match
        - dependencyTypes: see https://github.com/sverweij/dependency-cruiser/blob/master/doc/rules-reference.md#dependencytypes
        for a complete list
     */
     doNotFollow: {
-      path: 'node_modules',
+      path: '(node_modules)|(\\.yarn)|(dist)|(coverage)',
       dependencyTypes: [
         'npm',
         'npm-dev',
@@ -186,8 +191,19 @@ module.exports = {
     */
     exclude: {
       path: '^((\\.yarn)|(.*\\.(spec|test)\\.[jt]sx?)|(.*/next\\.config\\.js)|(jest\\.\\w+\\.js))$',
-      dynamic: true,
+      // dynamic: true,
     },
+
+    exclude: [
+      '\\.git',
+      '\\.yarn',
+      '\\.vscode',
+      'dist',
+      'coverage',
+      'mocks',
+      'node_modules',
+      'jest\\.w+\\.js',
+    ],
 
     /* pattern specifying which files to include (regular expression)
        dependency-cruiser will skip everything not matching this pattern
@@ -201,13 +217,13 @@ module.exports = {
     // focus : '',
 
     /* list of module systems to cruise */
-    // moduleSystems: ['amd', 'cjs', 'es6', 'tsd'],
+    moduleSystems: ['cjs', 'es6'],
 
     /* prefix for links in html and svg output (e.g. 'https://github.com/you/yourrepo/blob/develop/'
        to open it on your online repo or `vscode://file/${process.cwd()}/` to 
        open it in visual studio code),
      */
-    // prefix: '',
+    prefix: 'https://github.com/watheia/next-mfe-starter/blob/main',
 
     /* false (the default): ignore dependencies that only exist before typescript-to-javascript compilation
        true: also detect dependencies that only exist before typescript-to-javascript compilation
@@ -222,7 +238,7 @@ module.exports = {
        folder the cruise is initiated from. Useful for how (some) mono-repos
        manage dependencies & dependency definitions.
      */
-    combinedDependencies: false,
+    combinedDependencies: true,
 
     /* if true leave symlinks untouched, otherwise use the realpath */
     // preserveSymlinks: false,
@@ -265,6 +281,8 @@ module.exports = {
       fileName: 'babel.config.json',
     },
 
+    metrics: true,
+
     /* List of strings you have in use in addition to cjs/ es6 requires
        & imports to declare module dependencies. Use this e.g. if you've
        redeclared require, use a require-wrapper or use window.require as
@@ -278,25 +296,26 @@ module.exports = {
 
        Note: settings in webpack.conf.js override the ones specified here.
      */
+    parser: 'tsc', // acorn, swc, tsc
     enhancedResolveOptions: {
-      /* List of strings to consider as 'exports' fields in package.json. Use
-         ['exports'] when you use packages that use such a field and your environment
-         supports it (e.g. node ^12.19 || >=14.7 or recent versions of webpack).
-
-        If you have an `exportsFields` attribute in your webpack config, that one
-         will have precedence over the one specified here.
-      */
       exportsFields: ['exports'],
-      /* List of conditions to check for in the exports field. e.g. use ['imports']
-         if you're only interested in exposed es6 modules, ['require'] for commonjs,
-         or all conditions at once `(['import', 'require', 'node', 'default']`)
-         if anything goes for you. Only works when the 'exportsFields' array is
-         non-empty.
-
-        If you have a 'conditionNames' attribute in your webpack config, that one will
-        have precedence over the one specified here.
-      */
-      conditionNames: ['import', 'require', 'node', 'default'],
+      conditionNames: ['require'],
+      extensions: [
+        '.js',
+        '.cjs',
+        '.mjs',
+        '.jsx',
+        '.ts',
+        '.tsx',
+        '.d.ts',
+        // ".coffee",
+        // ".litcoffee",
+        // "cofee.md",
+        // ".csx",
+        // ".cjsx",
+        '.vue',
+        '.svelte',
+      ],
     },
     reporterOptions: {
       dot: {
@@ -306,6 +325,8 @@ module.exports = {
            the external modules, but not the innards your app depends upon.
          */
         collapsePattern: 'node_modules/[^/]+',
+
+        showMetrics: true,
 
         /* Options to tweak the appearance of your graph.See
            https://github.com/sverweij/dependency-cruiser/blob/master/doc/options-reference.md#reporteroptions
@@ -322,12 +343,24 @@ module.exports = {
           },
           modules: [
             {
-              criteria: { source: '^src/model' },
-              attributes: { fillcolor: '#ccccff' },
+              criteria: { source: '^libs/components/src/mfe' },
+              attributes: { fillcolor: '#003f5c' },
             },
             {
-              criteria: { source: '^src/view' },
-              attributes: { fillcolor: '#ccffcc' },
+              criteria: { source: '^libs/components/src/theme' },
+              attributes: { fillcolor: '#58508d' },
+            },
+            {
+              criteria: { source: '^libs/components/src/envs' },
+              attributes: { fillcolor: '#bc5090' },
+            },
+            {
+              criteria: { source: '^libs/components/src/theme' },
+              attributes: { fillcolor: '#ff6361' },
+            },
+            {
+              criteria: { source: '^libs/components/src/model' },
+              attributes: { fillcolor: '#ffa600' },
             },
           ],
           dependencies: [

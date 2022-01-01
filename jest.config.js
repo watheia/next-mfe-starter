@@ -2,7 +2,7 @@ const { getJestProjects } = require('@nrwl/jest');
 
 module.exports = {
   projects: getJestProjects(),
-  coverageReporters: ['clover', 'json', 'lcov', ['text', { skipFull: false }]],
+  coverageReporters: ['clover', 'json', 'lcov', ['text', { skipFull: false }, 'html']],
   coverageThreshold: {
     global: {
       branches: 80,

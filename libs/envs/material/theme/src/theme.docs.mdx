@@ -1,0 +1,40 @@
+---
+description: 'Customize MUI with your theme. You can change the colors, the typography and much more.'
+labels: ['material-ui', 'theme']
+---
+
+## Theming
+
+The theme specifies the color of the components, darkness of the surfaces, level of shadow, appropriate opacity of ink elements, etc.
+
+Themes let you apply a consistent tone to your app. It allows you to customize all design aspects of your project in order to meet the specific needs of your business or brand.
+
+To promote greater consistency between apps, light and dark theme types are available to choose from. By default, components use the light theme type.
+
+## Example Usage
+
+```tsx
+import { CacheProvider, EmotionCache } from '@emotion/react';
+import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider as MuiThemeProvider } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import Head from 'next/head';
+import React, { ReactNode } from 'react';
+import { withTheme } from '@watheia/envs.material.theme';
+import { useDarkMode } from '@watheia/envs.material.use-dark-mode';
+
+export function ThemeProvider({ children }: ThemeProviderProps) {
+  const prefersDarkMode = useDarkMode();
+  const theme = React.useMemo(
+    () => withTheme(prefersDarkMode ? 'dark' : 'light'),
+    [prefersDarkMode]
+  );
+  return (
+    <MuiThemeProvider theme={theme}>
+      {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+      <CssBaseline />
+      {children}
+    </MuiThemeProvider>
+  );
+}
+```

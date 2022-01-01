@@ -9,5 +9,101 @@
  */
 
 {
+    "design/figma-embed": {
+        "scope": "watheia.base-ui",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "libs/base-ui/design/figma-embed/src"
+    },
+    "fonts/book": {
+        "scope": "watheia.theme",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "libs/theme/fonts/src/book"
+    },
+    "fonts/icons-font": {
+        "scope": "watheia.theme",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "libs/theme/fonts/src/icons-font"
+    },
+    "fonts/roboto": {
+        "scope": "watheia.theme",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "libs/theme/fonts/src/roboto"
+    },
+    "fonts/tangerine-font": {
+        "scope": "watheia.theme",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "libs/theme/fonts/src/tangerine-font"
+    },
+    "hooks/use-local-storage": {
+        "scope": "watheia.base-ui",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "libs/base-ui/hooks/use-local-storage/src"
+    },
+    "material/react-mui-env": {
+        "scope": "watheia.envs",
+        "version": "0.1.1",
+        "mainFile": "index.ts",
+        "rootDir": "libs/envs/material/react-mui-env/src"
+    },
+    "material/theme": {
+        "scope": "watheia.envs",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "libs/envs/material/theme/src"
+    },
+    "material/theme-provider": {
+        "scope": "watheia.envs",
+        "version": "0.1.1",
+        "mainFile": "index.ts",
+        "rootDir": "libs/envs/material/theme-provider/src"
+    },
+    "material/use-dark-mode": {
+        "scope": "watheia.envs",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "libs/envs/material/use-dark-mode/src"
+    },
+    "navigator/compare-url": {
+        "scope": "watheia.base-ui",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "libs/base-ui/navigator/compare-url/src"
+    },
+    "navigator/link": {
+        "scope": "watheia.base-ui",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "libs/base-ui/navigator/link/src"
+    },
+    "navigator/router-context": {
+        "scope": "watheia.base-ui",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "libs/base-ui/navigator/router-context/src"
+    },
+    "navigator/routing-adapter": {
+        "scope": "watheia.base-ui",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "libs/base-ui/navigator/routing-adapter/src"
+    },
+    "navigator/use-location": {
+        "scope": "watheia.base-ui",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "libs/base-ui/navigator/use-location/src"
+    },
+    "tokens/color": {
+        "scope": "watheia.theme",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "libs/theme/tokens/color/src"
+    },
     "$schema-version": "14.9.0"
 }

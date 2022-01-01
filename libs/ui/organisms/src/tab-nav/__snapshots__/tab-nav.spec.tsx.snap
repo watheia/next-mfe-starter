@@ -24,7 +24,7 @@ exports[`TabNav should render successfully 1`] = `
           <a
             aria-selected="false"
             class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
-            href="http://localhost:4200/#a"
+            href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/#a"
             role="tab"
             tabindex="-1"
           >
@@ -36,7 +36,7 @@ exports[`TabNav should render successfully 1`] = `
           <a
             aria-selected="false"
             class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
-            href="http://localhost:4200/#b"
+            href="https://4200-black-galliform-akqtwjts.ws-us25.gitpod.io/#b"
             role="tab"
             tabindex="-1"
           >

@@ -1,0 +1,43 @@
+{
+  "root": "libs/theme/fonts",
+  "sourceRoot": "libs/theme/fonts/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/theme/fonts",
+        "tsConfig": "libs/theme/fonts/tsconfig.lib.json",
+        "project": "libs/theme/fonts/package.json",
+        "entryFile": "libs/theme/fonts/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "libs/theme/fonts/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/theme/fonts/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/theme/fonts"],
+      "options": {
+        "jestConfig": "libs/theme/fonts/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "root": "libs/base-ui/hooks/use-local-storage",
+  "sourceRoot": "libs/base-ui/hooks/use-local-storage/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/base-ui/hooks/use-local-storage",
+        "tsConfig": "libs/base-ui/hooks/use-local-storage/tsconfig.lib.json",
+        "project": "libs/base-ui/hooks/use-local-storage/package.json",
+        "entryFile": "libs/base-ui/hooks/use-local-storage/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "swc",
+        "assets": [
+          {
+            "glob": "libs/base-ui/hooks/use-local-storage/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/base-ui/hooks/use-local-storage/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/base-ui/hooks/use-local-storage"],
+      "options": {
+        "jestConfig": "libs/base-ui/hooks/use-local-storage/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
