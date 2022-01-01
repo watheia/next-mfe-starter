@@ -1,0 +1,31 @@
+---
+description: 'A React Hook that increments a count by 1 each time it is called.'
+labels: ['hook', 'counter']
+---
+
+import { useDarkMode } from './use-dark-mode';
+
+## A React Hook to select a prefered color mode (light or dark)
+
+This hook handles all the stateful logic required to add a ☾ dark mode toggle to your website.
+It utilizes localStorage to remember the user's chosen mode, defaults to their browser or OS
+level setting using the prefers-color-scheme media query and manages the setting of a
+.dark-mode className on body to apply your styles.
+
+### Component usage
+
+In this example clicking the button calls `increment` which increments the `count` by 1
+
+```js
+function App() {
+  const [darkMode, setDarkMode] = useDarkMode();
+  return (
+    <div>
+      <div className="navbar">
+        <Toggle darkMode={darkMode} setDarkMode={setDarkMode} />
+      </div>
+      <Content />
+    </div>
+  );
+}
+```

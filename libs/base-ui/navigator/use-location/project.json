@@ -1,0 +1,43 @@
+{
+  "root": "libs/base-ui/navigator/use-location",
+  "sourceRoot": "libs/base-ui/navigator/use-location/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/base-ui/navigator/use-location",
+        "tsConfig": "libs/base-ui/navigator/use-location/tsconfig.lib.json",
+        "project": "libs/base-ui/navigator/use-location/package.json",
+        "entryFile": "libs/base-ui/navigator/use-location/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "swc",
+        "assets": [
+          {
+            "glob": "libs/base-ui/navigator/use-location/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/base-ui/navigator/use-location/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/base-ui/navigator/use-location"],
+      "options": {
+        "jestConfig": "libs/base-ui/navigator/use-location/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

@@ -5706,20 +5706,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:>=16.9.0":
+"@types/react@npm:*, @types/react@npm:>=16.9.0, @types/react@npm:^17.0.8":
   version: 17.0.38
   resolution: "@types/react@npm:17.0.38::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40types%2Freact%2F-%2Freact-17.0.38.tgz"
-  dependencies:
-    "@types/prop-types": "*"
-    "@types/scheduler": "*"
-    csstype: ^3.0.2
-  checksum: 4079f4f959cd4a4bfaeda8b89fe8a1b1f8bdc9d87acfdc5f74a0b39cec9ec6a470724357c62778c0f063180b360c250e920c5a142f1dbcda67d9cc25a6d43a85
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:17.0.38":
-  version: 17.0.38
-  resolution: "@types/react@npm:17.0.38"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
@@ -7710,9 +7699,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"book-df4496@workspace:libs/components/src/theme/fonts/book":
+"book-ce9c1c@workspace:libs/theme/fonts/src/book":
   version: 0.0.0-use.local
-  resolution: "book-df4496@workspace:libs/components/src/theme/fonts/book"
+  resolution: "book-ce9c1c@workspace:libs/theme/fonts/src/book"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
@@ -7801,15 +7790,6 @@ __metadata:
   checksum: e2a8e769a863f3d4ee887b5fe21f63193a891c68b612ddb4b68d82d1b5f3ff9073af066c343e9867a393fe4c2555dcb33e89b937195feb9c1613d259edfcd459
   languageName: node
   linkType: hard
-
-"brand-definition-a236a0@workspace:libs/components/src/theme/styles/brand-definition":
-  version: 0.0.0-use.local
-  resolution: "brand-definition-a236a0@workspace:libs/components/src/theme/styles/brand-definition"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
 
 "brorand@npm:^1.0.1, brorand@npm:^1.1.0":
   version: 1.1.0
@@ -8070,14 +8050,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"button-c4c0bb@workspace:libs/components/src/mfe/ui/atoms/button":
-  version: 0.0.0-use.local
-  resolution: "button-c4c0bb@workspace:libs/components/src/mfe/ui/atoms/button"
-  peerDependencies:
-    react: ^17.0.2
-  languageName: unknown
-  linkType: soft
-
 "bytes@npm:3.0.0":
   version: 3.0.0
   resolution: "bytes@npm:3.0.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fbytes%2F-%2Fbytes-3.0.0.tgz"
@@ -8281,14 +8253,6 @@ __metadata:
   checksum: 4e22649ef83781afbe6c81d6112ceac23c3ba29f91597ca1c14d323d5bfb646571edeb17436e76a29b07c8e9d75468655a2098a3e13dcc1438db47ff46fbb3ad
   languageName: node
   linkType: hard
-
-"card-c04b89@workspace:libs/components/src/mfe/ui/molecules/card":
-  version: 0.0.0-use.local
-  resolution: "card-c04b89@workspace:libs/components/src/mfe/ui/molecules/card"
-  peerDependencies:
-    react: ^17.0.2
-  languageName: unknown
-  linkType: soft
 
 "caseless@npm:~0.12.0":
   version: 0.12.0
@@ -8783,15 +8747,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"color-definition-5b38a8@workspace:libs/components/src/theme/styles/color-definition":
-  version: 0.0.0-use.local
-  resolution: "color-definition-5b38a8@workspace:libs/components/src/theme/styles/color-definition"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
-
 "color-name@npm:1.1.3":
   version: 1.1.3
   resolution: "color-name@npm:1.1.3::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fcolor-name%2F-%2Fcolor-name-1.1.3.tgz"
@@ -8855,15 +8810,6 @@ __metadata:
   checksum: cd55596a3a2d1071c1a28eee7fd8a5387593ff1bd10a3e8d0a6221499311fe34a9f2b9272d77c391e0e003dcdc8934fb2f8d106e7ef1f7516f8060c901d41a27
   languageName: node
   linkType: hard
-
-"colors-92439b@workspace:libs/components/src/theme/styles/colors":
-  version: 0.0.0-use.local
-  resolution: "colors-92439b@workspace:libs/components/src/theme/styles/colors"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
 
 "colors@npm:^1.1.2, colors@npm:^1.4.0":
   version: 1.4.0
@@ -8955,15 +8901,6 @@ __metadata:
   checksum: 59715f2fc456a73f68826285718503340b9f0dd89bfffc42749906c5cf3d4277ef11ef1cca0350d0e79204f00f1f6d83851ececc9095dc88512a697ac0b9bdcb
   languageName: node
   linkType: hard
-
-"compare-url-4b7220@workspace:libs/components/src/base-ui/navigator/compare-url":
-  version: 0.0.0-use.local
-  resolution: "compare-url-4b7220@workspace:libs/components/src/base-ui/navigator/compare-url"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
 
 "component-emitter@npm:^1.2.1, component-emitter@npm:~1.3.0":
   version: 1.3.0
@@ -10074,15 +10011,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"default-theme-e7abec@workspace:libs/components/src/theme/default-theme":
-  version: 0.0.0-use.local
-  resolution: "default-theme-e7abec@workspace:libs/components/src/theme/default-theme"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
-
 "defaults@npm:^1.0.3":
   version: 1.0.3
   resolution: "defaults@npm:1.0.3::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fdefaults%2F-%2Fdefaults-1.0.3.tgz"
@@ -10859,15 +10787,6 @@ __metadata:
   checksum: 65b5df55a8bab92229ab2b40dad3b387fad24613263d103a97f91c9fe43ceb21965cd3392b1ccb5d77088021e525c4e0481adb309625d0cb94ade1d1fb8dc17e
   languageName: node
   linkType: hard
-
-"env-with-tailwind-bb29cd@workspace:libs/components/src/envs/tailwind/env-with-tailwind":
-  version: 0.0.0-use.local
-  resolution: "env-with-tailwind-bb29cd@workspace:libs/components/src/envs/tailwind/env-with-tailwind"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
 
 "envinfo@npm:^7.8.1":
   version: 7.8.1
@@ -12048,15 +11967,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"figma-embed-28842b@workspace:libs/components/src/base-ui/figma/figma-embed":
-  version: 0.0.0-use.local
-  resolution: "figma-embed-28842b@workspace:libs/components/src/base-ui/figma/figma-embed"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
-
 "figures@npm:^3.0.0, figures@npm:^3.2.0":
   version: 3.2.0
   resolution: "figures@npm:3.2.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Ffigures%2F-%2Ffigures-3.2.0.tgz"
@@ -12483,7 +12393,7 @@ __metadata:
     "@types/chai": ^4.3.0
     "@types/jest": 26.0.20
     "@types/node": 12.20.4
-    "@types/react": 17.0.38
+    "@types/react": ^17.0.8
     "@types/react-dom": ^17.0.5
     "@types/react-router-dom": ^5.3.2
     "@types/tailwindcss": ^3.0.0
@@ -12553,7 +12463,6 @@ __metadata:
     typescript: ~4.5.4
     url-parse: ^1.5.4
   peerDependencies:
-    "@mui/material": ^5.2.6
     "@supabase/gotrue-js": ^1.21.7
   languageName: unknown
   linkType: soft
@@ -12759,15 +12668,6 @@ __metadata:
   checksum: f9c82452c8a17adb27279b0a9e882c081a13865413a1f95b9de2df85b15896f769302de9dd706dc362a72df02fe041e7e4355ef8d0eb78bec7e5350824d45d57
   languageName: node
   linkType: hard
-
-"gatsby-env-5f5933@workspace:libs/components/src/envs/gatsby/gatsby-env":
-  version: 0.0.0-use.local
-  resolution: "gatsby-env-5f5933@workspace:libs/components/src/envs/gatsby/gatsby-env"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
 
 "gatsby-graphiql-explorer@npm:^2.4.0":
   version: 2.4.0
@@ -13568,15 +13468,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"global-a62d0d@workspace:libs/components/src/theme/styles/global":
-  version: 0.0.0-use.local
-  resolution: "global-a62d0d@workspace:libs/components/src/theme/styles/global"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
-
 "global-dirs@npm:^3.0.0":
   version: 3.0.0
   resolution: "global-dirs@npm:3.0.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fglobal-dirs%2F-%2Fglobal-dirs-3.0.0.tgz"
@@ -13615,12 +13506,6 @@ __metadata:
   checksum: 9c057557c8f5a5bcfbeb9378ba4fe2255d04679452be504608dd5f13b54edf79f7be1db1031ea06a4ec6edd3b9f5f17d2d172fb47e6c69dae57fd84b7e72b77f
   languageName: node
   linkType: hard
-
-"globals-fe55d6@workspace:libs/components/src/envs/gatsby/globals":
-  version: 0.0.0-use.local
-  resolution: "globals-fe55d6@workspace:libs/components/src/envs/gatsby/globals"
-  languageName: unknown
-  linkType: soft
 
 "globals@npm:^11.1.0, globals@npm:^11.12.0":
   version: 11.12.0
@@ -14073,31 +13958,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"heading-3f1324@workspace:libs/components/src/mfe/ui/atoms/heading":
-  version: 0.0.0-use.local
-  resolution: "heading-3f1324@workspace:libs/components/src/mfe/ui/atoms/heading"
-  peerDependencies:
-    react: ^17.0.2
-  languageName: unknown
-  linkType: soft
-
-"heading-margin-definition-3fa05c@workspace:libs/components/src/theme/styles/heading-margin-definition":
-  version: 0.0.0-use.local
-  resolution: "heading-margin-definition-3fa05c@workspace:libs/components/src/theme/styles/heading-margin-definition"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
-
-"hero-b9aeeb@workspace:libs/components/src/mfe/ui/molecules/hero":
-  version: 0.0.0-use.local
-  resolution: "hero-b9aeeb@workspace:libs/components/src/mfe/ui/molecules/hero"
-  peerDependencies:
-    react: ^17.0.2
-  languageName: unknown
-  linkType: soft
-
 "hicat@npm:^0.8.0":
   version: 0.8.0
   resolution: "hicat@npm:0.8.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fhicat%2F-%2Fhicat-0.8.0.tgz"
@@ -14436,9 +14296,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"icons-font-1b1369@workspace:libs/components/src/theme/fonts/icons-font":
+"icons-font-071c6e@workspace:libs/theme/fonts/src/icons-font":
   version: 0.0.0-use.local
-  resolution: "icons-font-1b1369@workspace:libs/components/src/theme/fonts/icons-font"
+  resolution: "icons-font-071c6e@workspace:libs/theme/fonts/src/icons-font"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
@@ -14515,14 +14375,6 @@ __metadata:
   checksum: 6b1f926792d614f64c6c83da3a1f9c83f6196c2839aa41e1e32dd7b8d174cef2e329d75caabb62cb61ce9dc432f75e67d07d122a037312db7caa73166a1bdb77
   languageName: node
   linkType: hard
-
-"image-ff5ad8@workspace:libs/components/src/mfe/ui/atoms/image":
-  version: 0.0.0-use.local
-  resolution: "image-ff5ad8@workspace:libs/components/src/mfe/ui/atoms/image"
-  peerDependencies:
-    react: ^17.0.2
-  languageName: unknown
-  linkType: soft
 
 "image-q@npm:^1.1.1":
   version: 1.1.1
@@ -14684,14 +14536,6 @@ __metadata:
   checksum: 5d545056a3e1f2bf864c928a886a0e1656a3517127d36917b973de581bd54adc91b4bf1febcb0da054f204b4934763f1a4e09308b4d55002327cf1d48ac5d966
   languageName: node
   linkType: hard
-
-"input-a8996e@workspace:libs/components/src/mfe/ui/atoms/input":
-  version: 0.0.0-use.local
-  resolution: "input-a8996e@workspace:libs/components/src/mfe/ui/atoms/input"
-  peerDependencies:
-    react: ^17.0.2
-  languageName: unknown
-  linkType: soft
 
 "inquirer@npm:8.2.0":
   version: 8.2.0
@@ -16702,14 +16546,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"label-de4c53@workspace:libs/components/src/mfe/ui/atoms/label":
-  version: 0.0.0-use.local
-  resolution: "label-de4c53@workspace:libs/components/src/mfe/ui/atoms/label"
-  peerDependencies:
-    react: ^17.0.2
-  languageName: unknown
-  linkType: soft
-
 "language-subtag-registry@npm:~0.3.2":
   version: 0.3.21
   resolution: "language-subtag-registry@npm:0.3.21::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Flanguage-subtag-registry%2F-%2Flanguage-subtag-registry-0.3.21.tgz"
@@ -16734,14 +16570,6 @@ __metadata:
   checksum: fbc72b071eb66c40f652441fd783a9cca62f08bf42433651937f078cd9ef94bf728ec7743992777826e4e89305aef24f234b515e6030503a2cbee7fc9bdc2c0f
   languageName: node
   linkType: hard
-
-"layout-00491c@workspace:libs/components/src/mfe/ui/layout":
-  version: 0.0.0-use.local
-  resolution: "layout-00491c@workspace:libs/components/src/mfe/ui/layout"
-  peerDependencies:
-    react: ^17.0.2
-  languageName: unknown
-  linkType: soft
 
 "lazy-ass@npm:^1.6.0":
   version: 1.6.0
@@ -16845,23 +16673,6 @@ __metadata:
   checksum: 0c37f9f7fa212b38912b7145e1cd16a5f3cd34d782441c3e6ca653485d326f58b3caccda66efce1c5812bde4961bbde3374fae4b0d11bf1226152337f3894aa5
   languageName: node
   linkType: hard
-
-"link-33e9c3@workspace:libs/components/src/base-ui/navigator/link":
-  version: 0.0.0-use.local
-  resolution: "link-33e9c3@workspace:libs/components/src/base-ui/navigator/link"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
-
-"link-fcd686@workspace:libs/components/src/mfe/ui/atoms/link":
-  version: 0.0.0-use.local
-  resolution: "link-fcd686@workspace:libs/components/src/mfe/ui/atoms/link"
-  peerDependencies:
-    react: ^17.0.2
-  languageName: unknown
-  linkType: soft
 
 "listr2@npm:^3.8.3":
   version: 3.13.5
@@ -18141,14 +17952,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"navigator-e2db1e@workspace:libs/components/src/mfe/ui/organisms/navigator":
-  version: 0.0.0-use.local
-  resolution: "navigator-e2db1e@workspace:libs/components/src/mfe/ui/organisms/navigator"
-  peerDependencies:
-    react: ^17.0.2
-  languageName: unknown
-  linkType: soft
-
 "needle@npm:^2.5.2":
   version: 2.9.1
   resolution: "needle@npm:2.9.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fneedle%2F-%2Fneedle-2.9.1.tgz"
@@ -19198,14 +19001,6 @@ __metadata:
   checksum: 1be2bfa1f807608c7538afa15d6f25baa523c30ec870a3228a89579e474a4d992f4293859524e46d5d87fd30fa17c5edf34dbef0671251d9749820b488660b16
   languageName: node
   linkType: hard
-
-"paragraph-440c7e@workspace:libs/components/src/mfe/ui/atoms/paragraph":
-  version: 0.0.0-use.local
-  resolution: "paragraph-440c7e@workspace:libs/components/src/mfe/ui/atoms/paragraph"
-  peerDependencies:
-    react: ^17.0.2
-  languageName: unknown
-  linkType: soft
 
 "parent-module@npm:^1.0.0":
   version: 1.0.1
@@ -20737,12 +20532,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"product-2c8cb2@workspace:libs/components/src/model/entity/product":
-  version: 0.0.0-use.local
-  resolution: "product-2c8cb2@workspace:libs/components/src/model/entity/product"
-  languageName: unknown
-  linkType: soft
-
 "progress@npm:^2.0.0, progress@npm:^2.0.3":
   version: 2.0.3
   resolution: "progress@npm:2.0.3::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fprogress%2F-%2Fprogress-2.0.3.tgz"
@@ -21283,15 +21072,6 @@ __metadata:
   checksum: b67bf5b3e86dbab72d658b9a52a3589e5960583ab28c7c66272427d8fe30d4c7de422d5046ae96bd2683cdf80cc3264b2516f5ce80cae1dbe6cf3ca6dda392c5
   languageName: node
   linkType: hard
-
-"react-with-mui-9fd402@workspace:libs/components/src/envs/material/react-with-mui":
-  version: 0.0.0-use.local
-  resolution: "react-with-mui-9fd402@workspace:libs/components/src/envs/material/react-with-mui"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
 
 "react@npm:^17.0.2":
   version: 17.0.2
@@ -21966,9 +21746,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"roboto-1065c5@workspace:libs/components/src/theme/fonts/roboto":
+"roboto-cd040a@workspace:libs/theme/fonts/src/roboto":
   version: 0.0.0-use.local
-  resolution: "roboto-1065c5@workspace:libs/components/src/theme/fonts/roboto"
+  resolution: "roboto-cd040a@workspace:libs/theme/fonts/src/roboto"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
@@ -22058,15 +21838,6 @@ __metadata:
   checksum: 9dfa089a232346bc548bf5110e79e0cf5a2dac6fb9bf3f737a645e72795b4b4a1165d1bf86938f90805c4391e8dd571557afb901aaf81dcb82690c57737ab128
   languageName: node
   linkType: hard
-
-"router-context-a89535@workspace:libs/components/src/base-ui/navigator/router-context":
-  version: 0.0.0-use.local
-  resolution: "router-context-a89535@workspace:libs/components/src/base-ui/navigator/router-context"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
 
 "run-async@npm:^2.4.0":
   version: 2.4.1
@@ -22279,14 +22050,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"select-369120@workspace:libs/components/src/mfe/ui/atoms/select":
-  version: 0.0.0-use.local
-  resolution: "select-369120@workspace:libs/components/src/mfe/ui/atoms/select"
-  peerDependencies:
-    react: ^17.0.2
-  languageName: unknown
-  linkType: soft
-
 "select-hose@npm:^2.0.0":
   version: 2.0.0
   resolution: "select-hose@npm:2.0.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fselect-hose%2F-%2Fselect-hose-2.0.0.tgz"
@@ -22495,15 +22258,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shadow-definition-2a8843@workspace:libs/components/src/theme/styles/shadow-definition":
-  version: 0.0.0-use.local
-  resolution: "shadow-definition-2a8843@workspace:libs/components/src/theme/styles/shadow-definition"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
-
 "shallow-clone@npm:^3.0.0":
   version: 3.0.1
   resolution: "shallow-clone@npm:3.0.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fshallow-clone%2F-%2Fshallow-clone-3.0.1.tgz"
@@ -22654,24 +22408,6 @@ __metadata:
   checksum: aba6438f46d2bfcef94cf112c835ab395172c75f67453fe05c340c770d3c402363018ae1ab4172a1026a90c47eaccf3af7b6ff6fa749a680c2929bd7fa2b37a4
   languageName: node
   linkType: hard
-
-"size-definition-68620d@workspace:libs/components/src/theme/styles/size-definition":
-  version: 0.0.0-use.local
-  resolution: "size-definition-68620d@workspace:libs/components/src/theme/styles/size-definition"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
-
-"sizes-bd4dd8@workspace:libs/components/src/theme/styles/sizes":
-  version: 0.0.0-use.local
-  resolution: "sizes-bd4dd8@workspace:libs/components/src/theme/styles/sizes"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
 
 "slash@npm:3.0.0, slash@npm:^3.0.0":
   version: 3.0.0
@@ -23047,6 +22783,114 @@ __metadata:
   checksum: 19d79aec211f09b99ec3099b5b2ae2f6e9cdefe50bc91ac4c69144b6d3928a640bb6ae5b3def70c2e85a2c3d9f5ec2719921e3a59d3ca3ef4b2fd1a4656a0df3
   languageName: node
   linkType: hard
+
+"src-19b7f8@workspace:libs/base-ui/navigator/router-context/src":
+  version: 0.0.0-use.local
+  resolution: "src-19b7f8@workspace:libs/base-ui/navigator/router-context/src"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
+"src-2d7eed@workspace:libs/envs/material/react-mui-env/src":
+  version: 0.0.0-use.local
+  resolution: "src-2d7eed@workspace:libs/envs/material/react-mui-env/src"
+  languageName: unknown
+  linkType: soft
+
+"src-33ae33@workspace:libs/base-ui/navigator/compare-url/src":
+  version: 0.0.0-use.local
+  resolution: "src-33ae33@workspace:libs/base-ui/navigator/compare-url/src"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
+"src-660a86@workspace:libs/base-ui/design/figma-embed/src":
+  version: 0.0.0-use.local
+  resolution: "src-660a86@workspace:libs/base-ui/design/figma-embed/src"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
+"src-677417@workspace:libs/base-ui/navigator/routing-adapter/src":
+  version: 0.0.0-use.local
+  resolution: "src-677417@workspace:libs/base-ui/navigator/routing-adapter/src"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
+"src-7d48fa@workspace:libs/theme/tokens/color/src":
+  version: 0.0.0-use.local
+  resolution: "src-7d48fa@workspace:libs/theme/tokens/color/src"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
+"src-891ef3@workspace:libs/base-ui/navigator/link/src":
+  version: 0.0.0-use.local
+  resolution: "src-891ef3@workspace:libs/base-ui/navigator/link/src"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
+"src-949d3e@workspace:libs/base-ui/hooks/use-local-storage/src":
+  version: 0.0.0-use.local
+  resolution: "src-949d3e@workspace:libs/base-ui/hooks/use-local-storage/src"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
+"src-a27d5c@workspace:libs/envs/material/theme-provider/src":
+  version: 0.0.0-use.local
+  resolution: "src-a27d5c@workspace:libs/envs/material/theme-provider/src"
+  peerDependencies:
+    "@mui/material": ^5.2.6
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
+"src-c66b2a@workspace:libs/base-ui/navigator/use-location/src":
+  version: 0.0.0-use.local
+  resolution: "src-c66b2a@workspace:libs/base-ui/navigator/use-location/src"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
+"src-df30e4@workspace:libs/envs/material/use-dark-mode/src":
+  version: 0.0.0-use.local
+  resolution: "src-df30e4@workspace:libs/envs/material/use-dark-mode/src"
+  peerDependencies:
+    "@mui/material": ^5.2.6
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
+"src-f4e8c8@workspace:libs/envs/material/theme/src":
+  version: 0.0.0-use.local
+  resolution: "src-f4e8c8@workspace:libs/envs/material/theme/src"
+  peerDependencies:
+    "@mui/material": ^5.2.6
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
 
 "sshpk@npm:^1.14.1":
   version: 1.16.1
@@ -23862,12 +23706,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwind-config-676808@workspace:libs/components/src/envs/tailwind/tailwind-config":
-  version: 0.0.0-use.local
-  resolution: "tailwind-config-676808@workspace:libs/components/src/envs/tailwind/tailwind-config"
-  languageName: unknown
-  linkType: soft
-
 "tailwindcss@npm:^3.0.8":
   version: 3.0.8
   resolution: "tailwindcss@npm:3.0.8::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Ftailwindcss%2F-%2Ftailwindcss-3.0.8.tgz"
@@ -23903,9 +23741,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tangerine-font-f5e3d2@workspace:libs/components/src/theme/fonts/tangerine-font":
+"tangerine-font-7a5eaf@workspace:libs/theme/fonts/src/tangerine-font":
   version: 0.0.0-use.local
-  resolution: "tangerine-font-f5e3d2@workspace:libs/components/src/theme/fonts/tangerine-font"
+  resolution: "tangerine-font-7a5eaf@workspace:libs/theme/fonts/src/tangerine-font"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
@@ -24062,65 +23900,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"text-sizes-013bf1@workspace:libs/components/src/theme/styles/text-sizes":
-  version: 0.0.0-use.local
-  resolution: "text-sizes-013bf1@workspace:libs/components/src/theme/styles/text-sizes"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
-
 "text-table@npm:0.2.0, text-table@npm:^0.2.0":
   version: 0.2.0
   resolution: "text-table@npm:0.2.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Ftext-table%2F-%2Ftext-table-0.2.0.tgz"
   checksum: b6937a38c80c7f84d9c11dd75e49d5c44f71d95e810a3250bd1f1797fc7117c57698204adf676b71497acc205d769d65c16ae8fa10afad832ae1322630aef10a
   languageName: node
   linkType: hard
-
-"theme-compositions-2472ec@workspace:libs/components/src/theme/theme-compositions":
-  version: 0.0.0-use.local
-  resolution: "theme-compositions-2472ec@workspace:libs/components/src/theme/theme-compositions"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
-
-"theme-context-762d61@workspace:libs/components/src/theme/theme-context":
-  version: 0.0.0-use.local
-  resolution: "theme-context-762d61@workspace:libs/components/src/theme/theme-context"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
-
-"theme-provider-7d491e@workspace:libs/components/src/theme/theme-provider":
-  version: 0.0.0-use.local
-  resolution: "theme-provider-7d491e@workspace:libs/components/src/theme/theme-provider"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
-
-"theme-provider-b903a2@workspace:libs/components/src/envs/material/theme-provider":
-  version: 0.0.0-use.local
-  resolution: "theme-provider-b903a2@workspace:libs/components/src/envs/material/theme-provider"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
-
-"theme-toggler-b0715a@workspace:libs/components/src/mfe/ui/organisms/theme-toggler":
-  version: 0.0.0-use.local
-  resolution: "theme-toggler-b0715a@workspace:libs/components/src/mfe/ui/organisms/theme-toggler"
-  peerDependencies:
-    react: ^17.0.2
-  languageName: unknown
-  linkType: soft
 
 "throat@npm:^6.0.1":
   version: 6.0.1
@@ -25102,15 +24887,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-location-a0ed8a@workspace:libs/components/src/base-ui/navigator/use-location":
-  version: 0.0.0-use.local
-  resolution: "use-location-a0ed8a@workspace:libs/components/src/base-ui/navigator/use-location"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  languageName: unknown
-  linkType: soft
-
 "use-subscription@npm:1.5.1":
   version: 1.5.1
   resolution: "use-subscription@npm:1.5.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fuse-subscription%2F-%2Fuse-subscription-1.5.1.tgz"
@@ -25574,18 +25350,6 @@ __metadata:
   checksum: ddb4dca747349da462c0828a2e4d7d08f58fee365733a2edf682c5cfe13497524fc2a40080522b3f67bdef547aca0acc0a125ae81535103119c8ae297c0b4b17
   languageName: node
   linkType: hard
-
-"webpack-transformer-030aac@workspace:libs/components/src/envs/gatsby/webpack-transformer":
-  version: 0.0.0-use.local
-  resolution: "webpack-transformer-030aac@workspace:libs/components/src/envs/gatsby/webpack-transformer"
-  languageName: unknown
-  linkType: soft
-
-"webpack-transformer-73b672@workspace:libs/components/src/envs/tailwind/webpack-transformer":
-  version: 0.0.0-use.local
-  resolution: "webpack-transformer-73b672@workspace:libs/components/src/envs/tailwind/webpack-transformer"
-  languageName: unknown
-  linkType: soft
 
 "webpack-virtual-modules@npm:^0.3.2":
   version: 0.3.2

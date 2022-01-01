@@ -13,6 +13,8 @@ setup:
 	bvm install latest
 	bit config set analytics_reporting false
 	bit init --harmony
+  bit import
+  bit install
 
 assemble:
 	nx affected --target assemble
@@ -21,7 +23,7 @@ build:
 	nx run-many --all --target build --prod --verbose
 
 test:
-	nx run-many --all --target test --verbose --coverage 
+	nx run-many --all --target test --verbose --coverage
 
 lint:
 	nx run-many --all --target lint --fix

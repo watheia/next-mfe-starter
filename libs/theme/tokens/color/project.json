@@ -1,0 +1,43 @@
+{
+  "root": "libs/theme/tokens/color",
+  "sourceRoot": "libs/theme/tokens/color/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/theme/tokens/color",
+        "tsConfig": "libs/theme/tokens/color/tsconfig.lib.json",
+        "project": "libs/theme/tokens/color/package.json",
+        "entryFile": "libs/theme/tokens/color/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "libs/theme/tokens/color/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/theme/tokens/color/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/theme/tokens/color"],
+      "options": {
+        "jestConfig": "libs/theme/tokens/color/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

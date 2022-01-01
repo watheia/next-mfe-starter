@@ -1,0 +1,43 @@
+{
+  "root": "libs/base-ui/design/figma-embed",
+  "sourceRoot": "libs/base-ui/design/figma-embed/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/base-ui/design/figma-embed",
+        "tsConfig": "libs/base-ui/design/figma-embed/tsconfig.lib.json",
+        "project": "libs/base-ui/design/figma-embed/package.json",
+        "entryFile": "libs/base-ui/design/figma-embed/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "swc",
+        "assets": [
+          {
+            "glob": "libs/base-ui/design/figma-embed/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/base-ui/design/figma-embed/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/base-ui/design/figma-embed"],
+      "options": {
+        "jestConfig": "libs/base-ui/design/figma-embed/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

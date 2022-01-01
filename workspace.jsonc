@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://harmony-docs.bit.dev/workspace/configurations
- **/{
+ **/ {
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -79,9 +79,7 @@
     "*": {
       "teambit.dependencies/dependency-resolver": {},
       "teambit.pkg/pkg": {
-        "packageManagerPublishArgs": [
-          "--access public"
-        ],
+        "packageManagerPublishArgs": ["--access public"],
         "packageJson": {
           "name": "@watheia/{scope}.{name}",
           "private": false,
@@ -103,40 +101,50 @@
         }
       }
     },
-    "libs/components/src/base-ui": {
+    "libs/base-ui": {
       "defaultScope": "watheia.base-ui",
       "teambit.react/react": {}
     },
-    "libs/components/src/model": {
+    "libs/model": {
       "defaultScope": "watheia.model"
     },
-    "libs/components/src/demo": {
+    "libs/demo": {
       "defaultScope": "watheia.demo"
     },
-    "libs/components/src/mfe": {
+    "libs/mfe": {
       "defaultScope": "watheia.mfe"
     },
-    "libs/components/src/envs": {
+    "libs/envs": {
       "defaultScope": "watheia.envs"
     },
-    "libs/components/src/theme": {
+    "libs/theme": {
       "defaultScope": "watheia.theme",
       "teambit.react/react": {}
     },
     "{gatsby/gatsby-env}": {
       "teambit.harmony/aspect": {}
     },
-    "{material/react-with-mui}": {
+    "{material/mui-env}": {
       "teambit.harmony/aspect": {}
     },
-    "{tailwind/env-with-tailwind}": {
+    "{tailwind/tailwind-env}": {
       "teambit.harmony/aspect": {}
+    },
+    "{material/theme}": {
+      "teambit.react/react": {}
     },
     "{material/theme-provider}": {
       "teambit.react/react": {}
     },
+    "{material/use-dark-mode}": {
+      "teambit.react/react": {}
+    },
+    "libs/base-ui/navigator": {
+      "teambit.react/react": {}
+    },
+
     "{ui/**},": {
-      // "watheia.envs/material/react-with-mui": {}
+      "watheia.envs/material/react-mui-env": {}
     }
   }
 }

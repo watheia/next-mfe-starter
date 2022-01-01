@@ -15,13 +15,38 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@frontend/components": ["libs/components/src/index.ts"],
-      "@frontend/temp": ["libs/temp/src/index.ts"],
+      "@watheia/base-ui.hooks.use-local-storage": [
+        "libs/base-ui/hooks/use-local-storage/src/index.ts"
+      ],
+      "@watheia/base-ui.navigator.compare-url": [
+        "libs/base-ui/navigator/compare-url/src/index.ts"
+      ],
+      "@watheia/base-ui.navigator.link": ["libs/base-ui/navigator/link/src/index.ts"],
+      "@watheia/base-ui.navigator.router-context": [
+        "libs/base-ui/navigator/router-context/src/index.ts"
+      ],
+      "@watheia/base-ui.navigator.routing-adapter": [
+        "libs/base-ui/navigator/routing-adapter/src/index.ts"
+      ],
+      "@watheia/base-ui.navigator.use-location": [
+        "libs/base-ui/navigator/use-location/src/index.ts"
+      ],
+      "@watheia/envs.material.react-mui-env": [
+        "libs/envs/material/react-mui-env/src/index.ts"
+      ],
+      "@watheia/envs.material.theme-provider": [
+        "libs/envs/material/theme-provider/src/index.ts"
+      ],
+      "@watheia/envs.material.use-dark-mode": [
+        "libs/envs/material/use-dark-mode/src/index.ts"
+      ],
       "@watheia/mfe.api": ["libs/api/src/index.ts"],
       "@watheia/mfe.app": ["libs/app/src/index.ts"],
       "@watheia/mfe.model": ["libs/model/src/index.ts"],
       "@watheia/mfe.theme": ["libs/theme/src/index.ts"],
       "@watheia/mfe.util": ["libs/util/src/index.ts"],
+      "@watheia/theme.fonts": ["libs/theme/fonts/src/index.ts"],
+      "@watheia/theme.tokens.color": ["libs/theme/tokens/color/src/index.ts"],
       "@watheia/ui-atoms": ["libs/ui/atoms/src/index.ts"],
       "@watheia/ui-molecules": ["libs/ui/molecules/src/index.ts"],
       "@watheia/ui-organisms": ["libs/ui/organisms/src/index.ts"],

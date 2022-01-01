@@ -1,1 +1,0 @@
-export { setGatsbyGlobals } from './globals';

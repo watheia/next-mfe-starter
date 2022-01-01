@@ -1,0 +1,43 @@
+{
+  "root": "libs/envs/material/use-dark-mode",
+  "sourceRoot": "libs/envs/material/use-dark-mode/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/envs/material/use-dark-mode",
+        "tsConfig": "libs/envs/material/use-dark-mode/tsconfig.lib.json",
+        "project": "libs/envs/material/use-dark-mode/package.json",
+        "entryFile": "libs/envs/material/use-dark-mode/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "swc",
+        "assets": [
+          {
+            "glob": "libs/envs/material/use-dark-mode/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/envs/material/use-dark-mode/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/envs/material/use-dark-mode"],
+      "options": {
+        "jestConfig": "libs/envs/material/use-dark-mode/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

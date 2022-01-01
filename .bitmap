@@ -9,533 +9,101 @@
  */
 
 {
-    "default-theme": {
-        "scope": "",
-        "version": "",
+    "design/figma-embed": {
+        "scope": "watheia.base-ui",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/theme/default-theme",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "entity/product": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/model/entity/product",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "figma/figma-embed": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/base-ui/figma/figma-embed",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
+        "rootDir": "libs/base-ui/design/figma-embed/src"
     },
     "fonts/book": {
-        "scope": "",
-        "version": "",
+        "scope": "watheia.theme",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/theme/fonts/book",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
+        "rootDir": "libs/theme/fonts/src/book"
     },
     "fonts/icons-font": {
-        "scope": "",
-        "version": "",
+        "scope": "watheia.theme",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/theme/fonts/icons-font",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
+        "rootDir": "libs/theme/fonts/src/icons-font"
     },
     "fonts/roboto": {
-        "scope": "",
-        "version": "",
+        "scope": "watheia.theme",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/theme/fonts/roboto",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
+        "rootDir": "libs/theme/fonts/src/roboto"
     },
     "fonts/tangerine-font": {
-        "scope": "",
-        "version": "",
+        "scope": "watheia.theme",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/theme/fonts/tangerine-font",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
+        "rootDir": "libs/theme/fonts/src/tangerine-font"
     },
-    "gatsby/gatsby-env": {
-        "scope": "",
-        "version": "",
+    "hooks/use-local-storage": {
+        "scope": "watheia.base-ui",
+        "version": "0.1.0",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/gatsby/gatsby-env",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
+        "rootDir": "libs/base-ui/hooks/use-local-storage/src"
     },
-    "gatsby/globals": {
-        "scope": "",
-        "version": "",
+    "material/react-mui-env": {
+        "scope": "watheia.envs",
+        "version": "0.1.1",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/gatsby/globals",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
+        "rootDir": "libs/envs/material/react-mui-env/src"
     },
-    "gatsby/webpack-transformer": {
-        "scope": "",
-        "version": "",
+    "material/theme": {
+        "scope": "watheia.envs",
+        "version": "0.1.0",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/gatsby/webpack-transformer",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "material/react-with-mui": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/material/react-with-mui",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
+        "rootDir": "libs/envs/material/theme/src"
     },
     "material/theme-provider": {
-        "scope": "",
-        "version": "",
+        "scope": "watheia.envs",
+        "version": "0.1.1",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/material/theme-provider",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
+        "rootDir": "libs/envs/material/theme-provider/src"
+    },
+    "material/use-dark-mode": {
+        "scope": "watheia.envs",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "libs/envs/material/use-dark-mode/src"
     },
     "navigator/compare-url": {
-        "scope": "",
-        "version": "",
+        "scope": "watheia.base-ui",
+        "version": "0.1.0",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/base-ui/navigator/compare-url",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
+        "rootDir": "libs/base-ui/navigator/compare-url/src"
     },
     "navigator/link": {
-        "scope": "",
-        "version": "",
+        "scope": "watheia.base-ui",
+        "version": "0.1.0",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/base-ui/navigator/link",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
+        "rootDir": "libs/base-ui/navigator/link/src"
     },
     "navigator/router-context": {
-        "scope": "",
-        "version": "",
+        "scope": "watheia.base-ui",
+        "version": "0.1.0",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/base-ui/navigator/router-context",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
+        "rootDir": "libs/base-ui/navigator/router-context/src"
+    },
+    "navigator/routing-adapter": {
+        "scope": "watheia.base-ui",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "libs/base-ui/navigator/routing-adapter/src"
     },
     "navigator/use-location": {
-        "scope": "",
-        "version": "",
+        "scope": "watheia.base-ui",
+        "version": "0.1.0",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/base-ui/navigator/use-location",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
+        "rootDir": "libs/base-ui/navigator/use-location/src"
     },
-    "styles/brand-definition": {
-        "scope": "",
-        "version": "",
+    "tokens/color": {
+        "scope": "watheia.theme",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "libs/components/src/theme/styles/brand-definition",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "styles/color-definition": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/theme/styles/color-definition",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "styles/colors": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/theme/styles/colors",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "styles/global": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/theme/styles/global",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "styles/heading-margin-definition": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/theme/styles/heading-margin-definition",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "styles/shadow-definition": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/theme/styles/shadow-definition",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "styles/size-definition": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/theme/styles/size-definition",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "styles/sizes": {
-        "scope": "",
-        "version": "",
-        "mainFile": "sizes.ts",
-        "rootDir": "libs/components/src/theme/styles/sizes",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "styles/text-sizes": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/theme/styles/text-sizes",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "tailwind/env-with-tailwind": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/tailwind/env-with-tailwind",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "tailwind/tailwind-config": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/tailwind/tailwind-config",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "tailwind/webpack-transformer": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/envs/tailwind/webpack-transformer",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "theme-compositions": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/theme/theme-compositions",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "theme-context": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/theme/theme-context",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "theme-provider": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.tsx",
-        "rootDir": "libs/components/src/theme/theme-provider",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "ui/atoms/button": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/mfe/ui/atoms/button",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "ui/atoms/heading": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/mfe/ui/atoms/heading",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "ui/atoms/image": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/mfe/ui/atoms/image",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "ui/atoms/input": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/mfe/ui/atoms/input",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "ui/atoms/label": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/mfe/ui/atoms/label",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "ui/atoms/link": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/mfe/ui/atoms/link",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "ui/atoms/paragraph": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/mfe/ui/atoms/paragraph",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "ui/atoms/select": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/mfe/ui/atoms/select",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "ui/layout": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/mfe/ui/layout",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "ui/molecules/card": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/mfe/ui/molecules/card",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "ui/molecules/hero": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/mfe/ui/molecules/hero",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "ui/organisms/navigator": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/mfe/ui/organisms/navigator",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
-    },
-    "ui/organisms/theme-toggler": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/mfe/ui/organisms/theme-toggler",
-        "nextVersion": {
-            "version": "minor",
-            "message": "",
-            "username": "Aaron Miller",
-            "email": "amiller@watheia.org"
-        }
+        "rootDir": "libs/theme/tokens/color/src"
     },
     "$schema-version": "14.9.0"
 }

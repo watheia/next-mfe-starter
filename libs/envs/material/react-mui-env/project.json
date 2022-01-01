@@ -1,0 +1,43 @@
+{
+  "root": "libs/envs/material/react-mui-env",
+  "sourceRoot": "libs/envs/material/react-mui-env/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/envs/material/react-mui-env",
+        "tsConfig": "libs/envs/material/react-mui-env/tsconfig.lib.json",
+        "project": "libs/envs/material/react-mui-env/package.json",
+        "entryFile": "libs/envs/material/react-mui-env/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "swc",
+        "assets": [
+          {
+            "glob": "libs/envs/material/react-mui-env/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/envs/material/react-mui-env/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/envs/material/react-mui-env"],
+      "options": {
+        "jestConfig": "libs/envs/material/react-mui-env/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

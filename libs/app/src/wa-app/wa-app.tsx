@@ -1,14 +1,22 @@
+import { CacheProvider, EmotionCache } from '@emotion/react';
 import { GlobalStyles } from '@mui/material';
+import { ThemeProvider } from '@watheia/envs.material.theme-provider';
 import { AuthProvider, env, fetcher, SupabaseProvider } from '@watheia/mfe.api';
-import { ThemeProvider } from '@watheia/mfe.theme';
 import NextApp from 'next/app';
 import React, { ReactNode } from 'react';
 import { SWRConfig } from 'swr';
 import { AppBar } from '../app-bar';
 import Footer from '../footer';
+import createEmotionCache from './emotion-cache';
 
 /* eslint-disable-next-line */
-export interface WaAppProps {}
+export interface WaAppProps {
+  emotionCache?: EmotionCache;
+  children: ReactNode | ReactNode[];
+}
+
+// Client-side cache, shared for the whole session of the user in the browser.
+const clientSideEmotionCache = createEmotionCache();
 
 export class WaApp extends NextApp<WaAppProps> {
   override render() {
@@ -18,7 +26,7 @@ export class WaApp extends NextApp<WaAppProps> {
 
   compose(children: ReactNode | ReactNode[]): JSX.Element {
     return (
-      <>
+      <CacheProvider value={this.props.emotionCache ?? clientSideEmotionCache}>
         <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
         <SWRConfig
           value={{
@@ -38,7 +46,7 @@ export class WaApp extends NextApp<WaAppProps> {
             </AuthProvider>
           </SupabaseProvider>
         </SWRConfig>
-      </>
+      </CacheProvider>
     );
   }
 }
