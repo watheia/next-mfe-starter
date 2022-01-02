@@ -10,7 +10,7 @@
     "importHelpers": true,
     "target": "es2020",
     "module": "esnext",
-    "lib": ["es2020", "dom", "ESNext.Promise"],
+    "lib": ["es2020", "dom", "ESNext.Promise", "ESNext.String"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
@@ -22,6 +22,7 @@
       "@watheia/mfe.theme.styles/*": ["libs/theme/src/styles/*"],
       "@watheia/mfe.util": ["libs/util/src/index.ts"],
       "@watheia/ui-atoms": ["libs/ui/atoms/src/index.ts"],
+      "@watheia/ui-hooks": ["libs/ui/hooks/src/index.ts"],
       "@watheia/ui-molecules": ["libs/ui/molecules/src/index.ts"],
       "@watheia/ui-organisms": ["libs/ui/organisms/src/index.ts"],
       "@watheia/ui-views": ["libs/ui/views/src/index.ts"]

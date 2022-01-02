@@ -1,7 +1,7 @@
 import { styled } from '@mui/system';
 import { HtmlHTMLAttributes } from 'react';
 import Commands from './components/commands';
-import Header from './components/header';
+import { Header } from '@watheia/ui-molecules';
 import Hero from './components/hero';
 import LearningMaterials from './components/learning-materials';
 import OtherLinks from './components/other-links';

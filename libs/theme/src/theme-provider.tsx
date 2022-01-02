@@ -4,8 +4,9 @@ import { ThemeProvider as MuiThemeProvider } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { createEmotionCache } from '@watheia/mfe.util';
 import Head from 'next/head';
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useMemo } from 'react';
 import { createTheme } from './theme';
+import { useDarkMode } from '@watheia/envs.material.use-dark-mode';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -20,8 +21,8 @@ export function ThemeProvider({
   children,
   emotionCache = clientSideEmotionCache,
 }: ThemeProviderProps) {
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
-  const theme = React.useMemo(
+  const prefersDarkMode = useDarkMode();
+  const theme = useMemo(
     () => createTheme(prefersDarkMode ? 'dark' : 'light'),
     [prefersDarkMode]
   );

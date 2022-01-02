@@ -44,7 +44,6 @@ export type LinkProps = {
   as?: NextLinkProps['as'];
   href: NextLinkProps['href'];
   linkAs?: NextLinkProps['as']; // Useful when the as prop is shallow by styled().
-  noLinkStyle?: boolean;
 } & Omit<NextLinkComposedProps, 'to' | 'linkAs' | 'href'> &
   Omit<MuiLinkProps, 'href'>;
 
@@ -56,7 +55,6 @@ const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(function Link(props,
     as: linkAs,
     className: classNameProps,
     href,
-    noLinkStyle,
     role, // Link don't have roles.
     ...other
   } = props;
@@ -64,10 +62,8 @@ const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(function Link(props,
   const router = useRouter();
   const pathname = typeof href === 'string' ? href : href.pathname;
   const className = clsx(classNameProps, {
-    [activeClassName]: router && router.pathname === pathname && activeClassName,
+    [activeClassName]: router && router.pathname === pathname,
   });
-
-  console.log(`isExternal(${href})?`, isExternal(href));
 
   if (isExternal(href)) {
     // if (noLinkStyle) {

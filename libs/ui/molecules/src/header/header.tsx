@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { Box, styled } from '@mui/material';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import React from 'react';
@@ -11,41 +11,31 @@ export interface HeaderProps {
 
 type TextProps = { text: string };
 
-const Title = styled.div`
-  font-size: 3rem;
-  font-weight: 500;
-  letter-spacing: -0.025em;
-  line-height: 1;
-`;
+const Title = styled('h1')(({ theme }) => ({
+  fontSize: '3rem',
+  fontWeight: 500,
+  letterSpacing: '-0.025em',
+  lineHeight: 1,
+  color: theme.palette.text.primary,
+}));
 
-const SubTitle = styled.div`
-  display: block;
-  font-size: 1.875rem;
-  font-weight: 300;
-  line-height: 2.25rem;
-  margin-bottom: 0.5rem;
-`;
-
-// const Title = (props: TextProps) => (
-//   <Typography component="h1" variant="h2" color="text.primary" gutterBottom>
-//     {props.text}
-//   </Typography>
-// );
-
-// const SubTitle = (props: TextProps) => (
-//   <Typography variant="h5" color="text.secondary" component="p">
-//     {props.text}
-//   </Typography>
-// );
+const SubTitle = styled('span')(({ theme }) => ({
+  display: 'block',
+  fontSize: '1.875rem',
+  fontWeight: 300,
+  lineHeight: '2.25rem',
+  marginBottom: '0.5rem',
+  color: theme.palette.text.secondary,
+}));
 
 export function Header({ title, subTitle }: HeaderProps) {
   if (!title && !subTitle) return null;
 
   return (
-    <Container disableGutters maxWidth="md" component="header" sx={{ mt: 2 }}>
-      {title && <Title>{title}</Title>}
+    <Box component="header" sx={{ mt: 2 }}>
       {subTitle && <SubTitle>{subTitle}</SubTitle>}
-    </Container>
+      {title && <Title>{title}</Title>}
+    </Box>
   );
 }
 

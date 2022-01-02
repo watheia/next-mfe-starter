@@ -24,7 +24,7 @@ export default function Header(props: HeaderProps) {
           noWrap
           key={it.label}
           variant="body2"
-          href={getUrl('blog', it.url)}
+          href={getUrl('blog', it.url).href}
           sx={{ p: 1, flexShrink: 0 }}
         >
           {it.label}

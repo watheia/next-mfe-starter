@@ -1,28 +1,49 @@
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import { GridProps } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Checkbox from '@mui/material/Checkbox';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Grid from '@mui/material/Grid';
-import Link from '@mui/material/Link';
+import Snackbar from '@mui/material/Snackbar';
+import IconButton from '@mui/material/IconButton';
+import CloseIcon from '@mui/icons-material/Close';
+import Grid, { GridProps } from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
+import { useAuth } from '@watheia/mfe.api';
+import { getUrl } from '@watheia/mfe.util';
+import { useRouter } from 'next/router';
 import React from 'react';
 
 export type AuthViewProps = GridProps;
 
 export default function AuthView({ ...props }: AuthViewProps) {
+  const { userLoaded, signIn } = useAuth();
+  const [open, setOpen] = React.useState(false);
+
+  const handleClose = (event: React.SyntheticEvent | Event, reason?: string) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+  const action = (
+    <IconButton size="small" aria-label="close" color="inherit" onClick={handleClose}>
+      <CloseIcon fontSize="small" />
+    </IconButton>
+  );
+
+  const router = useRouter();
+  if (userLoaded) {
+    router.push(getUrl('/home').href);
+    return null;
+  }
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    // eslint-disable-next-line no-console
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
+    const email = data.get('email')?.toString() ?? '';
+    signIn({ email }).then(() => setOpen(true));
   };
 
   return (
@@ -33,7 +54,7 @@ export default function AuthView({ ...props }: AuthViewProps) {
         sm={4}
         md={7}
         sx={{
-          backgroundImage: 'url(https://source.unsplash.com/random)',
+          backgroundImage: 'url(/images/photo-1640872571837-f9405b1bb933.jfif)',
           backgroundRepeat: 'no-repeat',
           backgroundColor: (t) =>
             t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
@@ -68,35 +89,16 @@ export default function AuthView({ ...props }: AuthViewProps) {
               autoComplete="email"
               autoFocus
             />
-            <TextField
-              margin="normal"
-              required
-              fullWidth
-              name="password"
-              label="Password"
-              type="password"
-              id="password"
-              autoComplete="current-password"
-            />
-            <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
-              label="Remember me"
-            />
             <Button type="submit" fullWidth variant="contained" sx={{ mt: 3, mb: 2 }}>
-              Sign In
+              Send token
             </Button>
-            <Grid container>
-              <Grid item xs>
-                <Link href="#" variant="body2">
-                  Forgot password?
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link href="#" variant="body2">
-                  {"Don't have an account? Sign Up"}
-                </Link>
-              </Grid>
-            </Grid>
+            <Snackbar
+              open={open}
+              autoHideDuration={6000}
+              onClose={handleClose}
+              message="Check your email for the login url"
+              action={action}
+            />
           </Box>
         </Box>
       </Grid>

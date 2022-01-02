@@ -2,7 +2,7 @@ import MuiAppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { fetcher, usePrincipal } from '@watheia/mfe.api';
+import { useAuth } from '@watheia/mfe.api';
 import { fixtures } from '@watheia/mfe.model';
 import { getUrl } from '@watheia/mfe.util';
 import { Link } from '@watheia/ui-atoms';
@@ -13,31 +13,13 @@ import React, { MouseEvent } from 'react';
 /* eslint-disable-next-line */
 export interface AppBarProps {}
 
-const LoginButton = () => (
-  <Button href={getUrl('/auth')} color="primary" variant="text" sx={{ my: 1, mx: 1.5 }}>
-    Login
-  </Button>
-);
-
-const LogoutButton = ({
-  onClick,
-}: {
-  onClick: (e: MouseEvent<HTMLButtonElement>) => Promise<void>;
-}) => (
-  <Button onClick={onClick} variant="text" sx={{ my: 1, mx: 1.5 }}>
-    Logout
-  </Button>
-);
-
 export function AppBar(props: AppBarProps) {
-  const { user, mutateUser } = usePrincipal();
+  const { session, signOut } = useAuth();
   const router = useRouter();
 
   const signoutHandler = async (e: MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    // TODO refactor into api
-    mutateUser(await fetcher('/api/logout', { method: 'POST' }), false);
-    router.push('/login');
+    signOut().then(() => router.push('/'));
   };
 
   return (
@@ -52,12 +34,28 @@ export function AppBar(props: AppBarProps) {
     >
       <Toolbar sx={{ flexWrap: 'wrap' }}>
         <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-          <Link variant="inherit" color="text.primary" href={getUrl()} underline="hover">
+          <Link
+            variant="inherit"
+            color="text.primary"
+            href={getUrl().href}
+            underline="hover"
+          >
             waweb
           </Link>
         </Typography>
-        <TabNav routes={fixtures.primaryNav} />
-        {user?.isLoggedIn ? <LogoutButton onClick={signoutHandler} /> : <LoginButton />}
+        {session && (
+          <>
+            <TabNav items={fixtures.primaryNav} />
+            <Button
+              onClick={signoutHandler}
+              variant="text"
+              color="inherit"
+              sx={{ my: 1, mx: 1.5 }}
+            >
+              Logout
+            </Button>{' '}
+          </>
+        )}
       </Toolbar>
     </MuiAppBar>
   );

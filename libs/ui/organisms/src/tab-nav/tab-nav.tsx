@@ -4,34 +4,32 @@ import Tabs from '@mui/material/Tabs';
 import { Resource } from '@watheia/mfe.model';
 import { getUrl } from '@watheia/mfe.util';
 import { useRouter } from 'next/router';
-import React from 'react';
+import React, { useState } from 'react';
+import Link from 'next/link';
 
 interface LinkTabProps {
-  label?: string;
-  href?: string;
+  label: string;
+  href: string;
 }
 
-function LinkTab(props: LinkTabProps) {
+function LinkTab({ label, href }: LinkTabProps) {
   return (
-    <Tab
-      component="a"
-      //squash default tab action for link nav
-      onClick={(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-        event.preventDefault();
-      }}
-      {...props}
-    />
+    <Link href={getUrl(href).href} passHref>
+      <Tab component="a" label={label} value={href} />
+    </Link>
   );
 }
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface TabNavProps extends BoxProps {
-  routes: Resource[];
+  items: Resource[];
 }
 
-const TabNav = ({ sx, routes, ...props }: TabNavProps) => {
+const TabNav = ({ sx, items, ...props }: TabNavProps) => {
   const router = useRouter();
-  const [value, setValue] = React.useState(0);
+  const url = getUrl(router?.basePath);
+  const selectedIndex = items.findIndex((it) => url.href.endsWith(it.url));
+  const [value, setValue] = useState<number>(selectedIndex);
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
@@ -39,9 +37,15 @@ const TabNav = ({ sx, routes, ...props }: TabNavProps) => {
   const styles = { maxWidth: 'sm', ...sx };
   return (
     <Box sx={styles} {...props}>
-      <Tabs variant="scrollable" scrollButtons="auto" aria-label="primary navigation">
-        {routes.map((route, i) => (
-          <LinkTab key={i} href={getUrl(route.url)} label={route.label} />
+      <Tabs
+        variant="scrollable"
+        scrollButtons="auto"
+        aria-label="primary navigation"
+        value={value}
+        onChange={handleChange}
+      >
+        {items.map((it, i) => (
+          <LinkTab key={it.url} href={it.url} label={it.label} />
         ))}
       </Tabs>
     </Box>

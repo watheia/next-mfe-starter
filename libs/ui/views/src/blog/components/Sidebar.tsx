@@ -19,7 +19,14 @@ export default function Sidebar(props: SidebarProps) {
 
   return (
     <Grid item xs={12} md={4}>
-      <Paper elevation={0} sx={{ p: 2, bgcolor: 'grey.200' }}>
+      <Paper
+        elevation={0}
+        sx={{
+          p: 2,
+          bgcolor: (t) =>
+            t.palette.mode === 'dark' ? t.palette.grey[900] : t.palette.grey[50],
+        }}
+      >
         <Typography variant="h6" gutterBottom>
           {title}
         </Typography>
@@ -32,7 +39,7 @@ export default function Sidebar(props: SidebarProps) {
         <Link
           display="block"
           variant="body1"
-          href={getUrl(archive.url)}
+          href={getUrl(archive.url).href}
           key={archive.label}
         >
           {archive.label}
