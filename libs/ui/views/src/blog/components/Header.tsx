@@ -1,6 +1,6 @@
 import Toolbar from '@mui/material/Toolbar';
 import { Resource } from '@watheia/mfe.model';
-import { getUrl } from '@watheia/mfe.util';
+import { url } from '@watheia/mfe.api';
 import { Link } from '@watheia/ui-atoms';
 import * as React from 'react';
 
@@ -24,7 +24,7 @@ export default function Header(props: HeaderProps) {
           noWrap
           key={it.label}
           variant="body2"
-          href={getUrl('blog', it.url).href}
+          href={url('blog', it.url).href}
           sx={{ p: 1, flexShrink: 0 }}
         >
           {it.label}

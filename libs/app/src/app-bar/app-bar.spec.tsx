@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 
-import AppBar from './app-bar';
+import { AppBarExample } from './app-bar.composition';
 
 describe('AppBar', () => {
   it('should render successfully', () => {
-    const { container } = render(<AppBar />);
+    const { container } = render(<AppBarExample />);
     expect(container).toBeInstanceOf(HTMLElement);
     expect(container).toMatchSnapshot();
   });

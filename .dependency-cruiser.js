@@ -26,11 +26,11 @@ module.exports = {
         orphan: true,
         pathNot: [
           '(^|/)\\.[^/]+\\.(js|cjs|mjs|ts|json)$', // dot files
+          '\\.json$', // json data
+          '(^|/)docs', // docs
           '\\.d\\.ts$', // TypeScript declaration files
-          '\\.json$', // json files
-          '(^|/)app.po.ts$', // cypress
-          '(^|/)(babel|webpack|jest)\\.config\\.(js|cjs|mjs|ts|json)$', // other configs
-          '^docs/.*',
+          '(^|/)tsconfig\\.json$', // TypeScript config
+          '(^|/)(jest|next|babel|webpack)\\.config\\.(js|cjs|mjs|ts|json)$', // other configs
         ],
       },
       to: {},
@@ -81,6 +81,19 @@ module.exports = {
       },
     },
     {
+      name: 'no-non-package-json',
+      severity: 'error',
+      comment:
+        "This module depends on an npm package that isn't in the 'dependencies' section of your package.json. " +
+        "That's problematic as the package either (1) won't be available on live (2 - worse) will be " +
+        'available on live with an non-guaranteed version. Fix it by adding the package to the dependencies ' +
+        'in your package.json.',
+      from: {},
+      to: {
+        dependencyTypes: ['npm-no-pkg', 'npm-unknown'],
+      },
+    },
+    {
       name: 'not-to-unresolvable',
       comment:
         "This module depends on a module that cannot be found ('resolved to disk'). If it's an npm " +
@@ -128,7 +141,11 @@ module.exports = {
         'from.pathNot re of the not-to-dev-dep rule in the dependency-cruiser configuration',
       from: {
         path: '^(.)',
-        pathNot: '\\.(spec|test)\\.(js|mjs|cjs|ts|ls|coffee|litcoffee|coffee\\.md)$',
+        pathNot: [
+          '\\.(spec|test)\\.(js|mjs|cjs|ts|tsx|ls|coffee|litcoffee|coffee\\.md)$',
+          '(^|/)jest\\.(config|setup|preset)\\.(js|cjs|mjs|ts|json)$',
+          '(^|/)(next|babel|webpack)\\.config\\.(js|cjs|mjs|ts|json)$', // other configs
+        ],
       },
       to: {
         dependencyTypes: ['npm-dev'],
@@ -185,7 +202,13 @@ module.exports = {
           leave out if you want to exclude neither (recommended!)
     */
     exclude: {
-      path: '^((\\.yarn)|(.*\\.(spec|test)\\.[jt]sx?)|(.*/next\\.config\\.js)|(jest\\.\\w+\\.js))$',
+      path: [
+        '(^|/)\\.yarn$',
+        '(^|/)\\.git$',
+        '(^|/)\\.cache$',
+        '(^|/)dist$',
+        '(^|/)coverage$',
+      ],
       dynamic: true,
     },
 
@@ -204,10 +227,10 @@ module.exports = {
     // moduleSystems: ['amd', 'cjs', 'es6', 'tsd'],
 
     /* prefix for links in html and svg output (e.g. 'https://github.com/you/yourrepo/blob/develop/'
-       to open it on your online repo or `vscode://file/${process.cwd()}/` to 
+       to open it on your online repo or `vscode://file/${process.cwd()}/` to
        open it in visual studio code),
      */
-    // prefix: '',
+    prefix: 'https://github.com/watheia/next-mfe-starter/blob/main/',
 
     /* false (the default): ignore dependencies that only exist before typescript-to-javascript compilation
        true: also detect dependencies that only exist before typescript-to-javascript compilation
@@ -222,7 +245,7 @@ module.exports = {
        folder the cruise is initiated from. Useful for how (some) mono-repos
        manage dependencies & dependency definitions.
      */
-    combinedDependencies: false,
+    combinedDependencies: true,
 
     /* if true leave symlinks untouched, otherwise use the realpath */
     // preserveSymlinks: false,
@@ -258,7 +281,7 @@ module.exports = {
     /* Babel config ('.babelrc', '.babelrc.json', '.babelrc.json5', ...) to use
       for compilation (and whatever other naughty things babel plugins do to
       source code). This feature is well tested and usable, but might change
-      behavior a bit over time (e.g. more precise results for used module 
+      behavior a bit over time (e.g. more precise results for used module
       systems) without dependency-cruiser getting a major version bump.
      */
     babelConfig: {
@@ -375,4 +398,4 @@ module.exports = {
     },
   },
 };
-// generated: dependency-cruiser@11.2.1 on 2021-12-29T19:00:53.817Z
+// generated: dependency-cruiser@11.2.1 on 2022-01-08T02:07:37.191Z

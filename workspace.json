@@ -14,7 +14,6 @@
     "ui-hooks": "libs/ui/hooks",
     "ui-molecules": "libs/ui/molecules",
     "ui-organisms": "libs/ui/organisms",
-    "ui-views": "libs/ui/views",
-    "util": "libs/util"
+    "ui-views": "libs/ui/views"
   }
 }

@@ -1,4 +1,4 @@
-import { withEmotionProps } from '@watheia/mfe.util';
+import { withEmotionProps } from '@watheia/mfe.app';
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 import * as React from 'react';
 

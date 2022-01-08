@@ -2,7 +2,7 @@ import Box, { BoxProps } from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
 import { Resource } from '@watheia/mfe.model';
-import { getUrl } from '@watheia/mfe.util';
+import { url } from '@watheia/mfe.api';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import Link from 'next/link';
@@ -14,7 +14,7 @@ interface LinkTabProps {
 
 function LinkTab({ label, href }: LinkTabProps) {
   return (
-    <Link href={getUrl(href).href} passHref>
+    <Link href={url(href).href} passHref>
       <Tab component="a" label={label} value={href} />
     </Link>
   );
@@ -27,9 +27,10 @@ export interface TabNavProps extends BoxProps {
 
 const TabNav = ({ sx, items, ...props }: TabNavProps) => {
   const router = useRouter();
-  const url = getUrl(router?.basePath);
-  const selectedIndex = items.findIndex((it) => url.href.endsWith(it.url));
-  const [value, setValue] = useState<number>(selectedIndex);
+  const src = url(router?.basePath ?? '');
+  const selectedIndex = items.findIndex((it) => src.href.endsWith(it.url));
+  // default to the first tab (presumably the main home)
+  const [value, setValue] = useState<number>(Math.max(0, selectedIndex));
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };

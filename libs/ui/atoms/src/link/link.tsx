@@ -1,6 +1,6 @@
 import MuiLink, { LinkProps as MuiLinkProps } from '@mui/material/Link';
 import { styled } from '@mui/material/styles';
-import { isExternal } from '@watheia/mfe.util';
+import { isExternal } from '@watheia/mfe.api';
 import clsx from 'clsx';
 import NextLink, { LinkProps as NextLinkProps } from 'next/link';
 import { useRouter } from 'next/router';

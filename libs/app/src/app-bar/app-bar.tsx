@@ -2,9 +2,8 @@ import MuiAppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { useAuth } from '@watheia/mfe.api';
+import { useAuth, url } from '@watheia/mfe.api';
 import { fixtures } from '@watheia/mfe.model';
-import { getUrl } from '@watheia/mfe.util';
 import { Link } from '@watheia/ui-atoms';
 import { TabNav } from '@watheia/ui-organisms';
 import { useRouter } from 'next/router';
@@ -34,12 +33,7 @@ export function AppBar(props: AppBarProps) {
     >
       <Toolbar sx={{ flexWrap: 'wrap' }}>
         <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-          <Link
-            variant="inherit"
-            color="text.primary"
-            href={getUrl().href}
-            underline="hover"
-          >
+          <Link variant="inherit" color="text.primary" href={url().href} underline="hover">
             waweb
           </Link>
         </Typography>

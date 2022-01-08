@@ -33,7 +33,7 @@ start-bit:
 	bit start --dev --log info
 
 docs:
-	yarn depcruise --output-type dot --output-to docs/depgraph.dot --prefix "https://github.com/watheia/next-mfe-starter/blob/main"
+	yarn depcruise --output-type dot --output-to docs/depgraph.dot --prefix "https://github.com/watheia/next-mfe-starter/blob/main/"
 	cat docs/depgraph.dot | dot -T svg > docs/depgraph.svg.tmp
 	mv docs/depgraph.svg.tmp docs/depgraph.svg
 

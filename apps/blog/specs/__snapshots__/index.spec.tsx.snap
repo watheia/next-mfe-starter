@@ -9,61 +9,61 @@ exports[`Index should render successfully 1`] = `
       class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-14105se-MuiToolbar-root"
     >
       <a
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-4jhktb-MuiTypography-root-MuiLink-root"
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
         href="http://localhost:4200/blog/technology"
       >
         Technology
       </a>
       <a
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-4jhktb-MuiTypography-root-MuiLink-root"
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
         href="http://localhost:4200/blog/design"
       >
         Design
       </a>
       <a
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-4jhktb-MuiTypography-root-MuiLink-root"
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
         href="http://localhost:4200/blog/culture"
       >
         Culture
       </a>
       <a
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-4jhktb-MuiTypography-root-MuiLink-root"
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
         href="http://localhost:4200/blog/business"
       >
         Business
       </a>
       <a
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-4jhktb-MuiTypography-root-MuiLink-root"
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
         href="http://localhost:4200/blog/politics"
       >
         Politics
       </a>
       <a
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-4jhktb-MuiTypography-root-MuiLink-root"
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
         href="http://localhost:4200/blog/opinion"
       >
         Opinion
       </a>
       <a
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-4jhktb-MuiTypography-root-MuiLink-root"
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
         href="http://localhost:4200/blog/science"
       >
         Science
       </a>
       <a
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-4jhktb-MuiTypography-root-MuiLink-root"
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
         href="http://localhost:4200/blog/health"
       >
         Health
       </a>
       <a
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-4jhktb-MuiTypography-root-MuiLink-root"
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
         href="http://localhost:4200/blog/style"
       >
         Style
       </a>
       <a
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-4jhktb-MuiTypography-root-MuiLink-root"
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1vmf2w0-MuiTypography-root-MuiLink-root"
         href="http://localhost:4200/blog/travel"
       >
         Travel
@@ -481,7 +481,7 @@ Aenean lacinia bibendum nulla sed consectetur.
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
         >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1wq21mn-MuiPaper-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1or3v9a-MuiPaper-root"
           >
             <h6
               class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-18k87ye-MuiTypography-root"
@@ -500,67 +500,67 @@ Aenean lacinia bibendum nulla sed consectetur.
             Archives
           </h6>
           <a
-            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-1uu6mh0-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
             href="http://localhost:4200/#"
           >
             March 2020
           </a>
           <a
-            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-1uu6mh0-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
             href="http://localhost:4200/#"
           >
             February 2020
           </a>
           <a
-            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-1uu6mh0-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
             href="http://localhost:4200/#"
           >
             January 2020
           </a>
           <a
-            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-1uu6mh0-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
             href="http://localhost:4200/#"
           >
             November 1999
           </a>
           <a
-            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-1uu6mh0-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
             href="http://localhost:4200/#"
           >
             October 1999
           </a>
           <a
-            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-1uu6mh0-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
             href="http://localhost:4200/#"
           >
             September 1999
           </a>
           <a
-            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-1uu6mh0-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
             href="http://localhost:4200/#"
           >
             August 1999
           </a>
           <a
-            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-1uu6mh0-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
             href="http://localhost:4200/#"
           >
             July 1999
           </a>
           <a
-            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-1uu6mh0-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
             href="http://localhost:4200/#"
           >
             June 1999
           </a>
           <a
-            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-1uu6mh0-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
             href="http://localhost:4200/#"
           >
             May 1999
           </a>
           <a
-            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-1uu6mh0-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-m68o6z-MuiTypography-root-MuiLink-root"
             href="http://localhost:4200/#"
           >
             April 1999

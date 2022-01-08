@@ -1,4 +1,4 @@
-import { styled } from '@mui/system';
+import { styled } from '@mui/material';
 import { HtmlHTMLAttributes } from 'react';
 import Commands from './components/commands';
 import { Header } from '@watheia/ui-molecules';

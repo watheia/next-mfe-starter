@@ -12,85 +12,12 @@ exports[`AppBar should render successfully 1`] = `
         class="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap css-uh02xs-MuiTypography-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-8p8juu-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1a3i5r6-MuiTypography-root-MuiLink-root"
           href="http://localhost:4200/"
         >
           waweb
         </a>
       </h6>
-      <div
-        class="MuiBox-root css-1274r9c"
-      >
-        <div
-          class="MuiTabs-root css-1ujnqem-MuiTabs-root"
-        >
-          <div
-            class="MuiTabs-scrollableX MuiTabs-hideScrollbar css-agdkjh-MuiTabs-scrollbarSize"
-            style="width: 99px; height: 99px; position: absolute; top: -9999px; overflow: scroll;"
-          />
-          <div
-            class="MuiTabs-scroller MuiTabs-hideScrollbar MuiTabs-scrollableX css-69z67c-MuiTabs-scroller"
-            style="margin-bottom: 0px;"
-          >
-            <div
-              aria-label="primary navigation"
-              class="MuiTabs-flexContainer css-heg063-MuiTabs-flexContainer"
-              role="tablist"
-            >
-              <a
-                aria-selected="false"
-                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
-                href="http://localhost:4200/home"
-                role="tab"
-                tabindex="-1"
-              >
-                Home
-                <span
-                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                />
-              </a>
-              <a
-                aria-selected="false"
-                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
-                href="http://localhost:4200/blog"
-                role="tab"
-                tabindex="-1"
-              >
-                Blog
-                <span
-                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                />
-              </a>
-              <a
-                aria-selected="false"
-                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
-                href="http://localhost:4200/catalog"
-                role="tab"
-                tabindex="-1"
-              >
-                Catalog
-                <span
-                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                />
-              </a>
-            </div>
-            <span
-              class="MuiTabs-indicator css-1aquho2-MuiTabs-indicator"
-              style="left: 0px; width: 0px;"
-            />
-          </div>
-        </div>
-      </div>
-      <a
-        class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1hg9nn6-MuiButtonBase-root-MuiButton-root"
-        href="http://localhost:4200/auth"
-        tabindex="0"
-      >
-        Login
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
-      </a>
     </div>
   </header>
 </div>

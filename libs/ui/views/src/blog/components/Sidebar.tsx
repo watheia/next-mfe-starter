@@ -2,10 +2,10 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
+import { url } from '@watheia/mfe.api';
 import { Resource } from '@watheia/mfe.model';
-import { getUrl } from '@watheia/mfe.util';
 import { Link } from '@watheia/ui-atoms';
-import * as React from 'react';
+import React from 'react';
 
 interface SidebarProps {
   archives: ReadonlyArray<Resource>;
@@ -39,7 +39,7 @@ export default function Sidebar(props: SidebarProps) {
         <Link
           display="block"
           variant="body1"
-          href={getUrl(archive.url).href}
+          href={url(archive.url).href}
           key={archive.label}
         >
           {archive.label}

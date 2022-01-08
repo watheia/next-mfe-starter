@@ -20,7 +20,7 @@
       "options": {
         "cacheableOperations": ["build", "lint", "test", "e2e", "stylelint"],
         "accessToken": "YzE3YjY1NmUtOTU1Mi00ZTkwLTgzOGQtNTQ0MGIxNjEwYTI1fHJlYWQtd3JpdGU=",
-        "useDaemonProcess": true
+        "useDaemonProcess": false
       }
     }
   },

@@ -11,16 +11,20 @@ exports[`Index should render successfully 1`] = `
       <div
         class="container"
       >
-        <div
-          id="welcome"
+        <header
+          class="MuiBox-root css-1yuhvjn"
         >
-          <h1>
-            <span>
-              Please enjoy your stay.
-            </span>
+          <span
+            class="css-uu7gpt"
+          >
+            Please enjoy your stay.
+          </span>
+          <h1
+            class="css-149j6a3"
+          >
             Welcome Home
           </h1>
-        </div>
+        </header>
         <div
           class="rounded"
           id="hero"

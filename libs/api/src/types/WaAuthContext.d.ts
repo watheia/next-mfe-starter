@@ -1,4 +1,4 @@
-import { Session } from '@supabase/gotrue-js';
+import { Session } from '@supabase/supabase-js';
 import { WaSignInRequest } from './WaSignInRequest';
 import { WaSignInResponse } from './WaSignInResponse';
 import { WaSignOutResponse } from './WaSignOutResponse';

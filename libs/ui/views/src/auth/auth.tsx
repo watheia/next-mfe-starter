@@ -9,8 +9,7 @@ import Grid, { GridProps } from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
-import { useAuth } from '@watheia/mfe.api';
-import { getUrl } from '@watheia/mfe.util';
+import { useAuth, url } from '@watheia/mfe.api';
 import { useRouter } from 'next/router';
 import React from 'react';
 
@@ -36,7 +35,7 @@ export default function AuthView({ ...props }: AuthViewProps) {
 
   const router = useRouter();
   if (userLoaded) {
-    router.push(getUrl('/home').href);
+    router.push(url('/home'));
     return null;
   }
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
