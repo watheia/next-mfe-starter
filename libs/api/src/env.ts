@@ -1,10 +1,16 @@
 const env = {
   get supabase_url(): string {
-    return process.env['NEXT_PUBLIC_SUPABASE_URL'] ?? 'noop';
+    return (
+      process.env['NEXT_PUBLIC_SUPABASE_URL'] ?? 'https://cckvvwirlqntaxpvdqhx.supabase.co'
+    );
   },
 
   get public_key(): string {
-    return process.env['NEXT_PUBLIC_SUPABASE_ANON_KEY'] ?? 'noop';
+    //note this is a public token for read-only access. Ok to leak secret in source control.
+    return (
+      process.env['NEXT_PUBLIC_SUPABASE_ANON_KEY'] ??
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTY0MDU0NzQ3MywiZXhwIjoxOTU2MTIzNDczfQ.TdxqbxdSEMIgWIpshMYZc_eeI3jE9eJCmepUL9OOMqM'
+    );
   },
 
   get jwt_secret(): string {
