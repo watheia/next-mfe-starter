@@ -64,7 +64,7 @@
       "options": {
         "push": true,
         "tags": [
-          "localhost:5000/waweb-home:latest"
+          "docker.local:5000/home:v0alpha1"
         ]
       },
       "configurations": {
@@ -81,7 +81,7 @@
       "options": {
         "commands": [
           "nx run home:export",
-          "nx run home:docker"
+          "nx run home:docker:production"
         ],
         "parallel": false
       }

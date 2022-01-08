@@ -63,14 +63,14 @@
       "options": {
         "push": true,
         "tags": [
-          "localhost:5000/waweb-blog:latest"
+          "docker.local:5000/blog:v0alpha1"
         ]
       },
       "configurations": {
         "production": {
           "push": true,
           "tags": [
-            "watheialabs/blog:0.0.1"
+            "watheialabs/waweb-blog:v0alpha1"
           ]
         }
       }
@@ -80,7 +80,7 @@
       "options": {
         "commands": [
           "nx run blog:export",
-          "nx run blog:docker"
+          "nx run blog:docker:production"
         ],
         "parallel": false
       }

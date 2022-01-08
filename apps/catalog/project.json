@@ -63,14 +63,14 @@
       "options": {
         "push": true,
         "tags": [
-          "localhost:5000/waweb-catalog:latest"
+          "docker.local:5000/catalog:v0alpha1"
         ]
       },
       "configurations": {
         "production": {
           "push": true,
           "tags": [
-            "watheialabs/catalog:v0alpha1"
+            "watheialabs/waweb-catalog:v0alpha1"
           ]
         }
       }
@@ -80,7 +80,7 @@
       "options": {
         "commands": [
           "nx run catalog:export",
-          "nx run catalog:docker"
+          "nx run catalog:docker:production"
         ],
         "parallel": false
       }

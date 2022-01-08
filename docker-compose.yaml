@@ -3,12 +3,7 @@
 
 version: '3.7'
 services:
-  echo:
-    image: localhost:5000/echo
-    ports:
-      - 8080:8080
-
-  registry:
+  docker.local:
     image: 'registry:2'
     ports:
       - 5000:5000
@@ -39,6 +34,8 @@ services:
       - 6443:6443 # Kubernetes API Server
       - 80:80 # Ingress controller port 80
       - 443:443 # Ingress controller port 443
+      - 8080:8080
+      - 8443:8443
 
   k3s-agent:
     image: 'rancher/k3s'

@@ -64,14 +64,14 @@
       "options": {
         "push": true,
         "tags": [
-          "localhost:5000/waweb-gatekeeper:latest"
+          "docker.local:5000/gatekeeper:v0alpha1"
         ]
       },
       "configurations": {
         "production": {
           "push": true,
           "tags": [
-            "watheialabs/gatekeeper:0.0.1"
+            "watheialabs/waweb-gatekeeper:v0alpha1"
           ]
         }
       }
@@ -81,7 +81,7 @@
       "options": {
         "commands": [
           "nx run gatekeeper:build:production",
-          "nx run gatekeeper:docker"
+          "nx run gatekeeper:docker:production"
         ],
         "parallel": false
       }
