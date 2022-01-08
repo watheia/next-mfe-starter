@@ -18,7 +18,7 @@
 *.sublime-workspace
 .env
 .env.local
-.env.dev
+.env.*
 
 # IDE - VSCode
 .vscode/*

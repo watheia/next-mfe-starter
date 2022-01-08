@@ -4,98 +4,59 @@
 version: '3.7'
 services:
   echo:
-    image: gcr.io/google-containers/echoserver:1.8
+    image: localhost:5000/echo
     ports:
       - 8080:8080
 
-  gatekeeper:
-    image: dev.local/gatekeeper
+  registry:
+    image: 'registry:2'
     ports:
-      - 4200:4200
-    environment:
-      - URL=http://gatekeeper:4200
-      - HOME_URL=http://home:4210/home
-      - BLOG_URL=http://blog:4220/blog
-      - CATALOG_URL=http://catalog:4230/catalog
+      - 5000:5000
 
-  home:
-    image: dev.local/home
+  k3s-server:
+    image: 'rancher/k3s'
+    command: server
+    tmpfs:
+      - /run
+      - /var/run
+    ulimits:
+      nproc: 65535
+      nofile:
+        soft: 65535
+        hard: 65535
+    privileged: true
+    restart: always
+    environment:
+      - K3S_TOKEN=${K3S_TOKEN:?err}
+      - K3S_KUBECONFIG_OUTPUT=/output/kubeconfig.yaml
+      - K3S_KUBECONFIG_MODE=666
+    volumes:
+      - k3s-server:/var/lib/rancher/k3s
+      # This is just so that we get the kubeconfig file out
+      - .:/output
+      - ./registries.yaml:/etc/rancher/k3s/registries.yaml
     ports:
-      - 1:80
+      - 6443:6443 # Kubernetes API Server
+      - 80:80 # Ingress controller port 80
+      - 443:443 # Ingress controller port 443
+
+  k3s-agent:
+    image: 'rancher/k3s'
+    tmpfs:
+      - /run
+      - /var/run
+    ulimits:
+      nproc: 65535
+      nofile:
+        soft: 65535
+        hard: 65535
+    privileged: true
+    restart: always
     environment:
-      - URL=http://gatekeeper:4200
-      - HOME_URL=http://home:4210/home
-      - BLOG_URL=http://blog:4220/blog
-      - CATALOG_URL=http://catalog:4230/catalog
+      - K3S_URL=https://k3s-server:6443
+      - K3S_TOKEN=${K3S_TOKEN:?err}
+    volumes:
+      - ./registries.yaml:/etc/rancher/k3s/registries.yaml
 
-  blog:
-    image: dev.local/blog
-    ports:
-      - 4220:80
-    environment:
-      - URL=http://gatekeeper:4200
-      - HOME_URL=http://home:4210/home
-      - BLOG_URL=http://blog:4220/blog
-      - CATALOG_URL=http://catalog:4230/catalog
-
-  catalog:
-    image: dev.local/catalog
-    ports:
-      - 4230:80
-    environment:
-      - URL=http://gatekeeper:4200
-      - HOME_URL=http://home:4210/home
-      - BLOG_URL=http://blog:4220/blog
-      - CATALOG_URL=http://catalog:4230/catalog
-#   dev.local:
-#     image: 'registry:2'
-#     ports:
-#       - 5000:5000
-
-#   k3s-server:
-#     image: 'rancher/k3s'
-#     command: server
-#     tmpfs:
-#       - /run
-#       - /var/run
-#     ulimits:
-#       nproc: 65535
-#       nofile:
-#         soft: 65535
-#         hard: 65535
-#     privileged: true
-#     restart: always
-#     environment:
-#       - K3S_TOKEN=${K3S_TOKEN:?err}
-#       - K3S_KUBECONFIG_OUTPUT=/output/kubeconfig.yaml
-#       - K3S_KUBECONFIG_MODE=666
-#     volumes:
-#       - k3s-server:/var/lib/rancher/k3s
-#       # This is just so that we get the kubeconfig file out
-#       - .:/output
-#       - ./registries.yaml:/etc/rancher/k3s/registries.yaml
-#     ports:
-#       - 6443:6443 # Kubernetes API Server
-#       - 80:80 # Ingress controller port 80
-#       - 443:443 # Ingress controller port 443
-
-#   k3s-agent:
-#     image: 'rancher/k3s'
-#     tmpfs:
-#       - /run
-#       - /var/run
-#     ulimits:
-#       nproc: 65535
-#       nofile:
-#         soft: 65535
-#         hard: 65535
-#     privileged: true
-#     restart: always
-#     environment:
-#       - K3S_URL=https://k3s-server:6443
-#       - K3S_TOKEN=${K3S_TOKEN:?err}
-#     volumes:
-#       - ./registries.yaml:/etc/rancher/k3s/registries.yaml
-
-# volumes:
-#   k3s-server: {}
+volumes:
+  k3s-server: {}

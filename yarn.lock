@@ -4105,6 +4105,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nx-tools/nx-prisma@npm:^2.0.0-alpha.4":
+  version: 2.0.0-alpha.4
+  resolution: "@nx-tools/nx-prisma@npm:2.0.0-alpha.4"
+  dependencies:
+    "@nx-tools/core": ^2.2.0
+  peerDependencies:
+    prisma: ^3.0.1
+    ts-node: "*"
+  checksum: 00fc95956a5013a366551382cfc7bc72c4c45f30657470295c020f95626d4483691db7ccf12363a7b2b265d6d87f933ecdd6e6c1dd88e430cdf6ce526921b60a
+  languageName: node
+  linkType: hard
+
 "@octokit/auth-token@npm:^2.4.4":
   version: 2.5.0
   resolution: "@octokit/auth-token@npm:2.5.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40octokit%2Fauth-token%2F-%2Fauth-token-2.5.0.tgz"
@@ -10165,6 +10177,7 @@ __metadata:
     "@nrwl/web": 13.4.3
     "@nrwl/workspace": 13.4.3
     "@nx-tools/nx-docker": ^2.2.0
+    "@nx-tools/nx-prisma": ^2.0.0-alpha.4
     "@prisma/client": ^3.7.0
     "@supabase/supabase-js": ^1.29.1
     "@swc/cli": ~0.1.55
