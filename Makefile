@@ -7,7 +7,8 @@ clean:
 	rm -rf yarn.lock dist public node_modules apps/web/public apps/web/.cache
 
 # TODO: detect and replace in bashrc to prevent dupes
-setup:
+bit:
+  yarn install
 	npm install --global @teambit/bvm
 	bvm install latest
 	bit config set analytics_reporting false
