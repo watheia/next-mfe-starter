@@ -6,7 +6,6 @@ PATH := ./node_modules/.bin:$(HOME)/bin:$(PATH)
 clean:
 	rm -rf yarn.lock dist public node_modules apps/web/public apps/web/.cache
 
-# TODO: detect and replace in bashrc to prevent dupes
 bit:
   yarn install
 	npm install --global @teambit/bvm
