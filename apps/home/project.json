@@ -5,9 +5,7 @@
   "targets": {
     "build": {
       "executor": "@nrwl/next:build",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
         "root": "apps/home",
@@ -40,9 +38,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/apps/home"
-      ],
+      "outputs": ["coverage/apps/home"],
       "options": {
         "jestConfig": "apps/home/jest.config.js",
         "passWithNoTests": true
@@ -50,39 +46,28 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "apps/home/**/*.{ts,tsx,js,jsx}"
-        ]
+        "lintFilePatterns": ["apps/home/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "docker": {
       "executor": "@nx-tools/nx-docker:build",
       "options": {
         "push": true,
-        "tags": [
-          "docker.local:5000/home:v0alpha1"
-        ]
+        "tags": ["docker.local:5000/home:v0alpha1"]
       },
       "configurations": {
         "production": {
           "push": true,
-          "tags": [
-            "watheialabs/waweb-home:0.0.1"
-          ]
+          "tags": ["watheialabs/waweb-home:v0alpha1"]
         }
       }
     },
     "publish": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
-        "commands": [
-          "nx run home:export",
-          "nx run home:docker:production"
-        ],
+        "commands": ["nx run home:export", "nx run home:docker:production"],
         "parallel": false
       }
     }

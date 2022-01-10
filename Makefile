@@ -7,7 +7,7 @@ clean:
 	rm -rf yarn.lock dist public node_modules apps/web/public apps/web/.cache
 
 bit:
-  yarn install
+	yarn install
 	npm install --global @teambit/bvm
 	bvm install latest
 	bit config set analytics_reporting false
@@ -24,9 +24,6 @@ test:
 
 lint:
 	nx run-many --all --target lint --fix
-
-start-web:
-	nx serve web --verbose
 
 start-bit:
 	bit ui-build

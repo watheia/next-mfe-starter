@@ -5,9 +5,7 @@
   "targets": {
     "build": {
       "executor": "@nrwl/next:build",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
         "root": "apps/gatekeeper",
@@ -40,9 +38,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/apps/gatekeeper"
-      ],
+      "outputs": ["coverage/apps/gatekeeper"],
       "options": {
         "jestConfig": "apps/gatekeeper/jest.config.js",
         "passWithNoTests": true
@@ -50,29 +46,21 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "apps/gatekeeper/**/*.{ts,tsx,js,jsx}"
-        ]
+        "lintFilePatterns": ["apps/gatekeeper/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "docker": {
       "executor": "@nx-tools/nx-docker:build",
       "options": {
         "push": true,
-        "tags": [
-          "docker.local:5000/gatekeeper:v0alpha1"
-        ]
+        "tags": ["docker.local:5000/gatekeeper:v0alpha1"]
       },
       "configurations": {
         "production": {
           "push": true,
-          "tags": [
-            "watheialabs/waweb-gatekeeper:v0alpha1"
-          ]
+          "tags": ["watheialabs/waweb-gatekeeper:v0alpha1"]
         }
       }
     },
